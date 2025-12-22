@@ -15,7 +15,7 @@ use Illuminate\Support\Str;
 class FullFeedClient
 {
     public function __construct(
-        private readonly array $items = [],
+        private array $items = [],
     ) {}
 
     /**
@@ -101,6 +101,16 @@ class FullFeedClient
     public function first(string $url): ?array
     {
         return array_find($this->items, fn ($item) => Str::isMatch('@'.data_get($item, 'data.url').'@i', $url));
+    }
+
+    /**
+     * Merge new items to the beginning of the existing items.
+     */
+    public function merge(array $items): static
+    {
+        $this->items = array_merge($items, $this->items);
+
+        return $this;
     }
 
     public function all(): array

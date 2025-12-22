@@ -67,3 +67,24 @@ it('can mock FullFeed responses', function () {
     expect($content)->toContain('Mocked Article')
         ->and($content)->toContain('This is mocked content.');
 });
+
+it('can merge new rules into existing ones', function () {
+    $initialCount = FullFeed::collect()->count();
+
+    $newRules = [
+        [
+            'name' => 'example.com',
+            'data' => [
+                'url' => '^https://example.com/new-article',
+                'selector' => 'article',
+            ],
+        ],
+    ];
+
+    FullFeed::merge($newRules);
+
+    $newCount = FullFeed::collect()->count();
+
+    expect($newCount)->toBe($initialCount + 1)
+        ->and(FullFeed::has('https://example.com/new-article'))->toBeTrue();
+});
