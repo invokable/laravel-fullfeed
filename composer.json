@@ -1,6 +1,6 @@
 {
     "name": "revolution/laravel-fullfeed",
-    "description": "Fullfeed is a content extraction from rss feed link for Laravel.",
+    "description": "Extracts the main content from web pages for use in feed readers",
     "keywords": [
         "laravel",
         "fullfeed",
