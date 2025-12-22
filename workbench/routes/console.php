@@ -10,6 +10,7 @@ use Revolution\Fullfeed\Facades\FullFeed;
 //     $this->comment(Inspiring::quote());
 // })->purpose('Display an inspiring quote');
 
+// vendor/bin/testbench full
 Artisan::command('full', function () {
     dump(FullFeed::first('https://laravel.com/blog/how-we-built-laravel-wrapped'));
     $this->info(FullFeed::get('https://laravel.com/blog/how-we-built-laravel-wrapped'));
