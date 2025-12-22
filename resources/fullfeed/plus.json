@@ -1,0 +1,16 @@
+[
+    {
+        "name": "note",
+        "data": {
+            "url": "^https://note\\.com/",
+            "selector": "div[data-name=\"body\"]"
+        }
+    },
+    {
+        "name": "zenn",
+        "data": {
+            "url": "^https:\/\/zenn\\.dev\/(.+)\/articles",
+            "selector": "div.znc"
+        }
+    }
+]
