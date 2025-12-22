@@ -8,8 +8,7 @@ use Revolution\Fullfeed\Facades\FullFeed;
 //     $this->comment(Inspiring::quote());
 // })->purpose('Display an inspiring quote');
 
-// vendor/bin/testbench vendor:publish --tag=fullfeed --forceでvendor内のファイルを更新してからテスト用コマンドを実行。
 Artisan::command('full', function () {
-    //dump(FullFeed::all());
+    dump(FullFeed::first('https://laravel.com/blog/how-we-built-laravel-wrapped'));
     $this->info(FullFeed::get('https://laravel.com/blog/how-we-built-laravel-wrapped'));
 });
