@@ -33,3 +33,5 @@ We are using the LDRFullFeed format, which is popular in Japan, as a reference. 
         }
     },
 ```
+
+[resources/fullfeed/README.md](../resources/fullfeed/README.md)
