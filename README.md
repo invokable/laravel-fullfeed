@@ -1,5 +1,7 @@
 # FullFeed
 
+[![tests](https://github.com/invokable/laravel-fullfeed/actions/workflows/tests.yml/badge.svg)](https://github.com/invokable/laravel-fullfeed/actions/workflows/tests.yml)
+
 ## Overview
 
 FullFeed is a Laravel package that extracts the main content from web pages for use in feed readers.  
