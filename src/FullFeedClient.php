@@ -12,10 +12,10 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 
-readonly class FullFeedClient
+class FullFeedClient
 {
     public function __construct(
-        private array $items = [],
+        private readonly array $items = [],
     ) {}
 
     /**

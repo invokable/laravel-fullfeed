@@ -56,3 +56,14 @@ it('can retrieve all rules and convert to array/collection', function () {
         ->and(count($rulesArray))->toBeGreaterThan(0)
         ->and($rulesCollection->count())->toBeGreaterThan(0);
 });
+
+it('can mock FullFeed responses', function () {
+    FullFeed::expects('get')
+        ->with('https://laravel.com/blog/mock-test')
+        ->andReturn('<article><h1>Mocked Article</h1><p>This is mocked content.</p></article>');
+
+    $content = FullFeed::get('https://laravel.com/blog/mock-test');
+
+    expect($content)->toContain('Mocked Article')
+        ->and($content)->toContain('This is mocked content.');
+});
