@@ -12,5 +12,12 @@
             "url": "^https:\/\/zenn\\.dev\/(.+)\/articles",
             "selector": "div.znc"
         }
+    },
+    {
+        "name": "Laravel Official Blog",
+        "data": {
+            "url": "^https:\/\/laravel\\.com\/blog\/",
+            "selector": "article"
+        }
     }
 ]

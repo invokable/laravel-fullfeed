@@ -4,7 +4,7 @@ env:
   CACHE_STORE: array
 
 providers:
-  # - Workbench\App\Providers\WorkbenchServiceProvider
+  - Workbench\App\Providers\WorkbenchServiceProvider
   - Revolution\Fullfeed\FullfeedServiceProvider
 
 migrations:

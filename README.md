@@ -36,7 +36,7 @@ If you want to add your own site rules, add them in `resources/fullfeed`.
 ```php
 use Revolution\Fullfeed\Facades\Fullfeed;
 
-$text = FullFeed::get($url);
+$html = FullFeed::get($url);
 ```
 
 ## License
