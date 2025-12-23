@@ -27,16 +27,14 @@ class FullFeedClient
     {
         $response = Http::when(
             filled(config('fullfeed.user_agent')),
-            fn ($client) => $client->withUserAgent(config('fullfeed.user_agent')))
-            ->get($url);
+            fn ($client) => $client->withUserAgent(config('fullfeed.user_agent')),
+        )->get($url);
 
         if ($response->failed()) {
             return null;
         }
 
-        $body = $response->body();
-
-        return $this->extract($body, $url);
+        return $this->extract($response->body(), $url);
     }
 
     /**
