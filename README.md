@@ -37,7 +37,7 @@ Add the following to the `composer.json`
 ```json
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "@php artisan vendor:publish --tag=fullfeed"
+            "@php artisan vendor:publish --tag=fullfeed-site --ansi --force"
         ],
 ```
 
