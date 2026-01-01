@@ -13,6 +13,11 @@ use Dom\HTMLDocument;
  */
 class TogetterExtractor
 {
+    /**
+     * @param  string  $data  Target html content
+     * @param  string  $url  Original URL
+     * @param  array  $rule  Extraction rule
+     */
     public function __invoke(string $data, string $url, array $rule): string
     {
         $selector = data_get($rule, 'data.selector');
