@@ -29,6 +29,18 @@ php artisan vendor:publish --tag=fullfeed
 
 `config/fullfeed.php` and `resources/fullfeed` will be created.
 
+### Update site definition files
+
+When updating via `composer update`, you can automatically publish the latest site definition files.  
+Add the following to the `composer.json`
+
+```json
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan vendor:publish --tag=fullfeed"
+        ],
+```
+
 ## Configuration
 
 If you want to add your own site rules, add them in `resources/fullfeed`.
