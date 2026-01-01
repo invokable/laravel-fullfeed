@@ -42,7 +42,7 @@ class FullfeedServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__.'/../resources/fullfeed' => resource_path('fullfeed'),
-            ], 'fullfeed');
+            ], ['fullfeed', 'fullfeed-site']);
         }
     }
 }
