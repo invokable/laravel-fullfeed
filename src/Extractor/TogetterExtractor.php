@@ -26,9 +26,11 @@ class TogetterExtractor
         $nodes = $html->querySelectorAll($selector);
 
         if ($nodes->length > 0) {
+            // Remove unwanted elements.
+            // Images are lazy-loaded by JS and show nothing, so remove them.
+            // 画像はJSで遅延ロードしていて何も表示されないので削除。
+            $unwantedSelectors = data_get($rule, 'data.remove', []);
             foreach ($nodes as $node) {
-                // 画像はJSで遅延ロードしていて何も表示されないので削除。
-                $unwantedSelectors = data_get($rule, 'data.remove', []);
                 foreach ($unwantedSelectors as $unwantedSelector) {
                     $unwantedNodes = $node->querySelectorAll($unwantedSelector);
                     foreach ($unwantedNodes as $unwantedNode) {
