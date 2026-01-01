@@ -49,6 +49,17 @@ class FullFeedClient
             return null;
         }
 
+        // "callable": "App\\FullFeed\\CustomExtractor"
+        // If complex processing is required, it can be delegated to a custom callable class.
+        $callable = data_get($rule, 'data.callable');
+        if (filled($callable) && class_exists($callable)) {
+            return app()->call($callable, [
+                'data' => $data,
+                'url' => $url,
+                'rule' => $rule,
+            ]);
+        }
+
         $selector = data_get($rule, 'data.selector');
         $xpath = data_get($rule, 'data.xpath');
         $encoding = data_get($rule, 'data.enc', 'UTF-8');

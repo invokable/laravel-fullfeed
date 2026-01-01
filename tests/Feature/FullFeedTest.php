@@ -88,3 +88,45 @@ it('can merge new rules into existing ones', function () {
     expect($newCount)->toBe($initialCount + 1)
         ->and(FullFeed::has('https://example.com/new-article'))->toBeTrue();
 });
+
+it('can use custom extractor', function () {
+    $html = <<<'HTML'
+<section class="entry_main tweet_box">
+                    <div class='list_box type_tweet impl_profile' data-index='0' data-id='1111'>
+            <span>
+                <a class="user_link"
+                   rel="noreferrer"
+                   href='https://x.com/****'
+                   target='_blank'>
+                            <img class="lzpk " data-s="2" src="https://s.tgstc.com/static/web/p.gif" data-e="3" />
+                                                    <strong class="emj">name</strong>
+                                        <span class="status_name">@user</span>
+                </a>
+            </span>
+            <p class='tweet emj'><span class="f20 c01">ツイート
+
+<a href="https://x.com/search?q=****" target="_blank" rel="noreferrer">#***</a> <a href="https://t.co/***" target="_blank" rel="noreferrer">pic.x.com/***</a></span></p>
+            <span class='status'>
+                <span class="intent"></span>
+                <span>
+                    <a class="link" href="https://x.com/mn_enta_tv/status/****" target="_blank" rel="noreferrer">2026-01-01 00:00:00</a>
+                </span>
+            </span>
+                                <div class="list_photo_box">
+                <figure class='list_photo'>
+                    <img class="lzpk " data-s="4" src="https://s.tgstc.com/static/web/p.gif" data-e="5"/>
+                </figure>
+                </div>
+                </div>
+</section>
+HTML;
+
+    Http::fake([
+        'https://togetter.com/li/1' => Http::response($html, 200),
+    ]);
+
+    $content = FullFeed::get('https://togetter.com/li/1');
+
+    expect($content)->toContain('ツイート')
+        ->and($content)->not->toContain('img');
+});

@@ -19,7 +19,8 @@ plus.jsonは追加ファイルのサンプル。
             "url": "^https://note\\.com/",
             "selector": "div[data-name=\"body\"]",
             "xpath": "//div[@data-name=\"body\"]",
-            "enc": "UTF-8"
+            "enc": "UTF-8",
+            "callable": "App\\FullFeed\\CustomExtractor"
         }
     },
 ```
@@ -30,6 +31,7 @@ plus.jsonは追加ファイルのサンプル。
 - selector: CSSセレクタ。LDRFullFeedとは違ってセレクタにも対応。XPathより優先される。
 - xpath: XPath。LDRFullFeedからそのまま使う場合。LDRFullFeedにあるけどサイト側が変わっていて使えなくなってる場合にはコピペして修正して使う。
 - enc: 文字エンコーディング。UTF-8以外の文字コードを使っていて変換が必要な場合に指定。
+- callable: 単純なselectorやxpathでは対応できない場合に独自のクラスを指定可能。`App\\FullFeed\\CustomExtractor`のように指定。`src/Extractor/TogetterExtractor.php`がサンプルなので参考にしてください。
 
 PHP8.4以降の`Dom\HTMLDocument`が対応しているセレクタを使えます。`querySelectorAll`で選択後、最初のアイテムを返します。
 

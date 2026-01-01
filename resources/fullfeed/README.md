@@ -19,7 +19,8 @@ plus.json is a sample additional file.
             "url": "^https://note\\.com/",
             "selector": "div[data-name=\"body\"]",
             "xpath": "//div[@data-name=\"body\"]",
-            "enc": "UTF-8"
+            "enc": "UTF-8",
+            "callable": "App\\FullFeed\\CustomExtractor"
         }
     },
 ```
@@ -30,6 +31,7 @@ The actual usage is within the data object:
 - selector: CSS selector. Unlike LDRFullFeed, this also supports selectors. Takes priority over XPath.
 - xpath: XPath. For direct use from LDRFullFeed. When a rule exists in LDRFullFeed but no longer works due to site changes, copy and modify it for use.
 - enc: Character encoding. Specify when the site uses a character encoding other than UTF-8 that requires conversion.
+- callable: You can specify a custom class when simple selectors or XPath cannot handle the extraction. Specify it like `App\\FullFeed\\CustomExtractor`. Refer to `src/Extractor/TogetterExtractor.php` as a sample.
 
 You can use selectors supported by PHP 8.4+'s `Dom\HTMLDocument`. After selecting with `querySelectorAll`, it returns the first item.
 

@@ -19,5 +19,20 @@
             "url": "^https:\/\/laravel\\.com\/blog\/",
             "selector": "article"
         }
+    },
+    {
+        "name": "Togetter",
+        "data": {
+            "url": "^https://togetter\\.com\/li\/",
+            "selector": "section.entry_main",
+            "callable": "Revolution\\Fullfeed\\Extractor\\TogetterExtractor",
+            "remove": [
+                "div.list_photo_box",
+                "img",
+                "span.intent",
+                "div.pagenation",
+                "script"
+            ]
+        }
     }
 ]

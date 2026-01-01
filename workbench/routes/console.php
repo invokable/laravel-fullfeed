@@ -15,3 +15,8 @@ Artisan::command('full', function () {
     dump(FullFeed::first('https://laravel.com/blog/how-we-built-laravel-wrapped'));
     $this->info(FullFeed::get('https://laravel.com/blog/how-we-built-laravel-wrapped'));
 });
+
+// vendor/bin/testbench callable
+Artisan::command('callable', function () {
+    $this->info(FullFeed::get('https://togetter.com/li/'));
+});

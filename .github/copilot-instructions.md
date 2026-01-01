@@ -29,7 +29,8 @@ We are using the LDRFullFeed format, which is popular in Japan, as a reference. 
             "url": "^https://note\\.com/",
             "selector": "div[data-name=\"body\"]",
             "xpath": "//div[@data-name=\"body\"]",
-            "enc": "UTF-8"
+            "enc": "UTF-8",
+            "callable": "App\\FullFeed\\CustomExtractor"
         }
     },
 ```
