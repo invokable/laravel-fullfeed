@@ -8,8 +8,8 @@ use const Dom\HTML_NO_DEFAULT_NS;
 
 use Dom\HTMLDocument;
 use Dom\XPath;
+use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 
@@ -54,7 +54,7 @@ class FullFeedClient
         // If complex processing is required, it can be delegated to a custom callable class.
         $callable = data_get($rule, 'data.callable');
         if (filled($callable) && class_exists($callable)) {
-            return App::call($callable, [
+            return Container::getInstance()->call($callable, [
                 'data' => $data,
                 'url' => $url,
                 'rule' => $rule,
