@@ -29,6 +29,8 @@
             "remove": [
                 "div.list_photo_box",
                 "img",
+                "svg",
+                "use",
                 "span.intent",
                 "div.pagenation",
                 "script"
