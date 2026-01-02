@@ -9,14 +9,21 @@
     {
         "name": "zenn",
         "data": {
-            "url": "^https:\/\/zenn\\.dev\/(.+)\/articles",
+            "url": "^https://zenn\\.dev\/(.+)\/articles\/",
             "selector": "div.znc"
+        }
+    },
+    {
+        "name": "Qiita",
+        "data": {
+            "url": "^https://qiita\\.com\/(.+)/items\/",
+            "selector": "article"
         }
     },
     {
         "name": "Laravel Official Blog",
         "data": {
-            "url": "^https:\/\/laravel\\.com\/blog\/",
+            "url": "^https://laravel\\.com\/blog\/",
             "selector": "article"
         }
     },
