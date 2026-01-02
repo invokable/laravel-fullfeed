@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Revolution\Fullfeed\Extractor;
 
 use Closure;
+use Dom\Element;
 use Revolution\Fullfeed\Context;
 
 /**
@@ -21,10 +22,11 @@ class SelectorExtractor
 
         $html = $context->htmlDocument();
 
-        $nodes = $html->querySelectorAll($selector);
+        /** @var ?Element $node */
+        $node = rescue(fn () => $html->querySelector($selector), report: false);
 
-        if ($nodes->length > 0) {
-            $context->source = $html->saveHtml($nodes->item(0));
+        if (! is_null($node)) {
+            $context->source = $html->saveHtml($node);
 
             return $next($context);
         }
