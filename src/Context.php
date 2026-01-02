@@ -22,8 +22,8 @@ class Context
      */
     public function __construct(
         public string $source,
-        public string $url,
-        public array $rule,
+        public readonly string $url,
+        public readonly array $rule,
     ) {
         $encoding = data_get($rule, 'data.enc', 'UTF-8');
         if (blank($encoding)) {
