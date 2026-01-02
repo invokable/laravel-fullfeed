@@ -33,7 +33,7 @@ class FullFeedClient
             return '';
         }
 
-        return $this->extract($response->body() ?? '', $url);
+        return $this->extract($response->body(), $url);
     }
 
     /**
@@ -59,14 +59,10 @@ class FullFeedClient
             ->push(SelectorExtractor::class)
             ->toArray();
 
-        // If extraction result is same as source, consider it as failed extraction
         return Pipeline::send($context)
             ->through($pipes)
             ->thenReturn()
-            ->when(
-                $context->source === $source,
-                fn () => $context->tap(fn ($context) => $context->source = ''),
-            )->source;
+            ->source;
     }
 
     /**
