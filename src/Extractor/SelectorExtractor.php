@@ -25,11 +25,11 @@ class SelectorExtractor
         /** @var ?Element $node */
         $node = rescue(fn () => $html->querySelector($selector), report: false);
 
-        if (! is_null($node)) {
-            $context->source = $html->saveHtml($node);
-
+        if (is_null($node)) {
             return $next($context);
         }
+
+        $context->source = $html->saveHtml($node);
 
         return $next($context);
     }
