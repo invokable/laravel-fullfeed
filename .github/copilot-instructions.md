@@ -9,8 +9,7 @@ We've separated the FullFeed package from our private feed reader app and made i
 ## Technology Stack
 - PHP 8.4+
 - Laravel 12.x
-- Pest for testing
-- Pint for code linting
+- Pest 4.x
 
 ## Commands
 - `composer run test`: Run the pest test suite.
@@ -36,3 +35,10 @@ We are using the LDRFullFeed format, which is popular in Japan, as a reference. 
 ```
 
 [resources/fullfeed/README.md](../resources/fullfeed/README.md)
+
+## Architecture
+- `src/FullFeedClient.php` - Main client class for FullFeed.
+- `src/Context.php` - Context class for managing extraction context.
+- `src/Extractor/` - Contains custom extractors for specific processing.
+
+Using Pipeline pattern for processing steps.
