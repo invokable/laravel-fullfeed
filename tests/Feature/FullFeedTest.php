@@ -16,24 +16,24 @@ it('can fetch full feed content', function () {
         ->and($content)->toContain('This is the full content of the article.');
 });
 
-it('returns null for non-existing rules', function () {
+it('returns empty for non-existing rules', function () {
     Http::fake([
         'https://example.com/no-rules' => Http::response('<html><body><p>No rules here.</p></body></html>', 200),
     ]);
 
     $content = FullFeed::get('https://example.com/no-rules');
 
-    expect($content)->toBeNull();
+    expect($content)->toBeEmpty();
 });
 
-it('returns null for failed HTTP requests', function () {
+it('returns empty for failed HTTP requests', function () {
     Http::fake([
         'https://example.com/fail' => Http::response('', 404),
     ]);
 
     $content = FullFeed::get('https://example.com/fail');
 
-    expect($content)->toBeNull();
+    expect($content)->toBeEmpty();
 });
 
 it('can check existence of rules for a URL', function () {

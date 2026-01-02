@@ -13,7 +13,7 @@ class XPathExtractor
     public function __invoke(Context $context, Closure $next): Context
     {
         $xpath = data_get($context->rule, 'data.xpath');
-        if (empty($xpath)) {
+        if (blank($xpath)) {
             return $next($context);
         }
 

@@ -22,7 +22,7 @@ class FullFeedClient
      *
      * URLのコンテンツを取得し、data.selectorやdata.xpathで指定された部分を返す
      */
-    public function get(string $url): ?string
+    public function get(string $url): string
     {
         $response = Http::when(
             filled(config('fullfeed.user_agent')),
@@ -30,10 +30,10 @@ class FullFeedClient
         )->get($url);
 
         if ($response->failed()) {
-            return null;
+            return '';
         }
 
-        return $this->extract($response->body(), $url);
+        return $this->extract($response->body() ?? '', $url);
     }
 
     /**
@@ -41,11 +41,11 @@ class FullFeedClient
      *
      * 与えられたHTMLデータから、data.selectorやdata.xpathで指定された部分を抽出する
      */
-    public function extract(string $source, string $url): ?string
+    public function extract(string $source, string $url): string
     {
         $rule = $this->first($url);
         if (blank($rule)) {
-            return null;
+            return '';
         }
 
         $context = new Context(

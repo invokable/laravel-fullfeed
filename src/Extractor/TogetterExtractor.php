@@ -14,7 +14,7 @@ class TogetterExtractor
 {
     public function __invoke(Context $context, Closure $next): Context
     {
-        $selector = data_get($context->rule, 'data.selector');
+        $selector = data_get($context->rule, 'data.selector', 'section.entry_main');
 
         $html = $context->htmlDocument();
 

@@ -12,7 +12,7 @@ class SelectorExtractor
     public function __invoke(Context $context, Closure $next): Context
     {
         $selector = data_get($context->rule, 'data.selector');
-        if (empty($selector)) {
+        if (blank($selector)) {
             return $next($context);
         }
 
