@@ -42,6 +42,17 @@
                 "span.intent",
                 "div.pagenation",
                 "script"
+            ],
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\ReplaceMatches"],
+            "replace": [
+                {
+                    "pattern": "/ data-(h-)?index=\"[0-9]+\"/",
+                    "replace": ""
+                },
+                {
+                    "pattern": "/ data-id=\"[0-9]+\"/",
+                    "replace": ""
+                }
             ]
         }
     }

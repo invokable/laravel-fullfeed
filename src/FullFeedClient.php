@@ -57,6 +57,7 @@ class FullFeedClient
         $pipes = Collection::wrap(data_get($rule, 'data.callable'))
             ->push(XPathExtractor::class)
             ->push(SelectorExtractor::class)
+            ->merge(data_get($rule, 'data.after_callable'))
             ->toArray();
 
         return Pipeline::send($context)
