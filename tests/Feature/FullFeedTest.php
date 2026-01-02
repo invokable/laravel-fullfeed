@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Http;
 use Revolution\Fullfeed\Extractor\RemoveElements;
+use Revolution\Fullfeed\Extractor\ReplaceMatches;
 use Revolution\Fullfeed\Facades\FullFeed;
 
 it('can fetch full feed content', function () {
@@ -179,4 +180,33 @@ it('can use remove elements extractor', function () {
         ->and($content)->not->toContain('This is mocked content 1.')
         ->and($content)->toContain('This is mocked content 2.')
         ->and($content)->not->toContain('This is mocked content 3.');
+});
+
+it('can use replace extractor', function () {
+    $html = '<html><article><h1>Mocked Article</h1><p>This is mocked content.</p></article></html>';
+
+    $newRules = [
+        [
+            'name' => 'example.com',
+            'data' => [
+                'url' => '^https://example.com/new-article',
+                'selector' => 'article',
+                'callable' => [ReplaceMatches::class],
+                'replace' => [
+                    [
+                        'pattern' => '/<h1>.*?<\/h1>/s',
+                        'replace' => '<h1>Replaced Title</h1>',
+                    ],
+                ],
+            ],
+        ],
+    ];
+
+    FullFeed::merge($newRules);
+
+    $content = FullFeed::extract(source: $html, url: 'https://example.com/new-article');
+
+    expect($content)->not->toContain('Mocked Article')
+        ->and($content)->toContain('Replaced Title')
+        ->and($content)->toContain('This is mocked content.');
 });
