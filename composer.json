@@ -61,6 +61,7 @@
         "test:coverage": "pest --coverage --coverage-clover build/logs/clover.xml",
         "lint": "pint",
         "test:lint": "pint --test",
+        "boost": "vendor/bin/testbench boost:install --no-interaction --ansi",
         "post-autoload-dump": [
             "@clear",
             "@prepare"
