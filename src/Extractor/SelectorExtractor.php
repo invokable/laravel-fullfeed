@@ -7,6 +7,9 @@ namespace Revolution\Fullfeed\Extractor;
 use Closure;
 use Revolution\Fullfeed\Context;
 
+/**
+ * CSS Selector based extractor.
+ */
 class SelectorExtractor
 {
     public function __invoke(Context $context, Closure $next): Context
