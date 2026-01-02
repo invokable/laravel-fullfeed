@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Http;
+use Revolution\Fullfeed\Extractor\RemoveElements;
 use Revolution\Fullfeed\Facades\FullFeed;
 
 it('can fetch full feed content', function () {
@@ -91,7 +92,7 @@ it('can merge new rules into existing ones', function () {
 
 it('can use xpath extractor', function () {
     Http::fake([
-        'https://example.com/new-article' => Http::response('<html></html><article><h1>Mocked Article</h1><p>This is mocked content.</p></article></html>', 200),
+        'https://example.com/new-article' => Http::response('<html><article><h1>Mocked Article</h1><p>This is mocked content.</p></article></html>', 200),
     ]);
 
     $newRules = [
@@ -152,4 +153,30 @@ HTML;
 
     expect($content)->toContain('ツイート')
         ->and($content)->not->toContain('img');
+});
+
+it('can use remove elements extractor', function () {
+    Http::fake([
+        'https://example.com/new-article' => Http::response('<html><article><h1>Mocked Article</h1><p id="1">This is mocked content 1.</p><p id="2">This is mocked content 2.</p><div id="3">This is mocked content 3.</div></article></html>', 200),
+    ]);
+
+    $newRules = [
+        [
+            'name' => 'example.com',
+            'data' => [
+                'url' => '^https://example.com/new-article',
+                'callable' => [RemoveElements::class],
+                'remove' => ['h1', 'p#1', 'div#3'],
+            ],
+        ],
+    ];
+
+    FullFeed::merge($newRules);
+
+    $content = FullFeed::get('https://example.com/new-article');
+
+    expect($content)->not->toContain('Mocked Article')
+        ->and($content)->not->toContain('This is mocked content 1.')
+        ->and($content)->toContain('This is mocked content 2.')
+        ->and($content)->not->toContain('This is mocked content 3.');
 });
