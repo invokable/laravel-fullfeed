@@ -25,7 +25,7 @@
         "data": {
             "url": "^https://togetter\\.com\/li\/",
             "selector": "section.entry_main",
-            "callable": "Revolution\\Fullfeed\\Extractor\\TogetterExtractor",
+            "callable": ["Revolution\\Fullfeed\\Extractor\\TogetterExtractor"],
             "remove": [
                 "div.list_photo_box",
                 "img",

@@ -89,6 +89,29 @@ it('can merge new rules into existing ones', function () {
         ->and(FullFeed::has('https://example.com/new-article'))->toBeTrue();
 });
 
+it('can use xpath extractor', function () {
+    Http::fake([
+        'https://example.com/new-article' => Http::response('<html></html><article><h1>Mocked Article</h1><p>This is mocked content.</p></article></html>', 200),
+    ]);
+
+    $newRules = [
+        [
+            'name' => 'example.com',
+            'data' => [
+                'url' => '^https://example.com/new-article',
+                'xpath' => '//article',
+            ],
+        ],
+    ];
+
+    FullFeed::merge($newRules);
+
+    $content = FullFeed::get('https://example.com/new-article');
+
+    expect($content)->toContain('Mocked Article')
+        ->and($content)->toContain('This is mocked content.');
+});
+
 it('can use custom extractor', function () {
     $html = <<<'HTML'
 <section class="entry_main tweet_box">

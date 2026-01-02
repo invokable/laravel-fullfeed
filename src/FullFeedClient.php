@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 namespace Revolution\Fullfeed;
 
-use const Dom\HTML_NO_DEFAULT_NS;
-
-use Dom\HTMLDocument;
-use Dom\XPath;
-use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Pipeline;
 use Illuminate\Support\Str;
+use Revolution\Fullfeed\Extractor\SelectorExtractor;
+use Revolution\Fullfeed\Extractor\XPathExtractor;
 
 class FullFeedClient
 {
@@ -43,54 +41,32 @@ class FullFeedClient
      *
      * 与えられたHTMLデータから、data.selectorやdata.xpathで指定された部分を抽出する
      */
-    public function extract(string $data, string $url): ?string
+    public function extract(string $source, string $url): ?string
     {
         $rule = $this->first($url);
         if (blank($rule)) {
             return null;
         }
 
-        // "callable": "App\\FullFeed\\CustomExtractor"
-        // If complex processing is required, it can be delegated to a custom callable class.
-        $callable = data_get($rule, 'data.callable');
-        if (filled($callable) && class_exists($callable)) {
-            return Container::getInstance()->call($callable, [
-                'data' => $data,
-                'url' => $url,
-                'rule' => $rule,
-            ]);
-        }
-
-        $selector = data_get($rule, 'data.selector');
-        $xpath = data_get($rule, 'data.xpath');
-        $encoding = data_get($rule, 'data.enc', 'UTF-8');
-        if (blank($encoding)) {
-            $encoding = 'UTF-8';
-        }
-
-        if ($encoding !== 'UTF-8') {
-            $data = mb_convert_encoding($data, 'UTF-8', $encoding);
-        }
-
-        $html = HTMLDocument::createFromString(
-            source: $data,
-            options: LIBXML_HTML_NOIMPLIED | LIBXML_NOERROR | HTML_NO_DEFAULT_NS,
-            overrideEncoding: 'UTF-8',
+        $context = new Context(
+            source: $source,
+            url: $url,
+            rule: $rule,
         );
 
-        if (filled($selector)) {
-            $nodes = $html->querySelectorAll($selector);
-        } elseif (filled($xpath)) {
-            $nodes = new XPath($html)->query($xpath);
-        } else {
-            return null;
-        }
+        $pipes = Collection::wrap(data_get($rule, 'data.callable'))
+            ->push(XPathExtractor::class)
+            ->push(SelectorExtractor::class)
+            ->toArray();
 
-        if ($nodes->length > 0) {
-            return $html->saveHtml($nodes->item(0));
-        }
-
-        return null;
+        // If extraction result is same as source, consider it as failed extraction
+        return Pipeline::send($context)
+            ->through($pipes)
+            ->thenReturn()
+            ->when(
+                $context->source === $source,
+                fn () => $context->tap(fn ($context) => $context->source = ''),
+            )->source;
     }
 
     /**
