@@ -17,7 +17,7 @@
         "name": "Qiita",
         "data": {
             "url": "^https://qiita\\.com\/(.+)/items\/",
-            "selector": "article"
+            "selector": "article > section"
         }
     },
     {
