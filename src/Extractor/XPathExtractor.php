@@ -8,6 +8,9 @@ use Closure;
 use Dom\XPath;
 use Revolution\Fullfeed\Context;
 
+/**
+ * XPath based extractor.
+ */
 class XPathExtractor
 {
     public function __invoke(Context $context, Closure $next): Context
