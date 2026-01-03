@@ -31,7 +31,7 @@ plus.jsonは追加ファイルのサンプル。
 - selector: CSSセレクタ。LDRFullFeedとは違ってセレクタにも対応。XPathより優先される。
 - xpath: XPath。LDRFullFeedからそのまま使う場合。LDRFullFeedにあるけどサイト側が変わっていて使えなくなってる場合にはコピペして修正して使う。
 - enc: 文字エンコーディング。UTF-8以外の文字コードを使っていて変換が必要な場合に指定。
-- callable: 単純なselectorやxpathでは対応できない場合に独自のクラスを指定可能。`App\\FullFeed\\CustomExtractor`のように一つだけ指定も配列`["App\\FullFeed\\CustomExtractor"]`で複数指定も可能。`src/Extractor/TogetterExtractor.php`がサンプルなので参考にしてください。
+- callable: 単純なselectorやxpathでは対応できない場合に独自のクラスを指定可能。`App\\FullFeed\\CustomExtractor`のように一つだけ指定も配列`["App\\FullFeed\\CustomExtractor"]`で複数指定も可能。[src/Extractor](https://github.com/invokable/laravel-fullfeed/tree/main/src/Extractor)内がサンプルなので参考にしてください。
 - after_callable: callableと同様ですが、Extractorの最後に実行されます。RemoveElementsやReplaceMatchesなどで不要な要素を削除・置換したい場合に使えます。
 
 PHP8.4以降の`Dom\HTMLDocument`が対応しているセレクタを使えます。`querySelector`で選択した最初のアイテムを返します。
