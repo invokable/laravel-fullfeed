@@ -45,6 +45,8 @@ The execution order of Extractors is as follows:
 3. SelectorExtractor
 4. Classes specified in after_callable
 
+Laravel's Pipeline processes them in order.
+
 ### RemoveElements
 
 Removes all HTML elements specified by the selector.
