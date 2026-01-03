@@ -31,7 +31,7 @@ The actual usage is within the data object:
 - selector: CSS selector. Unlike LDRFullFeed, this also supports selectors. Takes priority over XPath.
 - xpath: XPath. For direct use from LDRFullFeed. When a rule exists in LDRFullFeed but no longer works due to site changes, copy and modify it for use.
 - enc: Character encoding. Specify when the site uses a character encoding other than UTF-8 that requires conversion.
-- callable: You can specify a custom class when simple selectors or XPath cannot handle the extraction. Specify it like `App\\FullFeed\\CustomExtractor`, or you can provide multiple classes in an array `["App\\FullFeed\\CustomExtractor"]`. Refer to `src/Extractor/TogetterExtractor.php` as a sample.
+- callable: You can specify a custom class when simple selectors or XPath cannot handle the extraction. Specify it like `App\\FullFeed\\CustomExtractor`, or you can provide multiple classes in an array `["App\\FullFeed\\CustomExtractor"]`. Refer to [src/Extractor](https://github.com/invokable/laravel-fullfeed/tree/main/src/Extractor) as a sample.
 - after_callable: Similar to callable, but executed at the end of the Extractor process. Useful for removing or replacing unwanted elements using classes like RemoveElements or ReplaceMatches.
 
 You can use selectors supported by PHP 8.4+'s `Dom\HTMLDocument`. After selecting with `querySelector`, it returns the first item.
