@@ -45,7 +45,7 @@
             ],
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\ReplaceMatches",
-                "Revolution\\Fullfeed\\Extractor\\StripTags:a"
+                "Revolution\\Fullfeed\\Extractor\\StripTags:a,div,p"
             ],
             "replace": [
                 {
