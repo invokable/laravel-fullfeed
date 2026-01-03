@@ -45,6 +45,8 @@ Extractorの実行順は以下のようになります。
 3. SelectorExtractor
 4. after_callableで指定したクラス
 
+LaravelのPipelineで順番に処理されます。
+
 ### RemoveElements
 
 セレクタで指定したhtml要素を全て削除。
