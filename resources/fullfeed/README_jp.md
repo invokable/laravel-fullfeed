@@ -76,6 +76,20 @@ Extractorの実行順は以下のようになります。
             ]
 ```
 
+### StripTags
+
+PHPの`strip_tags()`と同等の処理でHTMLタグを全て削除。
+
+```json
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\StripTags"]
+```
+
+`:`で削除せずに許可するタグを指定できます。Laravelのミドルウェアパラメーターと同じ仕様。
+
+```json
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\StripTags:a,img"]
+```
+
 ## 追加方法
 `resources/fullfeed`内にjsonファイルを作ってから`config/fullfeed.php`の`paths`に追加してください。
 `data.url`にマッチした最初のルールが使われるので追加ファイルは`paths`の先頭に置くのが良いでしょう。

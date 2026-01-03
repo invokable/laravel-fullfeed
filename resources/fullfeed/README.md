@@ -77,6 +77,20 @@ The difference from RemoveElements is that it processes the HTML as a string.
             ],
 ```
 
+### StripTags
+
+Performs the same operation as PHP's `strip_tags()`, removing all HTML tags.
+
+```json
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\StripTags"]
+```
+
+You can also specify tags to allow:
+
+```json
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\StripTags:a,img"]
+```
+
 ## How to Add
 
 Create a JSON file in `resources/fullfeed` and add it to `paths` in `config/fullfeed.php`.

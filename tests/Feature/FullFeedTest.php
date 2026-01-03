@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Facades\Http;
 use Revolution\Fullfeed\Extractor\RemoveElements;
 use Revolution\Fullfeed\Extractor\ReplaceMatches;
+use Revolution\Fullfeed\Extractor\StripTags;
 use Revolution\Fullfeed\Facades\FullFeed;
 
 it('can fetch full feed content', function () {
@@ -209,4 +210,26 @@ it('can use replace extractor', function () {
     expect($content)->not->toContain('Mocked Article')
         ->and($content)->toContain('Replaced Title')
         ->and($content)->toContain('This is mocked content.');
+});
+
+it('can use strip tags extractor', function () {
+    $html = '<html><article><h1>Mocked Article</h1><p>This is mocked content.</p></article></html>';
+
+    $newRules = [
+        [
+            'name' => 'example.com',
+            'data' => [
+                'url' => '^https://example.com/new-article',
+                'callable' => [StripTags::class.':h1,p'],
+            ],
+        ],
+    ];
+
+    FullFeed::merge($newRules);
+
+    $content = FullFeed::extract(source: $html, url: 'https://example.com/new-article');
+
+    expect($content)->not->toContain('<article>')
+        ->and($content)->toContain('<h1>Mocked Article</h1>')
+        ->and($content)->toContain('<p>This is mocked content.</p>');
 });

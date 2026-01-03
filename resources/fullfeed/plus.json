@@ -43,7 +43,10 @@
                 "div.pagenation",
                 "script"
             ],
-            "after_callable": ["Revolution\\Fullfeed\\Extractor\\ReplaceMatches"],
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\ReplaceMatches",
+                "Revolution\\Fullfeed\\Extractor\\StripTags:a"
+            ],
             "replace": [
                 {
                     "pattern": "/ data-(h-)?index=\"[0-9]+\"/",
