@@ -16,16 +16,20 @@ class ReplaceMatches
     public function __invoke(Context $context, Closure $next): Context
     {
         $replaces = data_get($context->rule, 'data.replace', []);
-        collect($replaces)->each(function (array $replace) use ($context) {
+
+        foreach ($replaces as $replace) {
             $pattern = data_get($replace, 'pattern');
-            $replace = data_get($replace, 'replace', '');
 
             if (blank($pattern)) {
-                return;
+                continue;
             }
 
-            $context->source = Str::replaceMatches($pattern, $replace, $context->source);
-        });
+            $context->source = Str::replaceMatches(
+                pattern: $pattern,
+                replace: data_get($replace, 'replace', ''),
+                subject: $context->source,
+            );
+        }
 
         return $next($context);
     }
