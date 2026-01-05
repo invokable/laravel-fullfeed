@@ -36,5 +36,68 @@
                 "Revolution\\Fullfeed\\Extractor\\StripTags:a,div,p"
             ]
         }
+    },
+    {
+        "name": "PR TIMES",
+        "data": {
+            "url": "^https://prtimes\\.jp/main/html/rd/p/",
+            "selector": "div#press-release-body"
+        }
+    },
+    {
+        "name": "朝日新聞",
+        "data": {
+            "url": "^https://www\\.asahi\\.com/articles/",
+            "selector": "main#main",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\StripTags:a,div,p,img,figure,h2",
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "div.notPrint",
+                "a[role=\"button\"]",
+                "div[x-component-name]"
+            ]
+        }
+    },
+    {
+        "name": "読売新聞",
+        "data": {
+            "url": "^https://www\\.yomiuri\\.co\\.jp/",
+            "selector": "article.article-content > div.p-main-contents",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script",
+                "aside"
+            ]
+        }
+    },
+    {
+        "name": "産経ニュース",
+        "data": {
+            "url": "^https://www\\.sankei\\.com/article/",
+            "selector": "div.article-body",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script"
+            ]
+        }
+    },
+    {
+        "name": "毎日新聞",
+        "data": {
+            "url": "^https://mainichi\\.jp/articles/",
+            "selector": "section#articledetail-body",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script"
+            ]
+        }
     }
 ]
