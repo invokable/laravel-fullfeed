@@ -1,36 +1,29 @@
 [
     {
-        "name": "note",
+        "name": "Laravel Official Blog",
         "data": {
-            "url": "^https://note\\.com/",
-            "selector": "div[data-name=\"body\"]"
+            "url": "^https:\/\/laravel\\.com\/blog\/",
+            "selector": "article"
         }
     },
     {
-        "name": "zenn",
+        "name": "PR TIMES",
         "data": {
-            "url": "^https://zenn\\.dev\/(.+)\/articles\/",
-            "selector": "div.znc"
+            "url": "^https:\/\/prtimes\\.jp\/main\/html\/rd\/p\/",
+            "selector": "div#press-release-body"
         }
     },
     {
         "name": "Qiita",
         "data": {
-            "url": "^https://qiita\\.com\/(.+)/items\/",
+            "url": "^https:\/\/qiita\\.com\/(.+)\/items\/",
             "selector": "article > section"
-        }
-    },
-    {
-        "name": "Laravel Official Blog",
-        "data": {
-            "url": "^https://laravel\\.com\/blog\/",
-            "selector": "article"
         }
     },
     {
         "name": "Togetter",
         "data": {
-            "url": "^https://togetter\\.com\/li\/",
+            "url": "^https:\/\/togetter\\.com\/li\/",
             "selector": "section.entry_main",
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\StripTags:a,div,p"
@@ -38,16 +31,23 @@
         }
     },
     {
-        "name": "PR TIMES",
+        "name": "note",
         "data": {
-            "url": "^https://prtimes\\.jp/main/html/rd/p/",
-            "selector": "div#press-release-body"
+            "url": "^https:\/\/note\\.com\/",
+            "selector": "div[data-name=\"body\"]"
+        }
+    },
+    {
+        "name": "zenn",
+        "data": {
+            "url": "^https:\/\/zenn\\.dev\/(.+)\/articles\/",
+            "selector": "div.znc"
         }
     },
     {
         "name": "朝日新聞",
         "data": {
-            "url": "^https://www\\.asahi\\.com/articles/",
+            "url": "^https:\/\/www\\.asahi\\.com\/articles\/",
             "selector": "main#main",
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\StripTags:a,div,p,img,figure,h2",
@@ -61,23 +61,22 @@
         }
     },
     {
-        "name": "読売新聞",
+        "name": "毎日新聞",
         "data": {
-            "url": "^https://www\\.yomiuri\\.co\\.jp/",
-            "selector": "article.article-content > div.p-main-contents",
+            "url": "^https:\/\/mainichi\\.jp\/articles\/",
+            "selector": "section#articledetail-body",
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\RemoveElements"
             ],
             "remove": [
-                "script",
-                "aside"
+                "script"
             ]
         }
     },
     {
         "name": "産経ニュース",
         "data": {
-            "url": "^https://www\\.sankei\\.com/article/",
+            "url": "^https:\/\/www\\.sankei\\.com\/article\/",
             "selector": "div.article-body",
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\RemoveElements"
@@ -88,15 +87,16 @@
         }
     },
     {
-        "name": "毎日新聞",
+        "name": "読売新聞",
         "data": {
-            "url": "^https://mainichi\\.jp/articles/",
-            "selector": "section#articledetail-body",
+            "url": "^https:\/\/www\\.yomiuri\\.co\\.jp\/",
+            "selector": "article.article-content > div.p-main-contents",
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\RemoveElements"
             ],
             "remove": [
-                "script"
+                "script",
+                "aside"
             ]
         }
     }
