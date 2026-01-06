@@ -21,7 +21,6 @@ Artisan::command('fullfeed:sort', function () {
     File::put(__DIR__.'/../../resources/fullfeed/plus.json', json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 })->purpose('sort plus.json by name');
 
-
 /**
  * Local testing commands
  */
