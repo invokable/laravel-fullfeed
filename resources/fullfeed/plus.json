@@ -91,7 +91,11 @@
             "url": "^https:\/\/togetter\\.com\/li\/",
             "selector": "section.entry_main",
             "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements",
                 "Revolution\\Fullfeed\\Extractor\\StripTags:a,div,p"
+            ],
+            "remove": [
+                "script"
             ]
         }
     },
