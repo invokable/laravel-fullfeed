@@ -1,5 +1,70 @@
 [
     {
+        "name": "4Gamer.net",
+        "data": {
+            "url": "^https:\/\/www\\.4gamer\\.net\/",
+            "enc": "EUC-JP",
+            "selector": "div.maintxt"
+        }
+    },
+    {
+        "name": "AUTOMATON",
+        "data": {
+            "url": "^https:\/\/automaton-media\\.com\/articles\/",
+            "selector": "section.maintext"
+        }
+    },
+    {
+        "name": "GIGAZINE",
+        "data": {
+            "url": "^https:\/\/gigazine\\.net\/news\/",
+            "selector": "div#article > .cntimage"
+        }
+    },
+    {
+        "name": "Game*Spark",
+        "data": {
+            "url": "^https?:\/\/www\\.gamespark\\.jp\/",
+            "selector": "article.arti-body"
+        }
+    },
+    {
+        "name": "Gamer",
+        "data": {
+            "url": "^https:\/\/www\\.gamer\\.ne\\.jp\/news\/",
+            "selector": "div.c-article__body",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "div.c-button-comment",
+                "ins",
+                "script"
+            ]
+        }
+    },
+    {
+        "name": "IGN JAPAN",
+        "data": {
+            "url": "^https:\/\/jp\\.ign\\.com\/",
+            "selector": "div#id_text"
+        }
+    },
+    {
+        "name": "INSIDE",
+        "data": {
+            "url": "^https?:\/\/www\\.inside-games\\.jp\/",
+            "selector": "article.arti-body"
+        }
+    },
+    {
+        "name": "Impress Watch All",
+        "data": {
+            "url": "^https:\/\/.+\\.watch\\.impress\\.co\\.jp\/docs\/",
+            "selector": "div.mainContents"
+        }
+    },
+    {
         "name": "Laravel Official Blog",
         "data": {
             "url": "^https:\/\/laravel\\.com\/blog\/",
@@ -42,6 +107,48 @@
         "data": {
             "url": "^https:\/\/zenn\\.dev\/(.+)\/articles\/",
             "selector": "div.znc"
+        }
+    },
+    {
+        "name": "クラスメソッド DevelopersIO",
+        "data": {
+            "url": "^https:\/\/dev\\.classmethod\\.jp\/",
+            "selector": "div.znc"
+        }
+    },
+    {
+        "name": "テクノエッジ",
+        "data": {
+            "url": "^https:\/\/www\\.techno-edge\\.net\/article\/",
+            "selector": "article.arti-body"
+        }
+    },
+    {
+        "name": "ナタリー",
+        "data": {
+            "url": "^https:\/\/natalie\\.mu\/",
+            "selector": "div.NA_article_body"
+        }
+    },
+    {
+        "name": "ファミ通.com",
+        "data": {
+            "url": "^https:\/\/www\\.famitsu\\.com\/article\/",
+            "selector": "div[class^=ArticleDetailBody_articleBody]"
+        }
+    },
+    {
+        "name": "任天堂トピックス",
+        "data": {
+            "url": "^https:\/\/www\\.nintendo\\.com\/jp\/topics\/article",
+            "selector": "div.topics-articleBody"
+        }
+    },
+    {
+        "name": "日本経済新聞",
+        "data": {
+            "url": "^https:\/\/www\\.nikkei\\.com\/",
+            "selector": "section[data-track-article-content]"
         }
     },
     {
@@ -98,6 +205,27 @@
                 "script",
                 "aside"
             ]
+        }
+    },
+    {
+        "name": "電ファミニコゲーマー",
+        "data": {
+            "url": "^https:\/\/news\\.denfaminicogamer\\.jp\/",
+            "selector": "div#articleBody",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script",
+                "aside"
+            ]
+        }
+    },
+    {
+        "name": "電撃オンライン",
+        "data": {
+            "url": "^https:\/\/dengekionline\\.com\/article\/",
+            "selector": "div[class^=ArticleDetailBody_articleBody]"
         }
     }
 ]
