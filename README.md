@@ -21,6 +21,11 @@ We've separated the FullFeed package from our private feed reader app and made i
 composer require revolution/laravel-fullfeed
 ```
 
+Or to get the latest development version
+```shell
+composer require revolution/laravel-fullfeed:dev-main
+```
+
 Publish config and site definition files
 
 ```shell
