@@ -8,10 +8,34 @@
         }
     },
     {
+        "name": "ASCII.jp",
+        "data": {
+            "url": "^https:\/\/ascii\\.jp\/",
+            "selector": "div.contents_detail"
+        }
+    },
+    {
         "name": "AUTOMATON",
         "data": {
             "url": "^https:\/\/automaton-media\\.com\/articles\/",
             "selector": "section.maintext"
+        }
+    },
+    {
+        "name": "CNN Japan",
+        "data": {
+            "url": "^https:\/\/www\\.cnn\\.co\\.jp\/",
+            "selector": "article",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "div.fb-share-button",
+                "div.twitter-share-button",
+                "a.hatena-bookmark-button",
+                "style",
+                "script"
+            ]
         }
     },
     {
@@ -125,6 +149,13 @@
         "data": {
             "url": "^https:\/\/www\\.techno-edge\\.net\/article\/",
             "selector": "article.arti-body"
+        }
+    },
+    {
+        "name": "デイリーポータルZ",
+        "data": {
+            "url": "^https:\/\/dailyportalz\\.jp\/",
+            "selector": "div.article_content"
         }
     },
     {
