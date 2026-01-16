@@ -92,6 +92,14 @@ PHPの`strip_tags()`と同等の処理でHTMLタグを全て削除。
             "after_callable": ["Revolution\\Fullfeed\\Extractor\\StripTags:a,img"]
 ```
 
+### Squish
+
+Laravelの`Str::squish()`で余分な空白を削除。
+
+```json
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\Squish"]
+```
+
 ## 追加方法
 `resources/fullfeed`内にjsonファイルを作ってから`config/fullfeed.php`の`paths`に追加してください。
 `data.url`にマッチした最初のルールが使われるので追加ファイルは`paths`の先頭に置くのが良いでしょう。

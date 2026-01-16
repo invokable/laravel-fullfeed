@@ -124,6 +124,21 @@
         }
     },
     {
+        "name": "blog.google",
+        "data": {
+            "url": "^https:\/\/blog\\.google\/",
+            "selector": "section.article-container",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements",
+                "Revolution\\Fullfeed\\Extractor\\StripTags:a,h2,h3,figure,img,ol,ul,li,b",
+                "Revolution\\Fullfeed\\Extractor\\Squish"
+            ],
+            "remove": [
+                "script"
+            ]
+        }
+    },
+    {
         "name": "note",
         "data": {
             "url": "^https:\/\/note\\.com\/",

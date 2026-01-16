@@ -93,6 +93,14 @@ You can also specify tags to allow:
             "after_callable": ["Revolution\\Fullfeed\\Extractor\\StripTags:a,img"]
 ```
 
+### Squish
+
+Remove extra whitespace using Laravel's `Str::squish()`.
+
+```json
+            "after_callable": ["Revolution\\Fullfeed\\Extractor\\Squish"]
+```
+
 ## How to Add
 
 Create a JSON file in `resources/fullfeed` and add it to `paths` in `config/fullfeed.php`.
