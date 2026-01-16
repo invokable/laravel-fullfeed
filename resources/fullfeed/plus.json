@@ -134,6 +134,7 @@
                 "Revolution\\Fullfeed\\Extractor\\Squish"
             ],
             "remove": [
+                "style",
                 "script"
             ]
         }
