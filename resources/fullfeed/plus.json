@@ -134,6 +134,7 @@
                 "Revolution\\Fullfeed\\Extractor\\Squish"
             ],
             "remove": [
+                "div.audio-player-tts",
                 "style",
                 "script"
             ]
