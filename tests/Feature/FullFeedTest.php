@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
 use Revolution\Fullfeed\Extractor\RemoveElements;
 use Revolution\Fullfeed\Extractor\ReplaceMatches;
@@ -54,7 +55,7 @@ it('can retrieve all rules and convert to array/collection', function () {
 
     expect($allRules)->toBeArray()
         ->and($rulesArray)->toBeArray()
-        ->and($rulesCollection)->toBeInstanceOf(Illuminate\Support\Collection::class)
+        ->and($rulesCollection)->toBeInstanceOf(Collection::class)
         ->and(count($allRules))->toBeGreaterThan(0)
         ->and(count($rulesArray))->toBeGreaterThan(0)
         ->and($rulesCollection->count())->toBeGreaterThan(0);
