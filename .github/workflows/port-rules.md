@@ -3,48 +3,30 @@ on:
   schedule: weekly
   workflow_dispatch:
 
-steps:
-    - name: Set up PHP
-      uses: shivammathur/setup-php@2.37.0
-      with:
-          php-version: 8.5
-          extensions: mbstring
-          coverage: xdebug
-
-    - name: Install Composer dependencies
-      run: composer install --no-interaction --prefer-dist --optimize-autoloader
-
 permissions:
   contents: read
   issues: read
   pull-requests: read
 
-strict: false
-
 tools:
   github:
     toolsets: [default]
-  web-fetch:
   cache-memory: true
 
-network:
-  allowed:
-    - "*"
-
-imports:
-  - ../agents/port-rules.agent.md
-
 safe-outputs:
-  create-pull-request:
+  create-issue:
     title-prefix: "[port] "
     labels: [automation]
-    draft: true
+    max: 1
+  assign-to-agent:
+    custom-agent: port-rules
+    max: 1
 ---
 
 # LDRFullFeed ルール移植
 
 items_all.json のルールを plus.json に移植する週次ワークフローです。
-毎回1つのURLだけを処理します。
+毎回1つのURLだけを処理し、Copilot コーディングエージェントに移植作業を割り当てます。
 
 ## 手順
 
@@ -68,17 +50,22 @@ items_all.json のルールを plus.json に移植する週次ワークフロー
 ### 3. 移植するURLがない場合
 
 全てのルールが移植済みまたは無視リストに入っている場合は、何もせずに終了してください。
-PRも作成しません。
+issueも作成しません。
 
-### 4. 移植作業
+### 4. issueの作成とエージェント割り当て
 
-選定した1つのURLについて、カスタムエージェントの指示に従って移植作業を行ってください:
+選定した1つのURLについて issue を作成し、Copilot コーディングエージェントに割り当ててください。
 
-1. URLの到達確認
-2. 繋がらない場合: port.md を更新し、items_all.json からルールを削除
-3. 繋がる場合: HTMLを解析して最適なCSS selectorを決定し、plus.json に新規ルールを作成。items_all.json からルールを削除
-4. plus.json を変更した場合は `vendor/bin/testbench fullfeed:sort` を実行
-5. port.md を更新
+**issueのタイトル**: `ルール移植: {サイト名}`
+
+**issueの本文**に以下を含めてください:
+
+- 移植対象の `name` と `data.url` パターン
+- `items_all.json` 内のルールの現在のデータ（xpath, enc 等）
+- 移植作業の指示:
+  1. URLの到達確認
+  2. 繋がらない場合: `.github/port.md` の「今後無視するURL」に追加し、`items_all.json` からルール削除
+  3. 繋がる場合: HTMLを解析して最適なCSS selectorを決定し、`plus.json` に新規ルール作成。`items_all.json` からルール削除。`vendor/bin/testbench fullfeed:sort` を実行。`.github/port.md` の「移植完了」に追加
 
 ### 5. cache-memory の更新
 
@@ -88,17 +75,6 @@ PRも作成しません。
 {
   "last_processed": "サイト名",
   "last_processed_url": "^https://example\\.com/",
-  "last_processed_date": "YYYY-MM-DD",
-  "result": "ported" or "ignored",
-  "total_ported": 数値,
-  "total_ignored": 数値
+  "last_processed_date": "YYYY-MM-DD"
 }
 ```
-
-### 6. PR作成
-
-変更がある場合のみPRを作成してください。PRの本文には以下を含めてください:
-
-- 移植したサイト名とURLパターン
-- 結果（移植完了 or 接続不可で無視リストに追加）
-- 繋がった場合: 作成したCSS selectorと、選定理由の簡単な説明
