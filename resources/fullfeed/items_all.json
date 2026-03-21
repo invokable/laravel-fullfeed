@@ -2030,19 +2030,6 @@
         "created_at": "2017-01-15T15:12:34+09:00"
     },
     {
-        "resource_url": "http://wedata.net/items/81130",
-        "name": "ニッチなPCゲーマーの環境構築",
-        "data": {
-            "url": "^https?://(?:blog\\.livedoor\\.jp/nichepcgamer/archives/\\d+|www\\.nichepcgamer\\.com/archives/[^/]+)\\.html$",
-            "type": "INDIVIDUAL",
-            "xpath": "id(\"container\")//div[@class=\"article-body-inner\"]/dl[@class=\"article-tags\"]/preceding-sibling::node() | id(\"mainEntity\")/div[@class=\"clearfix\"]/aside/following-sibling::node()[following::node()[@id=\"custom_html-8\"]]"
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "r5hbne30",
-        "created_at": "2017-01-12T16:31:10+09:00",
-        "updated_at": "2019-12-07T12:56:20+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/81115",
         "name": "魔王ブログ。",
         "created_by": "freeplayerzz",
