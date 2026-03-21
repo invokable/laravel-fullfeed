@@ -183,6 +183,13 @@
         }
     },
     {
+        "name": "ニッチなPCゲーマーの環境構築Z",
+        "data": {
+            "url": "^https:\/\/www\\.nichepcgamer\\.com\/",
+            "selector": "div#mainEntity"
+        }
+    },
+    {
         "name": "ファミ通.com",
         "data": {
             "url": "^https:\/\/www\\.famitsu\\.com\/article\/",
