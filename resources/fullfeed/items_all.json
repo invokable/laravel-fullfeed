@@ -20925,20 +20925,6 @@
         "created_at": "2011-09-01T15:09:26+09:00"
     },
     {
-        "resource_url": "http://wedata.net/items/55359",
-        "data": {
-            "type": "IND",
-            "xpath": "//div[(@class='entry-content')]",
-            "url": "http://gamegaz.com/",
-            "enc": "UTF-8"
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "EkH22sCFrL",
-        "name": "大人のためのゲーム講座",
-        "created_at": "2011-08-31T14:22:09+09:00",
-        "updated_at": "2023-05-08T20:04:15+09:00"
-    },
-    {
         "name": "Suaraの日記",
         "resource_url": "http://wedata.net/items/55357",
         "updated_at": "2011-09-03T11:27:55+09:00",
