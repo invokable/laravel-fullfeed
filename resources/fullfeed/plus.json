@@ -141,6 +141,13 @@
         }
     },
     {
+        "name": "eng-blog.iij.ad.jp",
+        "data": {
+            "url": "^https:\/\/eng-blog\\.iij\\.ad\\.jp\/archives\/",
+            "selector": "div.article-single__entry"
+        }
+    },
+    {
         "name": "gamegaz.com",
         "data": {
             "url": "^https:\\\/\\\/gamegaz\\.com\\\/",
