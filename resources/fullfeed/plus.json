@@ -213,7 +213,7 @@
     {
         "name": "ライブドアニュース",
         "data": {
-            "url": "^https:\\\/\\\/news\\.livedoor\\.com\\\/article\\\/detail\\\/",
+            "url": "^https:\/\/news\\.livedoor\\.com\/article\/detail\/",
             "selector": "div.articleBody"
         }
     },
