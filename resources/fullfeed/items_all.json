@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/86179",
-        "data": {
-            "type": "IND",
-            "base": "",
-            "xpath": "//div[@class=\"entry-content\"]",
-            "microformats": "",
-            "url": "^https://gamegaz\\.com/",
-            "enc": ""
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "mexco2",
-        "name": "gamegaz.com",
-        "created_at": "2023-10-18T23:12:47+09:00",
-        "updated_at": "2023-10-18T23:12:47+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/86126",
         "data": {
             "type": "IND",

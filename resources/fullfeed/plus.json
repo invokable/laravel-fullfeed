@@ -141,6 +141,13 @@
         }
     },
     {
+        "name": "gamegaz.com",
+        "data": {
+            "url": "^https:\\\/\\\/gamegaz\\.com\\\/",
+            "selector": "div.entry-content"
+        }
+    },
+    {
         "name": "note",
         "data": {
             "url": "^https:\/\/note\\.com\/",
