@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/86126",
-        "data": {
-            "type": "IND",
-            "base": "",
-            "xpath": "//div[@class=\"article-single__entry\"]",
-            "microformats": "",
-            "url": "^https://eng-blog\\.iij\\.ad\\.jp/archives/",
-            "enc": ""
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "mexco",
-        "name": "eng-blog.iij.ad.jp",
-        "created_at": "2023-05-28T19:51:16+09:00",
-        "updated_at": "2023-05-28T19:51:16+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/86121",
         "data": {
             "type": "GEN",
