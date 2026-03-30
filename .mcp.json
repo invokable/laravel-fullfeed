@@ -1,11 +1,10 @@
 {
-    "servers": {
-        "github-agentic-workflows": {
+    "mcpServers": {
+        "laravel-boost": {
             "type": "local",
-            "command": "gh",
+            "command": "./vendor/bin/testbench",
             "args": [
-                "aw",
-                "mcp-server"
+                "boost:mcp"
             ],
             "tools": [
                 "*"
