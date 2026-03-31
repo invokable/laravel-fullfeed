@@ -22,9 +22,9 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Install gh-aw extension
-        uses: github/gh-aw-actions/setup-cli@5d2ebfd87a1a45a8a8323c1a12c01b055730dac5 # v0.64.5
+        uses: github/gh-aw-actions/setup-cli@8d14e5b79f1c57d9e76796a60e8dbd44874be574 # v0.65.0
         with:
-          version: v0.64.5
+          version: v0.65.0
 
       - name: Set up PHP
         uses: shivammathur/setup-php@2.37.0
