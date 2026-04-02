@@ -3,7 +3,6 @@
         "name": "4Gamer.net",
         "data": {
             "url": "^https:\/\/www\\.4gamer\\.net\/",
-            "enc": "EUC-JP",
             "selector": "div.maintxt"
         }
     },
