@@ -1,6 +1,6 @@
 ---
 on:
-  schedule: weekly
+  schedule: daily around 5:00 utc+9
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ safe-outputs:
 
 # LDRFullFeed ルール移植
 
-items_all.json のルールを plus.json に移植する週次ワークフローです。
+items_all.json のルールを plus.json に移植する日次ワークフローです。
 毎回1つのURLだけを処理し、Copilot コーディングエージェントに移植作業を割り当てます。
 
 ## 手順
