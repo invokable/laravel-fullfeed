@@ -161,6 +161,13 @@
         }
     },
     {
+        "name": "plaza.rakuten.co.jp",
+        "data": {
+            "url": "^https?:\/\/plaza\\.rakuten\\.co\\.jp\/.+\/diary\/",
+            "selector": "div.dText.break-word"
+        }
+    },
+    {
         "name": "zenn",
         "data": {
             "url": "^https:\/\/zenn\\.dev\/(.+)\/articles\/",
