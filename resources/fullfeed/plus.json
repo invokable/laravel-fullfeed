@@ -7,6 +7,13 @@
         }
     },
     {
+        "name": "AAPL Ch.",
+        "data": {
+            "url": "^https:\/\/applech2\\.com\/archives\/",
+            "selector": "div.entry-content"
+        }
+    },
+    {
         "name": "ASCII.jp",
         "data": {
             "url": "^https:\/\/ascii\\.jp\/",
