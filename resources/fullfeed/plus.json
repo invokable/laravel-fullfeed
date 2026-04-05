@@ -175,6 +175,13 @@
         }
     },
     {
+        "name": "youskbe.com",
+        "data": {
+            "url": "^https?:\\\/\\\/youskbe\\.com\\\/",
+            "selector": "div.content"
+        }
+    },
+    {
         "name": "zenn",
         "data": {
             "url": "^https:\/\/zenn\\.dev\/(.+)\/articles\/",
