@@ -16,22 +16,6 @@
         "updated_at": "2023-05-10T00:21:41+09:00"
     },
     {
-        "resource_url": "http://wedata.net/items/86114",
-        "data": {
-            "type": "IND",
-            "base": "",
-            "xpath": "//div[@class=\"content\"]",
-            "microformats": "",
-            "url": "^https?://youskbe\\.com/",
-            "enc": ""
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "mexco",
-        "name": "youskbe.com",
-        "created_at": "2023-05-07T18:07:00+09:00",
-        "updated_at": "2023-05-07T18:07:00+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/85521",
         "data": {
             "type": "IND",
