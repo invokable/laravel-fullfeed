@@ -12,4 +12,4 @@
 
 ## 今後無視するURL
 
--
+- `https://moti-soku.com/` (気になるVtuber速報) - 2026-04-06 確認、ドメインパーキング（ParkLogic）により接続不可
