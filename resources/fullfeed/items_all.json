@@ -16,22 +16,6 @@
         "updated_at": "2023-05-10T00:21:41+09:00"
     },
     {
-        "resource_url": "http://wedata.net/items/85520",
-        "data": {
-            "type": "IND",
-            "base": "",
-            "xpath": "//div[@class=\"article__content\"]",
-            "microformats": "",
-            "url": "^https://jj-labo.seesaa.net/article/",
-            "enc": ""
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "mat",
-        "name": "JJ PCゲームラボ",
-        "created_at": "2020-10-05T15:30:03+09:00",
-        "updated_at": "2020-10-05T15:30:03+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/85244",
         "name": "b40609bf810b189f6d353447915cf25a",
         "data": {
