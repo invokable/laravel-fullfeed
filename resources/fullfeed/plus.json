@@ -95,6 +95,19 @@
         }
     },
     {
+        "name": "JJ PCゲームラボ",
+        "data": {
+            "url": "^https:\/\/jj-labo\\.seesaa\\.net\/article\/",
+            "selector": "div.article__content",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script"
+            ]
+        }
+    },
+    {
         "name": "Laravel Official Blog",
         "data": {
             "url": "^https:\/\/laravel\\.com\/blog\/",

@@ -9,6 +9,7 @@
 - `^https?://plaza\.rakuten\.co\.jp/.*/diary/` (plaza.rakuten.co.jp) - 2026-04-04 移植完了
 - `^https://applech2\.com/archives/` (AAPL Ch.) - 2026-04-04 移植完了
 - `^https?://youskbe\.com/` (youskbe.com) - 2026-04-06 移植完了
+- `^https://jj-labo\.seesaa\.net/article/` (JJ PCゲームラボ) - 2026-04-06 移植完了
 
 ## 今後無視するURL
 
