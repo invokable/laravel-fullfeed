@@ -258,6 +258,19 @@
         }
     },
     {
+        "name": "情報管理LOG",
+        "data": {
+            "url": "^https?:\/\/hokoxjouhou\\.blog105\\.fc2\\.com\/blog-entry-",
+            "selector": "article.main-body .inner-contents",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "dl.relate_dl"
+            ]
+        }
+    },
+    {
         "name": "日本経済新聞",
         "data": {
             "url": "^https:\/\/www\\.nikkei\\.com\/",
