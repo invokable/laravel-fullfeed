@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/86119",
-        "data": {
-            "type": "GEN",
-            "base": "",
-            "xpath": "//div[@data-name=\"body\"]",
-            "microformats": "",
-            "url": "^https://note\\.com/",
-            "enc": ""
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "mexco",
-        "name": "note.com",
-        "created_at": "2023-05-10T00:21:41+09:00",
-        "updated_at": "2023-05-10T00:21:41+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/85224",
         "name": "ef162c0061da09680e86d9e3c999801e",
         "data": {
