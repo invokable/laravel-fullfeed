@@ -1,18 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/85224",
-        "name": "ef162c0061da09680e86d9e3c999801e",
-        "data": {
-            "url": "^https://shinjukuacc\\.com/\\d{8}-\\d{2}/$",
-            "type": "IND",
-            "xpath": "id(\"content\")//div[@class=\"entry-utility\"]/preceding-sibling::node()"
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "r5hbne30",
-        "created_at": "2020-02-18T18:17:23+09:00",
-        "updated_at": "2020-02-18T18:17:43+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/85214",
         "name": "究極ゲームブログ",
         "data": {
