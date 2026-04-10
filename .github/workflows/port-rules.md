@@ -3,6 +3,10 @@ on:
   schedule: daily around 5:00 utc+9
   workflow_dispatch:
 
+engine:
+  id: copilot
+  version: "1.0.21"
+
 permissions:
   contents: read
   issues: read
