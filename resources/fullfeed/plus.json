@@ -320,6 +320,13 @@
         }
     },
     {
+        "name": "究極ゲームブログ",
+        "data": {
+            "url": "^https:\\\/\\\/kyokugame\\.com\\\/",
+            "selector": "div.entry.single-entry"
+        }
+    },
+    {
         "name": "読売新聞",
         "data": {
             "url": "^https:\/\/www\\.yomiuri\\.co\\.jp\/",

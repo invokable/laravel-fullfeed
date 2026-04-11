@@ -1,18 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/85214",
-        "name": "究極ゲームブログ",
-        "data": {
-            "url": "^https://kyokugame.com/",
-            "type": "INC",
-            "xpath": "//div[@class=\"entry-inner\"]"
-        },
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "created_by": "mat",
-        "created_at": "2020-02-08T10:11:17+09:00",
-        "updated_at": "2020-02-08T10:11:43+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/85159",
         "name": "790bf0d23417f6c9d5041352d301c5c4",
         "data": {
@@ -378,22 +365,6 @@
             "xpath": "//div[@id=\"content\"]"
         },
         "created_at": "2018-09-27T11:08:08+09:00"
-    },
-    {
-        "resource_url": "http://wedata.net/items/81972",
-        "name": "究極ゲームブログ",
-        "created_by": "kcal46",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2018-09-21T11:35:35+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^https?://kyokugame\\.com/archives/",
-            "enc": "",
-            "xpath": "//*[@class=\"entry-inner\"]"
-        },
-        "created_at": "2018-09-21T11:35:35+09:00"
     },
     {
         "resource_url": "http://wedata.net/items/81969",
