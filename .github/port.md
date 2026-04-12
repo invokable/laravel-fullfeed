@@ -12,6 +12,7 @@
 - `^https://jj-labo\.seesaa\.net/article/` (JJ PCゲームラボ) - 2026-04-06 移植完了
 - `^https?://hokoxjouhou\.blog105\.fc2\.com/blog-entry-` (情報管理LOG) - 2026-04-08 移植完了
 - `^https://kyokugame\.com/` (究極ゲームブログ) - 2026-04-10 移植完了
+- `^https://money1\.jp/archives/\d+$` (money1.jp) - 2026-04-12 移植完了
 
 ## 今後無視するURL
 
