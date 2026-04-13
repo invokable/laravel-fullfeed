@@ -1,18 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82282",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "name": "マンガ中毒",
-        "data": {
-            "url": "^https://www.mangajunky.net/blog-entry-\\d+\\.html$",
-            "type": "IND",
-            "xpath": "id(\"main-box\")/div[@class=\"entry-body\"]/hr/preceding-sibling::node() | id(\"main-box\")/div[@class=\"entry-body\"]/div[@class=\"fc2_footer\"]/preceding-sibling::node()"
-        },
-        "created_at": "2019-09-22T21:56:38+09:00",
-        "updated_at": "2019-10-05T19:50:24+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82230",
         "created_by": "bjbjbj",
         "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
