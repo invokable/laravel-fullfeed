@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82230",
-        "created_by": "bjbjbj",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "name": "鉄路的部落",
-        "data": {
-            "base": "",
-            "microformats": "",
-            "url": "^http://btrainj\\.cocolog-nifty\\.com/hasirundesu/",
-            "enc": "",
-            "type": "SUB",
-            "xpath": "//div[@class=\"entry-body\"]"
-        },
-        "created_at": "2019-09-02T12:06:08+09:00",
-        "updated_at": "2019-09-02T12:06:08+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82229",
         "created_by": "bjbjbj",
         "database_resource_url": "http://wedata.net/databases/LDRFullFeed",

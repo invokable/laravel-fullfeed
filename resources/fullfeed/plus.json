@@ -348,6 +348,13 @@
         }
     },
     {
+        "name": "鉄路的部落",
+        "data": {
+            "url": "^https?:\/\/btrainj\\.cocolog-nifty\\.com\/hasirundesu\/",
+            "selector": "div.entry-body"
+        }
+    },
+    {
         "name": "電ファミニコゲーマー",
         "data": {
             "url": "^https:\/\/news\\.denfaminicogamer\\.jp\/",
