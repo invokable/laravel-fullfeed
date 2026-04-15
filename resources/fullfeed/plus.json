@@ -301,6 +301,13 @@
         }
     },
     {
+        "name": "極東ブログ",
+        "data": {
+            "url": "^https?:\/\/finalvent\\.cocolog-nifty\\.com\/fareastblog\/",
+            "selector": "div.entry-body-text"
+        }
+    },
+    {
         "name": "毎日新聞",
         "data": {
             "url": "^https:\/\/mainichi\\.jp\/articles\/",
