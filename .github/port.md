@@ -15,6 +15,7 @@
 - `^https://money1\.jp/archives/\d+$` (money1.jp) - 2026-04-12 移植完了
 - `^https?://btrainj\.cocolog-nifty\.com/hasirundesu/` (鉄路的部落) - 2026-04-14 移植完了
 - `^https?://finalvent\.cocolog-nifty\.com/fareastblog/` (極東ブログ) - 2026-04-15 移植完了
+- `^https://moacrie\.com/` (モアクリ) - 2026-04-16 移植完了
 
 ## 今後無視するURL
 
