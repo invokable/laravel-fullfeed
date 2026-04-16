@@ -251,6 +251,13 @@
         }
     },
     {
+        "name": "モアクリ",
+        "data": {
+            "url": "^https:\/\/moacrie\\.com\/",
+            "selector": "div#mainEntity"
+        }
+    },
+    {
         "name": "ライブドアニュース",
         "data": {
             "url": "^https:\/\/news\\.livedoor\\.com\/article\/detail\/",
