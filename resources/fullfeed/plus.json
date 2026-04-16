@@ -209,6 +209,13 @@
         }
     },
     {
+        "name": "かご猫　Ｂｌｏｇ",
+        "data": {
+            "url": "^https:\/\/kagonekoshiro\\.com\/",
+            "selector": "article.main-body > div.inner-contents"
+        }
+    },
+    {
         "name": "もえるあじあ(･∀･)",
         "data": {
             "url": "^https?:\/\/www\\.moeasia\\.net\/archives\/",
