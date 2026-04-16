@@ -209,6 +209,19 @@
         }
     },
     {
+        "name": "もえるあじあ(･∀･)",
+        "data": {
+            "url": "^https?:\/\/www\\.moeasia\\.net\/archives\/",
+            "selector": "section.entrybody",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script"
+            ]
+        }
+    },
+    {
         "name": "クラスメソッド DevelopersIO",
         "data": {
             "url": "^https:\/\/dev\\.classmethod\\.jp\/",
