@@ -23,6 +23,18 @@ tools:
   web-fetch:
   cache-memory: true
 
+steps:
+  - uses: actions/checkout@v6
+    with:
+      persist-credentials: false
+  - name: Set up PHP
+    uses: shivammathur/setup-php@2.37.0
+    with:
+      php-version: 8.5
+      extensions: mbstring
+  - name: Install dependencies
+    run: composer install --prefer-dist --no-interaction --no-progress
+
 safe-outputs:
   threat-detection: false
   create-pull-request:
@@ -32,6 +44,7 @@ safe-outputs:
     fallback-as-issue: false
     allowed-files:
       - ".github/port.md"
+      - "resources/fullfeed/*.json"
 ---
 
 # LDRFullFeed ルール移植（直接作業）
