@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82207",
-        "created_by": "youp",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "name": "かご猫　Ｂｌｏｇ",
-        "data": {
-            "base": "",
-            "microformats": "",
-            "url": "^https://kagonekoshiro\\.com/",
-            "enc": "",
-            "type": "IND",
-            "xpath": "//div[@id=\"inner-contents\"]"
-        },
-        "created_at": "2019-07-13T10:33:29+09:00",
-        "updated_at": "2019-07-13T10:33:29+09:00"
-    },
-    {
         "created_by": "kcal46",
         "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
         "name": "MoguLive",
