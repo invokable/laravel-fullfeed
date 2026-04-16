@@ -211,7 +211,7 @@
     {
         "name": "もえるあじあ(･∀･)",
         "data": {
-            "url": "^https?:\/\/www\\.moeruasia\\.net\/archives\/",
+            "url": "^https?:\/\/www\\.moeasia\\.net\/archives\/",
             "selector": "section.entrybody",
             "after_callable": [
                 "Revolution\\Fullfeed\\Extractor\\RemoveElements"
