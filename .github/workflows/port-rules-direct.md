@@ -30,6 +30,8 @@ safe-outputs:
     labels: [automation]
     draft: true
     fallback-as-issue: false
+    allowed-files:
+      - ".github/port.md"
 ---
 
 # LDRFullFeed ルール移植（直接作業）
@@ -65,14 +67,21 @@ safe-outputs:
 
 ### 4. URLの到達確認
 
-`data.url` の正規表現からサンプルURLを推測し、`curl` でアクセスして確認してください:
+`data.url` の正規表現からドメインのトップページURLを推測し、`curl` でアクセスして確認してください。
+パスを含む正規表現（例: `/archives/`, `/article/`）でも、**確認するのはドメインのトップページ**です:
 
 ```bash
+# 例: data.url が "^https://example\.com/archives/" の場合 → "https://example.com/" を確認
 curl -L -s -o /dev/null -w "%{http_code}" --max-time 15 "https://example.com/"
 ```
 
-- ステータスコード 200 → 繋がる
-- それ以外、またはタイムアウト → 繋がらない
+判定基準:
+- ステータスコード 200 または 301/302（リダイレクト先が正常） → **繋がる**
+- 接続タイムアウト、DNS解決失敗、またはリダイレクト先がドメインパーキング → **繋がらない**
+- 404はパスの問題なので「繋がらない」とは判定しない
+
+繋がると判定した場合は、続いて実際の**記事ページ**にアクセスしてHTMLを解析します。
+記事URLはトップページのリンクや `data.url` のパターンから推測してください。
 
 ### 5a. 繋がらない場合
 
