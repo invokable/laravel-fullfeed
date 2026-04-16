@@ -1,5 +1,6 @@
 ---
 on:
+  schedule: daily around 2:00 utc+9
   workflow_dispatch:
 
 engine:
