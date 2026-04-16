@@ -42,7 +42,7 @@ safe-outputs:
     title-prefix: "[port] "
     labels: [automation]
     draft: true
-    fallback-as-issue: false
+    fallback-as-issue: true
     protected-files: "allowed"
 ---
 
