@@ -4,6 +4,7 @@ on:
 
 engine:
   id: copilot
+  agent: port-rules
 
 strict: false
 
@@ -42,31 +43,23 @@ safe-outputs:
     labels: [automation]
     draft: true
     fallback-as-issue: false
-    allowed-files:
-      - ".github/port.md"
-      - "resources/fullfeed/*.json"
+    protected-files: "allowed"
 ---
 
 # LDRFullFeed ルール移植（直接作業）
 
-`sandbox: agent: false` により任意のURLに直接アクセスし、1つのルールを移植して PR を作成します。
+任意のURLに直接アクセスし、1つのルールを移植して PR を作成します。
+ルールのフォーマットや移植手順はエージェントの知識（port-rules agent）に従ってください。
 
 ## 手順
 
 ### 1. ファイルの読み込み
 
-以下のファイルを読み込んでください:
-
 - `resources/fullfeed/items_all.json` — 移植元ルール一覧
 - `resources/fullfeed/plus.json` — 移植先ルール
 - `.github/port.md` — 作業記録
 
-### 2. 既存issueの確認
-
-タイトルが `[port]` で始まるオープン中のissueを検索してください。
-そのissueで作業中のルールは選定対象から除外します。
-
-### 3. 移植対象の選定
+### 2. 移植対象の選定
 
 以下の条件で移植対象を**1つだけ**選んでください:
 
@@ -76,110 +69,31 @@ safe-outputs:
 4. 既存の `[port]` issueで作業中のものは除外
 5. 残った候補から1つを選ぶ（先頭から順に処理）
 
-移植するURLがない場合は、何もせずに終了してください。
+移植するURLがない場合は何もせずに終了してください。
 
-### 4. URLの到達確認
+### 3. URLの到達確認
 
-`data.url` の正規表現からドメインのトップページURLを推測し、`curl` でアクセスして確認してください。
-パスを含む正規表現（例: `/archives/`, `/article/`）でも、**確認するのはドメインのトップページ**です:
+`data.url` の正規表現からドメインの**トップページURL**を推測し、`curl` で確認してください。
+パスを含む正規表現（例: `/archives/`, `/article/`）でも確認対象はトップページです:
 
 ```bash
-# 例: data.url が "^https://example\.com/archives/" の場合 → "https://example.com/" を確認
 curl -L -s -o /dev/null -w "%{http_code}" --max-time 15 "https://example.com/"
 ```
 
-判定基準:
-- ステータスコード 200 または 301/302（リダイレクト先が正常） → **繋がる**
-- 接続タイムアウト、DNS解決失敗、またはリダイレクト先がドメインパーキング → **繋がらない**
-- 404はパスの問題なので「繋がらない」とは判定しない
+- 200 または正常なリダイレクト先 → **繋がる**
+- タイムアウト・DNS失敗・ドメインパーキング → **繋がらない**
+- 404 はパスの問題なので「繋がらない」と判定しない
 
-繋がると判定した場合は、続いて実際の**記事ページ**にアクセスしてHTMLを解析します。
-記事URLはトップページのリンクや `data.url` のパターンから推測してください。
+### 4. 移植作業
 
-### 5a. 繋がらない場合
+エージェントの知識（Step 2a / Step 2b）に従って作業してください:
 
-1. `.github/port.md` の「今後無視するURL」に追加:
-   ```
-   - `^https://example\.com/` (サイト名) - YYYY-MM-DD 確認、接続不可
-   ```
-2. `resources/fullfeed/items_all.json` から対象URLのルールを削除（同サイトの複数ルールも全て削除）
-3. cache-memory の `port-progress.json` を更新
-4. PR を作成
+- 繋がらない場合: `.github/port.md` の「今後無視するURL」に追加し、`items_all.json` から削除
+- 繋がる場合: HTMLを取得・解析してCSS selectorを決定し、`plus.json` に新規ルール作成、`items_all.json` から削除、`vendor/bin/testbench fullfeed:sort` を実行、`.github/port.md` の「移植完了」に追加
 
-### 5b. 繋がる場合
+### 5. cache-memory の更新と PR 作成
 
-1. **HTMLを取得して解析**: 実際の記事ページのHTMLを取得し、記事本文の領域を特定する
-
-   記事URLが不明な場合はトップページから記事一覧を探してサンプル記事にアクセスしてください:
-
-   ```bash
-   curl -L -s --max-time 15 "https://example.com/article/" | head -300
-   ```
-
-2. **CSS selector を決定**: `resources/fullfeed/plus.json` のフォーマットに従う
-
-   - 記事本文を囲む最も具体的な要素を選ぶ
-   - `article`, `main`, `section` などのセマンティック要素を優先
-   - ID付き要素（`#article-body`）はクラス（`.content`）より安定
-   - 広告、ナビゲーション等は `RemoveElements` で除去
-   - PHP 8.4+ の `Dom\HTMLDocument` が対応するセレクタを使うこと
-   - `items_all.json` のルールは古いためそのままコピーしない。実際のHTMLを確認する
-
-3. `resources/fullfeed/plus.json` に新規ルールを追加（`url` フィールドでは `/` を `\/` でエスケープ）
-
-4. `resources/fullfeed/items_all.json` から対象ルールを削除（同サイトの複数ルールも全て削除）
-
-5. ソートコマンドを実行:
-   ```bash
-   vendor/bin/testbench fullfeed:sort
-   ```
-
-6. `.github/port.md` の「移植完了」に追加:
-   ```
-   - `^https://example\.com/` (サイト名) - YYYY-MM-DD 移植完了
-   ```
-
-7. cache-memory の `port-progress.json` を更新
-
-8. PR を作成
-
-## plus.json のルールフォーマット
-
-### 最小構成
-
-```json
-{
-    "name": "サイト名",
-    "data": {
-        "url": "^https:\\/\\/example\\.com\\/",
-        "selector": "article.main-content"
-    }
-}
-```
-
-### 不要な要素を削除する場合
-
-```json
-{
-    "name": "サイト名",
-    "data": {
-        "url": "^https:\\/\\/example\\.com\\/",
-        "selector": "article",
-        "after_callable": [
-            "Revolution\\Fullfeed\\Extractor\\RemoveElements"
-        ],
-        "remove": [
-            "script",
-            "aside",
-            "div.social-buttons"
-        ]
-    }
-}
-```
-
-## cache-memory の更新
-
-処理した内容を `port-progress.json` として保存:
+処理した内容を `port-progress.json` として保存し、PR を作成してください:
 
 ```json
 {

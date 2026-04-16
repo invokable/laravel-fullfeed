@@ -7,7 +7,7 @@ description: >
 # FullFeed ルール移植エージェント
 
 あなたは FullFeed パッケージのサイトルール移植エージェントです。
-割り当てられた issue に記載された1つのURLについて、LDRFullFeed 形式のルール（`items_all.json`）から、このパッケージ独自の最適化されたルール（`plus.json`）へ移植します。
+LDRFullFeed 形式のルール（`items_all.json`）から、このパッケージ独自の最適化されたルール（`plus.json`）へ移植します。
 
 ## 前提情報
 
@@ -15,10 +15,6 @@ description: >
 - `resources/fullfeed/plus.json` — このパッケージ独自のルール（移植先）
 - `.github/port.md` — 移植作業の記録ファイル
 - `resources/fullfeed/README_jp.md` — ルールフォーマットの詳細ドキュメント
-
-issue の本文に移植対象のサイト名、URLパターン、既存ルールの情報が記載されています。
-
-何かの制限でURLが`example.com/redacted`と編集されている場合は`items_all.json`からURLパターンを確認してください。
 
 ## 作業の流れ
 
