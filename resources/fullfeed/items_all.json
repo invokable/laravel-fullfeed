@@ -1,21 +1,5 @@
 [
     {
-        "created_by": "kcal46",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "name": "MoguLive",
-        "data": {
-            "base": "",
-            "microformats": "",
-            "url": "^https://www\\.moguravr\\.com/",
-            "enc": "",
-            "type": "INDIVIDUAL",
-            "xpath": "//article[@class=\"content\"]"
-        },
-        "created_at": "2019-07-03T11:04:03+09:00",
-        "resource_url": "http://wedata.net/items/82201",
-        "updated_at": "2019-07-03T11:04:03+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82175",
         "name": "583caa7d7321692ab579c173374d77ff",
         "created_by": "r5hbne30",

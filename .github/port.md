@@ -18,6 +18,7 @@
 - `^https://moacrie\.com/` (モアクリ) - 2026-04-16 移植完了
 - `^https?://www\.moeasia\.net/archives/` (もえるあじあ(･∀･)) - 2026-04-16 移植完了
 - `^https://kagonekoshiro\.com/` (かご猫　Ｂｌｏｇ) - 2026-04-16 移植完了
+- `^https://www\.moguravr\.com/` (MoguLive) - 2026-04-17 移植完了
 
 ## 今後無視するURL
 

@@ -115,6 +115,28 @@
         }
     },
     {
+        "name": "MoguLive",
+        "data": {
+            "url": "^https:\/\/www\\.moguravr\\.com\/",
+            "selector": "article.mg-wp-article",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements",
+                "Revolution\\Fullfeed\\Extractor\\ReplaceMatches"
+            ],
+            "remove": [
+                "script",
+                "div.mg-mogura-card",
+                "div[class*=\"mg-ads-\"]"
+            ],
+            "replace": [
+                {
+                    "pattern": "\/<h2[^>]*>もぐら関連記事<\\\/h2>.*$\/su",
+                    "replace": ""
+                }
+            ]
+        }
+    },
+    {
         "name": "PR TIMES",
         "data": {
             "url": "^https:\/\/prtimes\\.jp\/main\/html\/rd\/p\/",
