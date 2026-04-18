@@ -390,6 +390,13 @@
         }
     },
     {
+        "name": "蠱惑の壺-漫画アニメ海外の反応まとめ(旧)",
+        "data": {
+            "url": "^https?:\/\/watamotetrans\\.livedoor\\.blog\/archives\/\\d+\\.html$",
+            "selector": "div.article-body-inner"
+        }
+    },
+    {
         "name": "読売新聞",
         "data": {
             "url": "^https:\/\/www\\.yomiuri\\.co\\.jp\/",
