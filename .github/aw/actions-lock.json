@@ -1,8 +1,8 @@
 {
   "entries": {
-    "actions/checkout@v6": {
+    "actions/checkout@v6.0.2": {
       "repo": "actions/checkout",
-      "version": "v6",
+      "version": "v6.0.2",
       "sha": "de0fac2e4500dabe0009e67214ff5f5447ce83dd"
     },
     "actions/github-script@v9": {
