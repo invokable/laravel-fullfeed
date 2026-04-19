@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82158",
-        "name": "9f886df7e5a31a647a01972cc6b37e4f",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2019-05-24T14:31:10+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^http://namekkutake\\.livedoor\\.blog/archives/\\d+\\.html$",
-            "enc": "",
-            "xpath": "id(\"container\")//div[@class=\"article-body-inner\"]//div[@class=\"t_h\" or @class=\"t_h t_i\" or @class=\"t_b\" or @class=\"t_b t_i\"]"
-        },
-        "created_at": "2019-05-24T14:31:10+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82153",
         "data": {
             "type": "IND",

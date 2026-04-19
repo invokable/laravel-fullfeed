@@ -238,6 +238,13 @@
         }
     },
     {
+        "name": "まとメメちゃん",
+        "data": {
+            "url": "^https:\/\/namekkutake\\.livedoor\\.blog\/archives\/\\d+\\.html$",
+            "selector": "div.article-body-inner"
+        }
+    },
+    {
         "name": "もえるあじあ(･∀･)",
         "data": {
             "url": "^https?:\/\/www\\.moeasia\\.net\/archives\/",
