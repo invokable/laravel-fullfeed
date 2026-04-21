@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82144",
-        "name": "0d479f5c395013bdb1b3f17e0629a645",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2019-05-13T08:45:39+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^http://musyoku\\.tokyo/\\d{4}/\\d{2}/\\d{2}/post-\\d+/$",
-            "enc": "",
-            "xpath": "id(\"the-content\")"
-        },
-        "created_at": "2019-05-13T08:45:39+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82140",
         "name": "cd9d1d843139055d240081706b9fa5ea",
         "created_by": "r5hbne30",

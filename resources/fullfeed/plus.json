@@ -314,6 +314,13 @@
         }
     },
     {
+        "name": "一生非正規雇用で生きてくブログ",
+        "data": {
+            "url": "^http:\/\/musyoku\\.tokyo\/\\d{4}\/\\d{2}\/\\d{2}\/post-\\d+\/$",
+            "selector": "#the-content"
+        }
+    },
+    {
         "name": "任天堂トピックス",
         "data": {
             "url": "^https:\/\/www\\.nintendo\\.com\/jp\/topics\/article",
