@@ -21,6 +21,7 @@
 - `^https://www\.moguravr\.com/` (MoguLive) - 2026-04-17 移植完了
 - `^https?://watamotetrans\.livedoor\.blog/archives/\d+\.html$` (蠱惑の壺-漫画アニメ海外の反応まとめ(旧)) - 2026-04-18 移植完了
 - `^http://namekkutake\.livedoor\.blog/archives/\d+\.html$` (まとメメちゃん) - 2026-04-19 移植完了
+- `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
 
 ## 今後無視するURL
 
