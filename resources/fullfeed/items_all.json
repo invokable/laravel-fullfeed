@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82140",
-        "name": "cd9d1d843139055d240081706b9fa5ea",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2019-05-09T14:55:26+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^http://poppoyakiya\\.com/[^/]+/[^/]+/$",
-            "enc": "",
-            "xpath": "id(\"content_area\")/article/section/div[@class=\"content\"]"
-        },
-        "created_at": "2019-05-09T14:55:26+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82134",
         "name": "文具のとびら",
         "created_by": "zxcvbnm001",
