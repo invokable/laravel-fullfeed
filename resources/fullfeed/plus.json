@@ -341,6 +341,31 @@
         }
     },
     {
+        "name": "文具のとびら",
+        "data": {
+            "url": "^https?:\/\/www\\.buntobi\\.com\/",
+            "selector": "section#page_entry_detail",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements",
+                "Revolution\\Fullfeed\\Extractor\\ReplaceMatches"
+            ],
+            "remove": [
+                "div[id^=\"div-gpt-ad-\"]",
+                "div[id^=\"gtm-event-detailpage-\"]",
+                "div.socialBtns",
+                "nav.anchorList",
+                "div#social_area",
+                "script"
+            ],
+            "replace": [
+                {
+                    "pattern": "\/<section[^>]*class=\\\"entry_box\\\"[^>]*>\\s*<h3[^>]*>\\s*関連記事\\s*<\\\/h3>[\\s\\S]*?<\\\/section>\/u",
+                    "replace": ""
+                }
+            ]
+        }
+    },
+    {
         "name": "日本経済新聞",
         "data": {
             "url": "^https:\/\/www\\.nikkei\\.com\/",
