@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82134",
-        "name": "文具のとびら",
-        "created_by": "zxcvbnm001",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2019-04-27T19:35:48+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^https?://www\\.buntobi\\.com/",
-            "enc": "",
-            "xpath": "//section[@id='page_entry_detail']/*[not(contains(@id, 'social_area'))]"
-        },
-        "created_at": "2019-04-27T19:35:48+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82102",
         "name": "e674f1d30e863cc38c615748697d9d68",
         "created_by": "r5hbne30",
