@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82102",
-        "name": "e674f1d30e863cc38c615748697d9d68",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2019-03-20T13:31:08+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^http://animanch\\.com/archives/\\d+\\.html$",
-            "enc": "",
-            "xpath": "id(\"site-content\")/div[@class=\"article-contents\"]//div[@class=\"res\"]"
-        },
-        "created_at": "2019-03-20T13:31:08+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82075",
         "name": "価格.comマガジン",
         "created_by": "zxcvbnm001",

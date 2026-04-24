@@ -26,6 +26,7 @@
 
 ## 今後無視するURL
 
+- `^http://animanch\.com/archives/\d+\.html$` (e674f1d30e863cc38c615748697d9d68) - 2026-04-24 確認、接続不可（403 Forbidden）
 - `^http://poppoyakiya\.com/[^/]+/[^/]+/$` (cd9d1d843139055d240081706b9fa5ea) - 2026-04-22 確認、接続不可
 - `^https://shinjukuacc\.com/\d{8}-\d{2}/$` (shinjukuacc.com) - 2026-04-10 確認、接続不可（403 Forbidden）
 - `https://moti-soku.com/` (気になるVtuber速報) - 2026-04-06 確認、ドメインパーキング（ParkLogic）により接続不可
