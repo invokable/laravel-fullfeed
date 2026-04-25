@@ -23,6 +23,7 @@
 - `^http://namekkutake\.livedoor\.blog/archives/\d+\.html$` (まとメメちゃん) - 2026-04-19 移植完了
 - `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
 - `^https?://www\.buntobi\.com/` (文具のとびら) - 2026-04-23 移植完了
+- `^https://kakakumag\.com/` (価格.comマガジン) - 2026-04-25 移植完了
 
 ## 今後無視するURL
 

@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82075",
-        "name": "価格.comマガジン",
-        "created_by": "zxcvbnm001",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2019-02-07T15:30:53+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^https://kakakumag\\.com/",
-            "enc": "",
-            "xpath": "div[@class=\"article-edit\"]"
-        },
-        "created_at": "2019-02-07T15:30:53+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82036",
         "name": "2f3a03c89dbf8a0bd53d6055d0acd801",
         "created_by": "r5hbne30",
