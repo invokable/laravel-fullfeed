@@ -328,6 +328,19 @@
         }
     },
     {
+        "name": "価格.comマガジン",
+        "data": {
+            "url": "^https:\/\/kakakumag\\.com\/",
+            "selector": "div.article-edit",
+            "after_callable": [
+                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+            ],
+            "remove": [
+                "script"
+            ]
+        }
+    },
+    {
         "name": "情報管理LOG",
         "data": {
             "url": "^https?:\/\/hokoxjouhou\\.blog105\\.fc2\\.com\/blog-entry-",
