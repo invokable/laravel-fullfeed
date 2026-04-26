@@ -314,6 +314,13 @@
         }
     },
     {
+        "name": "ワールドトリガーまとめブログ",
+        "data": {
+            "url": "^https:\/\/comic-news24\\.info\/archives\/\\d+$",
+            "selector": "div#the-content"
+        }
+    },
+    {
         "name": "一生非正規雇用で生きてくブログ",
         "data": {
             "url": "^http:\/\/musyoku\\.tokyo\/\\d{4}\/\\d{2}\/\\d{2}\/post-\\d+\/$",
