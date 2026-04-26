@@ -1,21 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82036",
-        "name": "2f3a03c89dbf8a0bd53d6055d0acd801",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2018-12-07T15:51:04+09:00",
-        "data": {
-            "microformats": "",
-            "base": "",
-            "type": "IND",
-            "url": "^http://comic-news24\\.info/archives/\\d+$",
-            "enc": "",
-            "xpath": "id(\"the-content\")"
-        },
-        "created_at": "2018-12-07T15:51:04+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82035",
         "name": "色々まとめ速報",
         "created_by": "r5hbne30",
