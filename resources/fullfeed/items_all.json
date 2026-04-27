@@ -1,18 +1,5 @@
 [
     {
-        "resource_url": "http://wedata.net/items/82035",
-        "name": "色々まとめ速報",
-        "created_by": "r5hbne30",
-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
-        "updated_at": "2018-12-09T22:20:03+09:00",
-        "data": {
-            "url": "^http://iroirosokuhou\\.com/archives/\\d+\\.html$",
-            "type": "IND",
-            "xpath": "id(\"main-inner\")//div[@class=\"article-body-inner\"]"
-        },
-        "created_at": "2018-12-07T15:45:16+09:00"
-    },
-    {
         "resource_url": "http://wedata.net/items/82034",
         "name": "ちゃん速",
         "created_by": "r5hbne30",

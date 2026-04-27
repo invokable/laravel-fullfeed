@@ -28,6 +28,7 @@
 
 ## 今後無視するURL
 
+- `^http://iroirosokuhou\.com/archives/\d+\.html$` (色々まとめ速報) - 2026-04-27 確認、接続不可（403 Forbidden / Cloudflare）
 - `^http://animanch\.com/archives/\d+\.html$` (e674f1d30e863cc38c615748697d9d68) - 2026-04-24 確認、接続不可（403 Forbidden）
 - `^http://poppoyakiya\.com/[^/]+/[^/]+/$` (cd9d1d843139055d240081706b9fa5ea) - 2026-04-22 確認、接続不可
 - `^https://shinjukuacc\.com/\d{8}-\d{2}/$` (shinjukuacc.com) - 2026-04-10 確認、接続不可（403 Forbidden）
