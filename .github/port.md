@@ -35,3 +35,4 @@
 - `^http://rakukan\.net/article/\d+\.html$` (rakukan.net) - 2026-04-08 確認、リダイレクトにより接続不可
 - `^https://www\.mangajunky\.net/blog-entry-\d+\.html$` (マンガ中毒) - 2026-04-13 確認、サイトがオンラインカジノに転換、記事URLは404
 - `^https?://oeste\.jp/(blog|kodawari)/` (オエステ会) - 2026-04-20 確認、接続不可
+- `^http://iroirosokuhou\.com/archives/\d+\.html$` (色々まとめ速報) - 2026-04-28 確認、接続不可（403 Forbidden）
