@@ -1,0 +1,88 @@
+From f08de8dd3ade4998ff7a1964abec47bdfeae8de9 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Thu, 23 Apr 2026 18:51:53 +0000
+Subject: [PATCH] Port buntobi fullfeed rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 16 ----------------
+ resources/fullfeed/plus.json      | 25 +++++++++++++++++++++++++
+ 3 files changed, 26 insertions(+), 16 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index be24b8b..ec8c31d 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -22,6 +22,7 @@ ## 移植完了
+ - `^https?://watamotetrans\.livedoor\.blog/archives/\d+\.html$` (蠱惑の壺-漫画アニメ海外の反応まとめ(旧)) - 2026-04-18 移植完了
+ - `^http://namekkutake\.livedoor\.blog/archives/\d+\.html$` (まとメメちゃん) - 2026-04-19 移植完了
+ - `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
++- `^https?://www\.buntobi\.com/` (文具のとびら) - 2026-04-23 移植完了
+ 
+ ## 今後無視するURL
+ 
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index 71483fa..c84c093 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,20 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82134",
+-        "name": "文具のとびら",
+-        "created_by": "zxcvbnm001",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2019-04-27T19:35:48+09:00",
+-        "data": {
+-            "microformats": "",
+-            "base": "",
+-            "type": "IND",
+-            "url": "^https?://www\\.buntobi\\.com/",
+-            "enc": "",
+-            "xpath": "//section[@id='page_entry_detail']/*[not(contains(@id, 'social_area'))]"
+-        },
+-        "created_at": "2019-04-27T19:35:48+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82102",
+         "name": "e674f1d30e863cc38c615748697d9d68",
+diff --git a/resources/fullfeed/plus.json b/resources/fullfeed/plus.json
+index 4d4a127..dce851b 100644
+--- a/resources/fullfeed/plus.json
++++ b/resources/fullfeed/plus.json
+@@ -340,6 +340,31 @@
+             ]
+         }
+     },
++    {
++        "name": "文具のとびら",
++        "data": {
++            "url": "^https?:\/\/www\\.buntobi\\.com\/",
++            "selector": "section#page_entry_detail",
++            "after_callable": [
++                "Revolution\\Fullfeed\\Extractor\\RemoveElements",
++                "Revolution\\Fullfeed\\Extractor\\ReplaceMatches"
++            ],
++            "remove": [
++                "div[id^=\"div-gpt-ad-\"]",
++                "div[id^=\"gtm-event-detailpage-\"]",
++                "div.socialBtns",
++                "nav.anchorList",
++                "div#social_area",
++                "script"
++            ],
++            "replace": [
++                {
++                    "pattern": "\/<section[^>]*class=\\\"entry_box\\\"[^>]*>\\s*<h3[^>]*>\\s*関連記事\\s*<\\\/h3>[\\s\\S]*?<\\\/section>\/u",
++                    "replace": ""
++                }
++            ]
++        }
++    },
+     {
+         "name": "日本経済新聞",
+         "data": {
+-- 
+2.53.0
+

@@ -1,0 +1,70 @@
+From aed9737c6c1d55cacc1fbdb184a88cb6a02d32be Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Tue, 21 Apr 2026 18:50:25 +0000
+Subject: [PATCH] port musyoku.tokyo rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 16 ----------------
+ resources/fullfeed/plus.json      |  7 +++++++
+ 3 files changed, 8 insertions(+), 16 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index 0b96677..bfeec40 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -21,6 +21,7 @@ ## 移植完了
+ - `^https://www\.moguravr\.com/` (MoguLive) - 2026-04-17 移植完了
+ - `^https?://watamotetrans\.livedoor\.blog/archives/\d+\.html$` (蠱惑の壺-漫画アニメ海外の反応まとめ(旧)) - 2026-04-18 移植完了
+ - `^http://namekkutake\.livedoor\.blog/archives/\d+\.html$` (まとメメちゃん) - 2026-04-19 移植完了
++- `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
+ 
+ ## 今後無視するURL
+ 
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index 7ad87eb..d83cbe8 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,20 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82144",
+-        "name": "0d479f5c395013bdb1b3f17e0629a645",
+-        "created_by": "r5hbne30",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2019-05-13T08:45:39+09:00",
+-        "data": {
+-            "microformats": "",
+-            "base": "",
+-            "type": "IND",
+-            "url": "^http://musyoku\\.tokyo/\\d{4}/\\d{2}/\\d{2}/post-\\d+/$",
+-            "enc": "",
+-            "xpath": "id(\"the-content\")"
+-        },
+-        "created_at": "2019-05-13T08:45:39+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82140",
+         "name": "cd9d1d843139055d240081706b9fa5ea",
+diff --git a/resources/fullfeed/plus.json b/resources/fullfeed/plus.json
+index 6bfa3ae..4d4a127 100644
+--- a/resources/fullfeed/plus.json
++++ b/resources/fullfeed/plus.json
+@@ -313,6 +313,13 @@
+             "selector": "div.articleBody"
+         }
+     },
++    {
++        "name": "一生非正規雇用で生きてくブログ",
++        "data": {
++            "url": "^http:\/\/musyoku\\.tokyo\/\\d{4}\/\\d{2}\/\\d{2}\/post-\\d+\/$",
++            "selector": "#the-content"
++        }
++    },
+     {
+         "name": "任天堂トピックス",
+         "data": {
+-- 
+2.53.0
+

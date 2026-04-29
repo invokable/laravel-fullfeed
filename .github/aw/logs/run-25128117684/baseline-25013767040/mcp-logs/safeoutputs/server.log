@@ -1,0 +1,126 @@
+Safe Outputs MCP Server Log
+Start time: Mon Apr 27 18:58:26 UTC 2026
+===========================================
+
+[2026-04-27T18:58:26.378Z] [safe-outputs-entry] Entry point script executing
+[2026-04-27T18:58:26.389Z] [safe_outputs_mcp_server_http] Module is being loaded
+[2026-04-27T18:58:26.389Z] [mcp_http_transport] Module is being loaded
+[2026-04-27T18:58:26.394Z] [mcp_server_core] Module is being loaded
+[2026-04-27T18:58:26.395Z] [safe_outputs_mcp_server_http] Loaded mcp_http_transport.cjs
+[2026-04-27T18:58:26.395Z] [safe_outputs_mcp_server_http] Loaded mcp_logger.cjs
+[2026-04-27T18:58:26.398Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_bootstrap.cjs
+[2026-04-27T18:58:26.398Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_append.cjs
+[2026-04-27T18:58:26.404Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_handlers.cjs
+[2026-04-27T18:58:26.404Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_tools_loader.cjs
+[2026-04-27T18:58:26.404Z] [safe_outputs_mcp_server_http] All modules loaded successfully
+[2026-04-27T18:58:26.405Z] [safe-outputs-entry] Successfully required safe_outputs_mcp_server_http.cjs
+[2026-04-27T18:58:26.405Z] [safe-outputs-entry] In require.main === module block
+[2026-04-27T18:58:26.405Z] [safe-outputs-entry] Port: 3001, LogDir: /tmp/gh-aw/mcp-logs/safeoutputs
+[2026-04-27T18:58:26.405Z] [safe-outputs-entry] Calling startHttpServer...
+[2026-04-27T18:58:26.405Z] [safe-outputs-startup] startHttpServer called with port=3001
+[2026-04-27T18:58:26.405Z] [safe-outputs-startup] === Starting Safe Outputs MCP HTTP Server ===
+[2026-04-27T18:58:26.405Z] [safe-outputs-startup] Port: 3001
+[2026-04-27T18:58:26.405Z] [safe-outputs-startup] Mode: stateless
+[2026-04-27T18:58:26.405Z] [safe-outputs-startup] Environment: NODE_VERSION=v20.20.2, PLATFORM=linux
+[2026-04-27T18:58:26.405Z] [safe-outputs-startup] About to call createMCPServer...
+[2026-04-27T18:58:26.405Z] [safeoutputs] === Creating MCP Server ===
+[2026-04-27T18:58:26.405Z] [safeoutputs] Loading safe-outputs configuration
+[2026-04-27T18:58:26.405Z] [safeoutputs] Reading config from file: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+[2026-04-27T18:58:26.405Z] [safeoutputs] Config file exists at: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+[2026-04-27T18:58:26.406Z] [safeoutputs] Config file content length: 896 characters
+[2026-04-27T18:58:26.406Z] [safeoutputs] Config file read successfully, attempting to parse JSON
+[2026-04-27T18:58:26.406Z] [safeoutputs] Successfully parsed config from file with 6 configuration keys
+[2026-04-27T18:58:26.406Z] [safeoutputs] Final processed config: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["automation"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+[2026-04-27T18:58:26.406Z] [safeoutputs] Loading safe-outputs tools
+[2026-04-27T18:58:26.406Z] [safeoutputs] Reading tools from file: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+[2026-04-27T18:58:26.406Z] [safeoutputs] Tools file exists at: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+[2026-04-27T18:58:26.406Z] [safeoutputs] Tools file content length: 7759 characters
+[2026-04-27T18:58:26.406Z] [safeoutputs] Tools file read successfully, attempting to parse JSON
+[2026-04-27T18:58:26.406Z] [safeoutputs] Successfully parsed 5 tools from file
+[2026-04-27T18:58:26.406Z] [safeoutputs] Server name: safeoutputs
+[2026-04-27T18:58:26.406Z] [safeoutputs] Server version: 1.0.0
+[2026-04-27T18:58:26.406Z] [safeoutputs] Output file: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+[2026-04-27T18:58:26.406Z] [safeoutputs] Config: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["automation"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering predefined tools...
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering tool: create_pull_request
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registered tool: create_pull_request
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering tool: missing_tool
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registered tool: missing_tool
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering tool: noop
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registered tool: noop
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering tool: missing_data
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registered tool: missing_data
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering tool: report_incomplete
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registered tool: report_incomplete
+[2026-04-27T18:58:26.407Z] [safeoutputs] Registering dynamic tools...
+[2026-04-27T18:58:26.407Z] [safeoutputs] Tool registration complete: 5 registered
+[2026-04-27T18:58:26.407Z] [safeoutputs] === MCP Server Creation Complete ===
+[2026-04-27T18:58:26.407Z] [safeoutputs] MCP server created successfully
+[2026-04-27T18:58:26.407Z] [safeoutputs] Server name: safeoutputs
+[2026-04-27T18:58:26.407Z] [safeoutputs] Server version: 1.0.0
+[2026-04-27T18:58:26.407Z] [safeoutputs] Tools configured: 6
+[2026-04-27T18:58:26.407Z] [safeoutputs] Creating HTTP transport...
+[2026-04-27T18:58:26.407Z] [safeoutputs] HTTP transport created
+[2026-04-27T18:58:26.407Z] [safeoutputs] Connecting server to transport...
+[2026-04-27T18:58:26.407Z] [safeoutputs] About to call server.connect(transport)...
+[2026-04-27T18:58:26.407Z] [MCPServer] Starting connect...
+[2026-04-27T18:58:26.407Z] [MCPServer] Set transport
+[2026-04-27T18:58:26.407Z] [MCPServer] Called setServer
+[2026-04-27T18:58:26.407Z] [MCPHTTPTransport] Called, started=false
+[2026-04-27T18:58:26.407Z] [MCPHTTPTransport] Set started=true
+[2026-04-27T18:58:26.407Z] [safe-outputs-entry] startHttpServer call initiated (async)
+[2026-04-27T18:58:26.407Z] [MCPServer] Transport.start() completed
+[2026-04-27T18:58:26.407Z] [safeoutputs] server.connect(transport) completed successfully
+[2026-04-27T18:58:26.407Z] [safeoutputs] Server connected to transport successfully
+[2026-04-27T18:58:26.407Z] [safeoutputs] Creating HTTP server...
+[2026-04-27T18:58:26.408Z] [safeoutputs] Attempting to bind to port 3001...
+[2026-04-27T18:58:26.410Z] [safeoutputs] === Safe Outputs MCP HTTP Server Started Successfully ===
+[2026-04-27T18:58:26.410Z] [safeoutputs] HTTP server listening on http://localhost:3001
+[2026-04-27T18:58:26.410Z] [safeoutputs] MCP endpoint: POST http://localhost:3001/
+[2026-04-27T18:58:26.410Z] [safeoutputs] Server is ready to accept requests
+[2026-04-27T19:00:42.461Z] [safeoutputs] Calling handler for tool: create_pull_request
+[2026-04-27T19:00:42.462Z] [safeoutputs] Multi-repo mode: looking for checkout of invokable/laravel-fullfeed
+[find_repo_checkout] Searching for repo: invokable/laravel-fullfeed in workspace: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+[find_repo_checkout] Found 1 git directories: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+[debug] Executing git command: git config --get remote.origin.url
+[debug] Git command output: https://github.com/invokable/laravel-fullfeed.git
+
+[find_repo_checkout] Repo at /home/runner/work/laravel-fullfeed/laravel-fullfeed has slug: invokable/laravel-fullfeed
+[find_repo_checkout] Found match: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+[2026-04-27T19:00:42.488Z] [safeoutputs] Found repo checkout at: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+[2026-04-27T19:00:42.488Z] [safeoutputs] Generating patch for create_pull_request with branch: port/ignore-iroirosokuhou-20260427 in /home/runner/work/laravel-fullfeed/laravel-fullfeed baseBranch: main
+[generate_git_patch] Starting patch generation: mode=full, branch=port/ignore-iroirosokuhou-20260427, defaultBranch=main
+[generate_git_patch] Environment: cwd=/home/runner/work/laravel-fullfeed/laravel-fullfeed, GITHUB_SHA=2087e0964800ba97010b4f7ae161d701c83e0c7d
+[generate_git_patch] Strategy 1: Checking if branch 'port/ignore-iroirosokuhou-20260427' exists locally
+[debug] Executing git command: git show-ref --verify --quiet refs/heads/port/ignore-iroirosokuhou-20260427
+[debug] Git command completed successfully with no output
+[generate_git_patch] Strategy 1: Branch 'port/ignore-iroirosokuhou-20260427' exists locally
+[generate_git_patch] Strategy 1 (full): Checking if origin/port/ignore-iroirosokuhou-20260427 exists
+[debug] Executing git command: git show-ref --verify --quiet refs/remotes/origin/port/ignore-iroirosokuhou-20260427
+[error] Git command failed: git show-ref --verify --quiet refs/remotes/origin/port/ignore-iroirosokuhou-20260427
+[error] Exit status: 1
+[generate_git_patch] Strategy 1 (full): origin/port/ignore-iroirosokuhou-20260427 not found, trying merge-base with main
+[debug] Executing git command: git show-ref --verify --quiet refs/remotes/origin/main
+[debug] Git command completed successfully with no output
+[generate_git_patch] Strategy 1 (full): origin/main exists locally
+[debug] Executing git command: git merge-base -- origin/main port/ignore-iroirosokuhou-20260427
+[debug] Git command output: 2087e0964800ba97010b4f7ae161d701c83e0c7d
+
+[generate_git_patch] Strategy 1 (full): Computed merge-base: 2087e0964800ba97010b4f7ae161d701c83e0c7d
+[debug] Executing git command: git rev-parse 2087e0964800ba97010b4f7ae161d701c83e0c7d
+[debug] Git command output: 2087e0964800ba97010b4f7ae161d701c83e0c7d
+
+[generate_git_patch] Strategy 1: Resolved baseRef 2087e0964800ba97010b4f7ae161d701c83e0c7d to SHA 2087e0964800ba97010b4f7ae161d701c83e0c7d
+[debug] Executing git command: git rev-list --count 2087e0964800ba97010b4f7ae161d701c83e0c7d..port/ignore-iroirosokuhou-20260427
+[debug] Git command output: 1
+
+[generate_git_patch] Strategy 1: Found 1 commits between 2087e0964800ba97010b4f7ae161d701c83e0c7d and port/ignore-iroirosokuhou-20260427
+[debug] Executing git command: git format-patch 2087e0964800ba97010b4f7ae161d701c83e0c7d..port/ignore-iroirosokuhou-20260427 --stdout
+[debug] Git command output: From 643a2a840ee95dd27ec3e0664709229974b810f8 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Mon, 27 Apr 2026 19:00:30 +0000
+Subject: [PATCH]...
+[generate_git_patch] Strategy 1: SUCCESS - Generated patch with 51 lines
+[generate_git_patch] Final: SUCCESS - patchSize=2136 bytes, patchLines=51, baseCommit=2087e0964800ba97010b4f7ae161d701c83e0c7d
+[2026-04-27T19:00:42.544Z] [safeoutputs] Patch generated successfully: /tmp/gh-aw/aw-invokable-laravel-fullfeed-port-ignore-iroirosokuhou-20260427.patch (2136 bytes, 51 lines)
+[2026-04-27T19:00:42.544Z] [safeoutputs] Handler returned for tool: create_pull_request

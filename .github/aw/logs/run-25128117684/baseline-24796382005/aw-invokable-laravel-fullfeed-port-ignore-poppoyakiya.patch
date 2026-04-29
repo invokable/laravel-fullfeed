@@ -1,0 +1,51 @@
+From 052e364258d69617d34d92878d5001443234d5c8 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Wed, 22 Apr 2026 18:49:52 +0000
+Subject: [PATCH] chore: ignore unreachable poppoyakiya rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 16 ----------------
+ 2 files changed, 1 insertion(+), 16 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index bfeec40..be24b8b 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -25,6 +25,7 @@ ## 移植完了
+ 
+ ## 今後無視するURL
+ 
++- `^http://poppoyakiya\.com/[^/]+/[^/]+/$` (cd9d1d843139055d240081706b9fa5ea) - 2026-04-22 確認、接続不可
+ - `^https://shinjukuacc\.com/\d{8}-\d{2}/$` (shinjukuacc.com) - 2026-04-10 確認、接続不可（403 Forbidden）
+ - `https://moti-soku.com/` (気になるVtuber速報) - 2026-04-06 確認、ドメインパーキング（ParkLogic）により接続不可
+ - `^http://rakukan\.net/article/\d+\.html$` (rakukan.net) - 2026-04-08 確認、リダイレクトにより接続不可
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index d83cbe8..71483fa 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,20 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82140",
+-        "name": "cd9d1d843139055d240081706b9fa5ea",
+-        "created_by": "r5hbne30",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2019-05-09T14:55:26+09:00",
+-        "data": {
+-            "microformats": "",
+-            "base": "",
+-            "type": "IND",
+-            "url": "^http://poppoyakiya\\.com/[^/]+/[^/]+/$",
+-            "enc": "",
+-            "xpath": "id(\"content_area\")/article/section/div[@class=\"content\"]"
+-        },
+-        "created_at": "2019-05-09T14:55:26+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82134",
+         "name": "文具のとびら",
+-- 
+2.53.0
+

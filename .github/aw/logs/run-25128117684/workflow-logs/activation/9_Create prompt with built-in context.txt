@@ -1,0 +1,126 @@
+﻿2026-04-29T19:07:26.0360440Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/create_prompt_first.sh"
+2026-04-29T19:07:26.0360975Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/create_prompt_first.sh"[0m
+2026-04-29T19:07:26.0361295Z [36;1m{[0m
+2026-04-29T19:07:26.0361498Z [36;1mcat << 'GH_AW_PROMPT_c8c988f912240032_EOF'[0m
+2026-04-29T19:07:26.0361778Z [36;1m<system>[0m
+2026-04-29T19:07:26.0362329Z [36;1mGH_AW_PROMPT_c8c988f912240032_EOF[0m
+2026-04-29T19:07:26.0362619Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/xpia.md"[0m
+2026-04-29T19:07:26.0362972Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/temp_folder_prompt.md"[0m
+2026-04-29T19:07:26.0363331Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/markdown.md"[0m
+2026-04-29T19:07:26.0363692Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/cache_memory_prompt.md"[0m
+2026-04-29T19:07:26.0364091Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_prompt.md"[0m
+2026-04-29T19:07:26.0364438Z [36;1mcat << 'GH_AW_PROMPT_c8c988f912240032_EOF'[0m
+2026-04-29T19:07:26.0364985Z [36;1m<safe-output-tools>[0m
+2026-04-29T19:07:26.0365340Z [36;1mTools: create_pull_request, missing_tool, missing_data, noop[0m
+2026-04-29T19:07:26.0365681Z [36;1mGH_AW_PROMPT_c8c988f912240032_EOF[0m
+2026-04-29T19:07:26.0366033Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_create_pull_request.md"[0m
+2026-04-29T19:07:26.0366412Z [36;1mcat << 'GH_AW_PROMPT_c8c988f912240032_EOF'[0m
+2026-04-29T19:07:26.0366898Z [36;1m</safe-output-tools>[0m
+2026-04-29T19:07:26.0367191Z [36;1m<github-context>[0m
+2026-04-29T19:07:26.0367534Z [36;1mThe following GitHub context information is available for this workflow:[0m
+2026-04-29T19:07:26.0367926Z [36;1m{{#if __GH_AW_GITHUB_ACTOR__ }}[0m
+2026-04-29T19:07:26.0368198Z [36;1m- **actor**: __GH_AW_GITHUB_ACTOR__[0m
+2026-04-29T19:07:26.0368441Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0368697Z [36;1m{{#if __GH_AW_GITHUB_REPOSITORY__ }}[0m
+2026-04-29T19:07:26.0368997Z [36;1m- **repository**: __GH_AW_GITHUB_REPOSITORY__[0m
+2026-04-29T19:07:26.0369263Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0369452Z [36;1m{{#if __GH_AW_GITHUB_WORKSPACE__ }}[0m
+2026-04-29T19:07:26.0370513Z [36;1m- **workspace**: __GH_AW_GITHUB_WORKSPACE__[0m
+2026-04-29T19:07:26.0370817Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0371032Z [36;1m{{#if __GH_AW_GITHUB_EVENT_ISSUE_NUMBER__ }}[0m
+2026-04-29T19:07:26.0371597Z [36;1m- **issue-number**: #__GH_AW_GITHUB_EVENT_ISSUE_NUMBER__[0m
+2026-04-29T19:07:26.0372477Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0372897Z [36;1m{{#if __GH_AW_GITHUB_EVENT_DISCUSSION_NUMBER__ }}[0m
+2026-04-29T19:07:26.0373290Z [36;1m- **discussion-number**: #__GH_AW_GITHUB_EVENT_DISCUSSION_NUMBER__[0m
+2026-04-29T19:07:26.0373644Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0373870Z [36;1m{{#if __GH_AW_GITHUB_EVENT_PULL_REQUEST_NUMBER__ }}[0m
+2026-04-29T19:07:26.0374279Z [36;1m- **pull-request-number**: #__GH_AW_GITHUB_EVENT_PULL_REQUEST_NUMBER__[0m
+2026-04-29T19:07:26.0374623Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0374826Z [36;1m{{#if __GH_AW_GITHUB_EVENT_COMMENT_ID__ }}[0m
+2026-04-29T19:07:26.0375161Z [36;1m- **comment-id**: __GH_AW_GITHUB_EVENT_COMMENT_ID__[0m
+2026-04-29T19:07:26.0375430Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0375614Z [36;1m{{#if __GH_AW_GITHUB_RUN_ID__ }}[0m
+2026-04-29T19:07:26.0377282Z [36;1m- **workflow-run-id**: __GH_AW_GITHUB_RUN_ID__[0m
+2026-04-29T19:07:26.0377625Z [36;1m{{/if}}[0m
+2026-04-29T19:07:26.0378037Z [36;1m</github-context>[0m
+2026-04-29T19:07:26.0378253Z [36;1m[0m
+2026-04-29T19:07:26.0378441Z [36;1mGH_AW_PROMPT_c8c988f912240032_EOF[0m
+2026-04-29T19:07:26.0378851Z [36;1mcat "${RUNNER_TEMP}/gh-aw/prompts/github_mcp_tools_with_safeoutputs_prompt.md"[0m
+2026-04-29T19:07:26.0379290Z [36;1mcat << 'GH_AW_PROMPT_c8c988f912240032_EOF'[0m
+2026-04-29T19:07:26.0380319Z [36;1m</system>[0m
+2026-04-29T19:07:26.0380867Z [36;1m{{#runtime-import .github/workflows/port-rules-direct.md}}[0m
+2026-04-29T19:07:26.0381216Z [36;1mGH_AW_PROMPT_c8c988f912240032_EOF[0m
+2026-04-29T19:07:26.0381468Z [36;1m} > "$GH_AW_PROMPT"[0m
+2026-04-29T19:07:26.0385940Z shell: /usr/bin/bash -e {0}
+2026-04-29T19:07:26.0386341Z env:
+2026-04-29T19:07:26.0390904Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:07:26.0396717Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:07:26.0397371Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 821d64e1eb93fafa
+2026-04-29T19:07:26.0397666Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489633855
+2026-04-29T19:07:26.0398171Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-04-29T19:07:26.0398761Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-04-29T19:07:26.0399148Z   GH_AW_GITHUB_ACTOR: kawax
+2026-04-29T19:07:26.0399368Z   GH_AW_GITHUB_EVENT_COMMENT_ID: 
+2026-04-29T19:07:26.0399820Z   GH_AW_GITHUB_EVENT_DISCUSSION_NUMBER: 
+2026-04-29T19:07:26.0400070Z   GH_AW_GITHUB_EVENT_ISSUE_NUMBER: 
+2026-04-29T19:07:26.0400701Z   GH_AW_GITHUB_EVENT_PULL_REQUEST_NUMBER: 
+2026-04-29T19:07:26.0401010Z   GH_AW_GITHUB_REPOSITORY: invokable/laravel-fullfeed
+2026-04-29T19:07:26.0401464Z   GH_AW_GITHUB_RUN_ID: 25128117684
+2026-04-29T19:07:26.0409114Z   GH_AW_GITHUB_WORKSPACE: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-29T19:07:26.0409542Z ##[endgroup]

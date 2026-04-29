@@ -1,0 +1,95 @@
+﻿2026-04-29T19:08:53.7437643Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-04-29T19:08:53.7438391Z with:
+2026-04-29T19:08:53.7438763Z   name: safe-outputs-items
+2026-04-29T19:08:53.7439844Z   path: /tmp/gh-aw/safe-output-items.jsonl
+/tmp/gh-aw/temporary-id-map.json
+
+2026-04-29T19:08:53.7440590Z   if-no-files-found: ignore
+2026-04-29T19:08:53.7441039Z   compression-level: 6
+2026-04-29T19:08:53.7441449Z   overwrite: false
+2026-04-29T19:08:53.7441850Z   include-hidden-files: false
+2026-04-29T19:08:53.7442295Z   archive: true
+2026-04-29T19:08:53.7442659Z env:
+2026-04-29T19:08:53.7443193Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-29T19:08:53.7443972Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-29T19:08:53.7444409Z   GH_AW_ENGINE_ID: copilot
+2026-04-29T19:08:53.7444838Z   GH_AW_ENGINE_MODEL: auto
+2026-04-29T19:08:53.7445257Z   GH_AW_ENGINE_VERSION: 1.0.35
+2026-04-29T19:08:53.7445723Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-29T19:08:53.7446259Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-29T19:08:53.7455452Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:53.7475116Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:53.7475846Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 35abaaed1c7d0d38
+2026-04-29T19:08:53.7476430Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489732462
+2026-04-29T19:08:53.7476948Z   GH_HOST: github.com
+2026-04-29T19:08:53.7477354Z ##[endgroup]
+2026-04-29T19:08:54.2895045Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-04-29T19:08:54.2896873Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-04-29T19:08:54.2897728Z With the provided path, there will be 1 file uploaded
+2026-04-29T19:08:54.2898559Z Artifact name is valid!
+2026-04-29T19:08:54.2899019Z Root directory input is valid!
+2026-04-29T19:08:54.2903499Z Uploading artifact: safe-outputs-items.zip
+2026-04-29T19:08:54.2904689Z Beginning upload of artifact content to blob storage
+2026-04-29T19:08:54.2905926Z Uploaded bytes 162
+2026-04-29T19:08:54.2906424Z Finished uploading artifact content to blob storage!
+2026-04-29T19:08:54.2907363Z SHA256 digest of uploaded artifact is 7690351c1511778e2b29c4af510d9a11b6af098b40ee90612c7aa74c4f43b6f4
+2026-04-29T19:08:54.2908243Z Finalizing artifact upload
+2026-04-29T19:08:54.2910094Z Artifact safe-outputs-items successfully finalized. Artifact ID 6715554175
+2026-04-29T19:08:54.2911238Z Artifact safe-outputs-items has been successfully uploaded! Final size is 162 bytes. Artifact ID is 6715554175
+2026-04-29T19:08:54.2912855Z Artifact download URL: https://github.com/invokable/laravel-fullfeed/actions/runs/25128117684/artifacts/6715554175

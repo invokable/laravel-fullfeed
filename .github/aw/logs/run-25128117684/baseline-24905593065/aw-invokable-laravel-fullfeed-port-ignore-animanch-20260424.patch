@@ -1,0 +1,51 @@
+From 468a68eabd35e504c0f7354411e68c8d8e200a5d Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Fri, 24 Apr 2026 18:34:09 +0000
+Subject: [PATCH] chore: ignore blocked animanch rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 16 ----------------
+ 2 files changed, 1 insertion(+), 16 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index ec8c31d..9512812 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -26,6 +26,7 @@ ## 移植完了
+ 
+ ## 今後無視するURL
+ 
++- `^http://animanch\.com/archives/\d+\.html$` (e674f1d30e863cc38c615748697d9d68) - 2026-04-24 確認、接続不可（403 Forbidden）
+ - `^http://poppoyakiya\.com/[^/]+/[^/]+/$` (cd9d1d843139055d240081706b9fa5ea) - 2026-04-22 確認、接続不可
+ - `^https://shinjukuacc\.com/\d{8}-\d{2}/$` (shinjukuacc.com) - 2026-04-10 確認、接続不可（403 Forbidden）
+ - `https://moti-soku.com/` (気になるVtuber速報) - 2026-04-06 確認、ドメインパーキング（ParkLogic）により接続不可
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index c84c093..26e3ef5 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,20 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82102",
+-        "name": "e674f1d30e863cc38c615748697d9d68",
+-        "created_by": "r5hbne30",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2019-03-20T13:31:08+09:00",
+-        "data": {
+-            "microformats": "",
+-            "base": "",
+-            "type": "IND",
+-            "url": "^http://animanch\\.com/archives/\\d+\\.html$",
+-            "enc": "",
+-            "xpath": "id(\"site-content\")/div[@class=\"article-contents\"]//div[@class=\"res\"]"
+-        },
+-        "created_at": "2019-03-20T13:31:08+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82075",
+         "name": "価格.comマガジン",
+-- 
+2.53.0
+

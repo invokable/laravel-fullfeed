@@ -1,0 +1,103 @@
+﻿2026-04-29T19:08:28.1574264Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-04-29T19:08:28.1574366Z with:
+2026-04-29T19:08:28.1574459Z   name: agent
+2026-04-29T19:08:28.1575452Z   path: /tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/sandbox/agent/logs/
+/tmp/gh-aw/redacted-urls.log
+/tmp/gh-aw/mcp-logs/
+/tmp/gh-aw/agent-stdio.log
+/tmp/gh-aw/agent/
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/safeoutputs.jsonl
+/tmp/gh-aw/agent_output.json
+/tmp/gh-aw/aw-*.patch
+/tmp/gh-aw/aw-*.bundle
+
+2026-04-29T19:08:28.1575572Z   if-no-files-found: ignore
+2026-04-29T19:08:28.1575664Z   compression-level: 6
+2026-04-29T19:08:28.1575752Z   overwrite: false
+2026-04-29T19:08:28.1575852Z   include-hidden-files: false
+2026-04-29T19:08:28.1575930Z   archive: true
+2026-04-29T19:08:28.1576009Z env:
+2026-04-29T19:08:28.1576098Z   DEFAULT_BRANCH: main
+2026-04-29T19:08:28.1576190Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-04-29T19:08:28.1576272Z   GH_AW_ASSETS_BRANCH: 
+2026-04-29T19:08:28.1576363Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-04-29T19:08:28.1576525Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:08:28.1576643Z   GH_AW_WORKFLOW_ID_SANITIZED: portrulesdirect
+2026-04-29T19:08:28.1580872Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:28.1581243Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:28.1581369Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fafde3ee818bbe3
+2026-04-29T19:08:28.1581478Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489668662
+2026-04-29T19:08:28.1581571Z   COMPOSER_PROCESS_TIMEOUT: 0
+2026-04-29T19:08:28.1581673Z   COMPOSER_NO_INTERACTION: 1
+2026-04-29T19:08:28.1581754Z   COMPOSER_NO_AUDIT: 1
+2026-04-29T19:08:28.1581840Z ##[endgroup]
+2026-04-29T19:08:28.3184210Z With the provided path, there will be 16 files uploaded
+2026-04-29T19:08:28.3191812Z Artifact name is valid!
+2026-04-29T19:08:28.3193476Z Root directory input is valid!
+2026-04-29T19:08:28.5834449Z Uploading artifact: agent.zip
+2026-04-29T19:08:28.5876875Z Beginning upload of artifact content to blob storage
+2026-04-29T19:08:29.0569007Z Uploaded bytes 49995
+2026-04-29T19:08:29.1336238Z Finished uploading artifact content to blob storage!
+2026-04-29T19:08:29.1337139Z SHA256 digest of uploaded artifact is a634797612c667b98780cec65401a1e7baecea4b6a93314ec9e8eb21724bd330
+2026-04-29T19:08:29.1337962Z Finalizing artifact upload
+2026-04-29T19:08:29.4628849Z Artifact agent successfully finalized. Artifact ID 6715546344
+2026-04-29T19:08:29.4630008Z Artifact agent has been successfully uploaded! Final size is 49995 bytes. Artifact ID is 6715546344
+2026-04-29T19:08:29.4634323Z Artifact download URL: https://github.com/invokable/laravel-fullfeed/actions/runs/25128117684/artifacts/6715546344

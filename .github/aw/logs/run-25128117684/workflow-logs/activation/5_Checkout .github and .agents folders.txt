@@ -1,0 +1,227 @@
+﻿2026-04-29T19:07:14.2665259Z ##[group]Run actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+2026-04-29T19:07:14.2666070Z with:
+2026-04-29T19:07:14.2666263Z   persist-credentials: false
+2026-04-29T19:07:14.2666618Z   sparse-checkout: .github
+.agents
+.claude
+.codex
+.crush
+.gemini
+.opencode
+
+2026-04-29T19:07:14.2667163Z   sparse-checkout-cone-mode: true
+2026-04-29T19:07:14.2667392Z   fetch-depth: 1
+2026-04-29T19:07:14.2667597Z   repository: invokable/laravel-fullfeed
+2026-04-29T19:07:14.2668008Z   token: ***
+2026-04-29T19:07:14.2668181Z   ssh-strict: true
+2026-04-29T19:07:14.2668365Z   ssh-user: git
+2026-04-29T19:07:14.2668533Z   clean: true
+2026-04-29T19:07:14.2668705Z   fetch-tags: false
+2026-04-29T19:07:14.2668896Z   show-progress: true
+2026-04-29T19:07:14.2669081Z   lfs: false
+2026-04-29T19:07:14.2669245Z   submodules: false
+2026-04-29T19:07:14.2669426Z   set-safe-directory: true
+2026-04-29T19:07:14.2669629Z env:
+2026-04-29T19:07:14.2674110Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:07:14.2679153Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:07:14.2679499Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 821d64e1eb93fafa
+2026-04-29T19:07:14.2679783Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489633855
+2026-04-29T19:07:14.2680034Z ##[endgroup]
+2026-04-29T19:07:14.4667576Z Syncing repository: invokable/laravel-fullfeed
+2026-04-29T19:07:14.4669721Z ##[group]Getting Git version info
+2026-04-29T19:07:14.4670193Z Working directory is '/home/runner/work/laravel-fullfeed/laravel-fullfeed'
+2026-04-29T19:07:14.6138685Z [command]/usr/bin/git version
+2026-04-29T19:07:16.7223895Z git version 2.53.0
+2026-04-29T19:07:16.7310668Z ##[endgroup]
+2026-04-29T19:07:16.7345183Z Temporarily overriding HOME='/home/runner/work/_temp/01467ccf-4fdd-49a4-9ae8-0c3aa1a34a33' before making global git config changes
+2026-04-29T19:07:16.7348676Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-29T19:07:16.7360658Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-29T19:07:16.8136474Z Deleting the contents of '/home/runner/work/laravel-fullfeed/laravel-fullfeed'
+2026-04-29T19:07:16.8147447Z ##[group]Initializing the repository
+2026-04-29T19:07:16.8199024Z [command]/usr/bin/git init /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-29T19:07:17.3148502Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-29T19:07:17.3152765Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-29T19:07:17.3158746Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-29T19:07:17.3205359Z hint: call:
+2026-04-29T19:07:17.3233543Z hint:
+2026-04-29T19:07:17.3233934Z hint: 	git config --global init.defaultBranch <name>
+2026-04-29T19:07:17.3234245Z hint:
+2026-04-29T19:07:17.3234589Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-29T19:07:17.3235626Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-29T19:07:17.3236005Z hint:
+2026-04-29T19:07:17.3237254Z hint: 	git branch -m <name>
+2026-04-29T19:07:17.3241284Z hint:
+2026-04-29T19:07:17.3246207Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-29T19:07:17.3739165Z Initialized empty Git repository in /home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/
+2026-04-29T19:07:17.3742094Z [command]/usr/bin/git remote add origin https://github.com/invokable/laravel-fullfeed
+2026-04-29T19:07:17.4208984Z ##[endgroup]
+2026-04-29T19:07:17.4330329Z ##[group]Disabling automatic garbage collection
+2026-04-29T19:07:17.4333221Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-29T19:07:17.4336931Z ##[endgroup]
+2026-04-29T19:07:17.4337295Z ##[group]Setting up auth
+2026-04-29T19:07:17.4337566Z Removing SSH command configuration
+2026-04-29T19:07:17.4338008Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-29T19:07:17.4405440Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-29T19:07:18.1738567Z Removing HTTP extra header
+2026-04-29T19:07:18.1750639Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-29T19:07:18.1852230Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-29T19:07:18.3355102Z Removing includeIf entries pointing to credentials config files
+2026-04-29T19:07:18.3365647Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-29T19:07:18.3430455Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-29T19:07:18.5244635Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-29T19:07:18.5913416Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:18.6045638Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:18.6248979Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:18.6599766Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:18.6715156Z ##[endgroup]
+2026-04-29T19:07:18.6716227Z ##[group]Fetching the repository
+2026-04-29T19:07:18.6730633Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --filter=blob:none --depth=1 origin +e9b88de1d5e2de646cae91e64a8cdc972b0efa90:refs/remotes/origin/main
+2026-04-29T19:07:22.3664831Z From https://github.com/invokable/laravel-fullfeed
+2026-04-29T19:07:22.3679385Z  * [new ref]         e9b88de1d5e2de646cae91e64a8cdc972b0efa90 -> origin/main
+2026-04-29T19:07:22.4616801Z [command]/usr/bin/git branch --list --remote origin/main
+2026-04-29T19:07:22.4676262Z   origin/main
+2026-04-29T19:07:22.4746714Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+2026-04-29T19:07:22.5511420Z e9b88de1d5e2de646cae91e64a8cdc972b0efa90
+2026-04-29T19:07:22.5523959Z ##[endgroup]
+2026-04-29T19:07:22.5636594Z ##[group]Determining the checkout info
+2026-04-29T19:07:22.5646669Z ##[endgroup]
+2026-04-29T19:07:22.5670361Z ##[group]Setting up sparse checkout
+2026-04-29T19:07:22.5670999Z [command]/usr/bin/git sparse-checkout set .github .agents .claude .codex .crush .gemini .opencode
+2026-04-29T19:07:22.6203333Z ##[endgroup]
+2026-04-29T19:07:22.6203734Z ##[group]Checking out the ref
+2026-04-29T19:07:22.6204582Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-29T19:07:24.2200000Z Updating files:   2% (1/45)
+2026-04-29T19:07:24.2200610Z Updating files:   4% (2/45)
+2026-04-29T19:07:24.2202278Z Updating files:   6% (3/45)
+2026-04-29T19:07:24.2202898Z Updating files:   8% (4/45)
+2026-04-29T19:07:24.2203250Z Updating files:  11% (5/45)
+2026-04-29T19:07:24.2214908Z Updating files:  13% (6/45)
+2026-04-29T19:07:24.2215789Z Updating files:  15% (7/45)
+2026-04-29T19:07:24.2216580Z Updating files:  17% (8/45)
+2026-04-29T19:07:24.2225284Z Updating files:  20% (9/45)
+2026-04-29T19:07:24.2230016Z Updating files:  22% (10/45)
+2026-04-29T19:07:24.2234934Z Updating files:  24% (11/45)
+2026-04-29T19:07:24.2239387Z Updating files:  26% (12/45)
+2026-04-29T19:07:24.2248427Z Updating files:  28% (13/45)
+2026-04-29T19:07:24.2253592Z Updating files:  31% (14/45)
+2026-04-29T19:07:24.2259478Z Updating files:  33% (15/45)
+2026-04-29T19:07:24.2263765Z Updating files:  35% (16/45)
+2026-04-29T19:07:24.2269741Z Updating files:  37% (17/45)
+2026-04-29T19:07:24.2293161Z Updating files:  40% (18/45)
+2026-04-29T19:07:24.2299546Z Updating files:  42% (19/45)
+2026-04-29T19:07:24.2308551Z Updating files:  44% (20/45)
+2026-04-29T19:07:24.2313541Z Updating files:  46% (21/45)
+2026-04-29T19:07:24.2324408Z Updating files:  48% (22/45)
+2026-04-29T19:07:24.2333851Z Updating files:  51% (23/45)
+2026-04-29T19:07:24.2337702Z Updating files:  53% (24/45)
+2026-04-29T19:07:24.2341571Z Updating files:  55% (25/45)
+2026-04-29T19:07:24.2346053Z Updating files:  57% (26/45)
+2026-04-29T19:07:24.2349960Z Updating files:  60% (27/45)
+2026-04-29T19:07:24.2354099Z Updating files:  62% (28/45)
+2026-04-29T19:07:24.2360105Z Updating files:  64% (29/45)
+2026-04-29T19:07:24.2365267Z Updating files:  66% (30/45)
+2026-04-29T19:07:24.2368236Z Updating files:  68% (31/45)
+2026-04-29T19:07:24.2370544Z Updating files:  71% (32/45)
+2026-04-29T19:07:24.2374833Z Updating files:  73% (33/45)
+2026-04-29T19:07:24.2377449Z Updating files:  75% (34/45)
+2026-04-29T19:07:24.2393511Z Updating files:  77% (35/45)
+2026-04-29T19:07:24.2398635Z Updating files:  80% (36/45)
+2026-04-29T19:07:24.2400939Z Updating files:  82% (37/45)
+2026-04-29T19:07:24.2403757Z Updating files:  84% (38/45)
+2026-04-29T19:07:24.2406006Z Updating files:  86% (39/45)
+2026-04-29T19:07:24.2414382Z Updating files:  88% (40/45)
+2026-04-29T19:07:24.2416703Z Updating files:  91% (41/45)
+2026-04-29T19:07:24.2419015Z Updating files:  93% (42/45)
+2026-04-29T19:07:24.2421269Z Updating files:  95% (43/45)
+2026-04-29T19:07:24.2432926Z Updating files:  97% (44/45)
+2026-04-29T19:07:24.2436807Z Updating files: 100% (45/45)
+2026-04-29T19:07:24.2437074Z Updating files: 100% (45/45), done.
+2026-04-29T19:07:25.0968924Z Switched to a new branch 'main'
+2026-04-29T19:07:25.0971534Z branch 'main' set up to track 'origin/main'.
+2026-04-29T19:07:25.0972921Z ##[endgroup]
+2026-04-29T19:07:25.0973494Z [command]/usr/bin/git log -1 --format=%H
+2026-04-29T19:07:25.0973808Z e9b88de1d5e2de646cae91e64a8cdc972b0efa90
+2026-04-29T19:07:25.0974518Z ##[group]Removing auth
+2026-04-29T19:07:25.0974762Z Removing SSH command configuration
+2026-04-29T19:07:25.0975167Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-29T19:07:25.0976456Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-29T19:07:25.0978212Z Removing HTTP extra header
+2026-04-29T19:07:25.0978677Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-29T19:07:25.0981020Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-29T19:07:25.0982865Z Removing includeIf entries pointing to credentials config files
+2026-04-29T19:07:25.0983348Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-29T19:07:25.0983856Z includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path
+2026-04-29T19:07:25.0984412Z includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path
+2026-04-29T19:07:25.0984881Z includeif.gitdir:/github/workspace/.git.path
+2026-04-29T19:07:25.0985514Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-04-29T19:07:25.0986372Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path
+2026-04-29T19:07:25.0987062Z /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0988401Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0989782Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path
+2026-04-29T19:07:25.0990511Z /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0992323Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0993692Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-04-29T19:07:25.0994484Z /github/runner_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0995595Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0996727Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-04-29T19:07:25.0997325Z /github/runner_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0998439Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config
+2026-04-29T19:07:25.0999909Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-29T19:07:25.1000950Z Removing credentials config '/home/runner/work/_temp/git-credentials-e4bed832-f1c6-4afd-a94c-138ccdfe52a0.config'
+2026-04-29T19:07:25.1001701Z ##[endgroup]

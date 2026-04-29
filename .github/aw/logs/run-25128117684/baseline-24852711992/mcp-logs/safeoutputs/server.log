@@ -1,0 +1,117 @@
+Safe Outputs MCP Server Log
+Start time: Thu Apr 23 18:46:24 UTC 2026
+===========================================
+
+[2026-04-23T18:46:24.579Z] [safe-outputs-entry] Entry point script executing
+[2026-04-23T18:46:24.605Z] [safe_outputs_mcp_server_http] Module is being loaded
+[2026-04-23T18:46:24.605Z] [mcp_http_transport] Module is being loaded
+[2026-04-23T18:46:24.609Z] [mcp_server_core] Module is being loaded
+[2026-04-23T18:46:24.610Z] [safe_outputs_mcp_server_http] Loaded mcp_http_transport.cjs
+[2026-04-23T18:46:24.610Z] [safe_outputs_mcp_server_http] Loaded mcp_logger.cjs
+[2026-04-23T18:46:24.612Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_bootstrap.cjs
+[2026-04-23T18:46:24.612Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_append.cjs
+[2026-04-23T18:46:24.617Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_handlers.cjs
+[2026-04-23T18:46:24.617Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_tools_loader.cjs
+[2026-04-23T18:46:24.617Z] [safe_outputs_mcp_server_http] All modules loaded successfully
+[2026-04-23T18:46:24.617Z] [safe-outputs-entry] Successfully required safe_outputs_mcp_server_http.cjs
+[2026-04-23T18:46:24.617Z] [safe-outputs-entry] In require.main === module block
+[2026-04-23T18:46:24.618Z] [safe-outputs-entry] Port: 3001, LogDir: /tmp/gh-aw/mcp-logs/safeoutputs
+[2026-04-23T18:46:24.618Z] [safe-outputs-entry] Calling startHttpServer...
+[2026-04-23T18:46:24.618Z] [safe-outputs-startup] startHttpServer called with port=3001
+[2026-04-23T18:46:24.618Z] [safe-outputs-startup] === Starting Safe Outputs MCP HTTP Server ===
+[2026-04-23T18:46:24.618Z] [safe-outputs-startup] Port: 3001
+[2026-04-23T18:46:24.618Z] [safe-outputs-startup] Mode: stateless
+[2026-04-23T18:46:24.618Z] [safe-outputs-startup] Environment: NODE_VERSION=v20.20.2, PLATFORM=linux
+[2026-04-23T18:46:24.618Z] [safe-outputs-startup] About to call createMCPServer...
+[2026-04-23T18:46:24.618Z] [safeoutputs] === Creating MCP Server ===
+[2026-04-23T18:46:24.618Z] [safeoutputs] Loading safe-outputs configuration
+[2026-04-23T18:46:24.618Z] [safeoutputs] Reading config from file: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+[2026-04-23T18:46:24.618Z] [safeoutputs] Config file exists at: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+[2026-04-23T18:46:24.618Z] [safeoutputs] Config file content length: 896 characters
+[2026-04-23T18:46:24.618Z] [safeoutputs] Config file read successfully, attempting to parse JSON
+[2026-04-23T18:46:24.618Z] [safeoutputs] Successfully parsed config from file with 6 configuration keys
+[2026-04-23T18:46:24.618Z] [safeoutputs] Final processed config: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["automation"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+[2026-04-23T18:46:24.618Z] [safeoutputs] Loading safe-outputs tools
+[2026-04-23T18:46:24.619Z] [safeoutputs] Reading tools from file: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+[2026-04-23T18:46:24.619Z] [safeoutputs] Tools file exists at: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+[2026-04-23T18:46:24.619Z] [safeoutputs] Tools file content length: 7759 characters
+[2026-04-23T18:46:24.619Z] [safeoutputs] Tools file read successfully, attempting to parse JSON
+[2026-04-23T18:46:24.619Z] [safeoutputs] Successfully parsed 5 tools from file
+[2026-04-23T18:46:24.619Z] [safeoutputs] Server name: safeoutputs
+[2026-04-23T18:46:24.619Z] [safeoutputs] Server version: 1.0.0
+[2026-04-23T18:46:24.619Z] [safeoutputs] Output file: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+[2026-04-23T18:46:24.619Z] [safeoutputs] Config: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["automation"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+[2026-04-23T18:46:24.619Z] [safeoutputs] Registering predefined tools...
+[2026-04-23T18:46:24.619Z] [safeoutputs] Registering tool: create_pull_request
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registered tool: create_pull_request
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registering tool: missing_tool
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registered tool: missing_tool
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registering tool: noop
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registered tool: noop
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registering tool: missing_data
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registered tool: missing_data
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registering tool: report_incomplete
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registered tool: report_incomplete
+[2026-04-23T18:46:24.620Z] [safeoutputs] Registering dynamic tools...
+[2026-04-23T18:46:24.620Z] [safeoutputs] Tool registration complete: 5 registered
+[2026-04-23T18:46:24.620Z] [safeoutputs] === MCP Server Creation Complete ===
+[2026-04-23T18:46:24.620Z] [safeoutputs] MCP server created successfully
+[2026-04-23T18:46:24.620Z] [safeoutputs] Server name: safeoutputs
+[2026-04-23T18:46:24.620Z] [safeoutputs] Server version: 1.0.0
+[2026-04-23T18:46:24.620Z] [safeoutputs] Tools configured: 6
+[2026-04-23T18:46:24.620Z] [safeoutputs] Creating HTTP transport...
+[2026-04-23T18:46:24.620Z] [safeoutputs] HTTP transport created
+[2026-04-23T18:46:24.620Z] [safeoutputs] Connecting server to transport...
+[2026-04-23T18:46:24.620Z] [safeoutputs] About to call server.connect(transport)...
+[2026-04-23T18:46:24.620Z] [MCPServer] Starting connect...
+[2026-04-23T18:46:24.620Z] [MCPServer] Set transport
+[2026-04-23T18:46:24.620Z] [MCPServer] Called setServer
+[2026-04-23T18:46:24.620Z] [MCPHTTPTransport] Called, started=false
+[2026-04-23T18:46:24.620Z] [MCPHTTPTransport] Set started=true
+[2026-04-23T18:46:24.620Z] [safe-outputs-entry] startHttpServer call initiated (async)
+[2026-04-23T18:46:24.620Z] [MCPServer] Transport.start() completed
+[2026-04-23T18:46:24.620Z] [safeoutputs] server.connect(transport) completed successfully
+[2026-04-23T18:46:24.620Z] [safeoutputs] Server connected to transport successfully
+[2026-04-23T18:46:24.620Z] [safeoutputs] Creating HTTP server...
+[2026-04-23T18:46:24.620Z] [safeoutputs] Attempting to bind to port 3001...
+[2026-04-23T18:46:24.622Z] [safeoutputs] === Safe Outputs MCP HTTP Server Started Successfully ===
+[2026-04-23T18:46:24.622Z] [safeoutputs] HTTP server listening on http://localhost:3001
+[2026-04-23T18:46:24.622Z] [safeoutputs] MCP endpoint: POST http://localhost:3001/
+[2026-04-23T18:46:24.622Z] [safeoutputs] Server is ready to accept requests
+[2026-04-23T18:52:09.628Z] [safeoutputs] Calling handler for tool: create_pull_request
+[2026-04-23T18:52:09.628Z] [safeoutputs] Generating patch for create_pull_request with branch: port-buntobi-rule
+[generate_git_patch] Starting patch generation: mode=full, branch=port-buntobi-rule, defaultBranch=main
+[generate_git_patch] Environment: cwd=/home/runner/work/laravel-fullfeed/laravel-fullfeed, GITHUB_SHA=d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+[generate_git_patch] Strategy 1: Checking if branch 'port-buntobi-rule' exists locally
+[debug] Executing git command: git show-ref --verify --quiet refs/heads/port-buntobi-rule
+[debug] Git command completed successfully with no output
+[generate_git_patch] Strategy 1: Branch 'port-buntobi-rule' exists locally
+[generate_git_patch] Strategy 1 (full): Checking if origin/port-buntobi-rule exists
+[debug] Executing git command: git show-ref --verify --quiet refs/remotes/origin/port-buntobi-rule
+[error] Git command failed: git show-ref --verify --quiet refs/remotes/origin/port-buntobi-rule
+[error] Exit status: 1
+[generate_git_patch] Strategy 1 (full): origin/port-buntobi-rule not found, trying merge-base with main
+[debug] Executing git command: git show-ref --verify --quiet refs/remotes/origin/main
+[debug] Git command completed successfully with no output
+[generate_git_patch] Strategy 1 (full): origin/main exists locally
+[debug] Executing git command: git merge-base -- origin/main port-buntobi-rule
+[debug] Git command output: d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+
+[generate_git_patch] Strategy 1 (full): Computed merge-base: d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+[debug] Executing git command: git rev-parse d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+[debug] Git command output: d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+
+[generate_git_patch] Strategy 1: Resolved baseRef d1b3bea1b56cc562b4363bb4e614554c3ea234a9 to SHA d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+[debug] Executing git command: git rev-list --count d1b3bea1b56cc562b4363bb4e614554c3ea234a9..port-buntobi-rule
+[debug] Git command output: 1
+
+[generate_git_patch] Strategy 1: Found 1 commits between d1b3bea1b56cc562b4363bb4e614554c3ea234a9 and port-buntobi-rule
+[debug] Executing git command: git format-patch d1b3bea1b56cc562b4363bb4e614554c3ea234a9..port-buntobi-rule --stdout
+[debug] Git command output: From f08de8dd3ade4998ff7a1964abec47bdfeae8de9 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Thu, 23 Apr 2026 18:51:53 +0000
+Subject: [PATCH]...
+[generate_git_patch] Strategy 1: SUCCESS - Generated patch with 89 lines
+[generate_git_patch] Final: SUCCESS - patchSize=3348 bytes, patchLines=89, baseCommit=d1b3bea1b56cc562b4363bb4e614554c3ea234a9
+[2026-04-23T18:52:09.706Z] [safeoutputs] Patch generated successfully: /tmp/gh-aw/aw-port-buntobi-rule.patch (3348 bytes, 89 lines)
+[2026-04-23T18:52:09.706Z] [safeoutputs] Handler returned for tool: create_pull_request

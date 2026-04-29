@@ -1,0 +1,89 @@
+﻿2026-04-29T19:08:52.4820021Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-04-29T19:08:52.4821483Z with:
+2026-04-29T19:08:52.4821832Z   name: agent
+2026-04-29T19:08:52.4822927Z   path: /tmp/gh-aw/
+2026-04-29T19:08:52.4823354Z   merge-multiple: false
+2026-04-29T19:08:52.4823799Z   repository: invokable/laravel-fullfeed
+2026-04-29T19:08:52.4824279Z   run-id: 25128117684
+2026-04-29T19:08:52.4824675Z   skip-decompress: false
+2026-04-29T19:08:52.4825091Z   digest-mismatch: error
+2026-04-29T19:08:52.4825477Z env:
+2026-04-29T19:08:52.4825995Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-29T19:08:52.4826651Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-29T19:08:52.4827078Z   GH_AW_ENGINE_ID: copilot
+2026-04-29T19:08:52.4827482Z   GH_AW_ENGINE_MODEL: auto
+2026-04-29T19:08:52.4827992Z   GH_AW_ENGINE_VERSION: 1.0.35
+2026-04-29T19:08:52.4828443Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-29T19:08:52.4828984Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-29T19:08:52.4836165Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:52.4843634Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:52.4844272Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 35abaaed1c7d0d38
+2026-04-29T19:08:52.4844822Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489732462
+2026-04-29T19:08:52.4845303Z ##[endgroup]
+2026-04-29T19:08:52.6563349Z Downloading single artifact
+2026-04-29T19:08:52.7535299Z Preparing to download the following artifacts:
+2026-04-29T19:08:52.7537372Z - agent (ID: 6715546344, Size: 49995, Expected Digest: sha256:a634797612c667b98780cec65401a1e7baecea4b6a93314ec9e8eb21724bd330)
+2026-04-29T19:08:52.9187990Z (node:1033) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-04-29T19:08:52.9195700Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-29T19:08:52.9284804Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/aea8a463-87ce-49c4-ab5f-f7d688ffe0dc/workflow-job-run-eee92b39-f5ea-5e1b-b32e-b04ec1cbcb26/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-04-29T19:08:52.9286857Z Starting download of artifact to: /tmp/gh-aw
+2026-04-29T19:08:52.9534622Z SHA256 digest of downloaded artifact is a634797612c667b98780cec65401a1e7baecea4b6a93314ec9e8eb21724bd330
+2026-04-29T19:08:52.9539608Z Artifact download completed successfully.
+2026-04-29T19:08:52.9543059Z Total of 1 artifact(s) downloaded
+2026-04-29T19:08:52.9550838Z Download artifact has finished successfully

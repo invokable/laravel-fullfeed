@@ -1,0 +1,106 @@
+﻿2026-04-29T19:07:26.3854428Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-04-29T19:07:26.3854829Z with:
+2026-04-29T19:07:26.3858645Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+
+const substitutePlaceholders = require('/home/runner/work/_temp/gh-aw/actions/substitute_placeholders.cjs');
+
+// Call the substitution function
+return await substitutePlaceholders({
+  file: process.env.GH_AW_PROMPT,
+  substitutions: {
+    GH_AW_ALLOWED_EXTENSIONS: process.env.GH_AW_ALLOWED_EXTENSIONS,
+    GH_AW_CACHE_DESCRIPTION: process.env.GH_AW_CACHE_DESCRIPTION,
+    GH_AW_CACHE_DIR: process.env.GH_AW_CACHE_DIR,
+    GH_AW_GITHUB_ACTOR: process.env.GH_AW_GITHUB_ACTOR,
+    GH_AW_GITHUB_EVENT_COMMENT_ID: process.env.GH_AW_GITHUB_EVENT_COMMENT_ID,
+    GH_AW_GITHUB_EVENT_DISCUSSION_NUMBER: process.env.GH_AW_GITHUB_EVENT_DISCUSSION_NUMBER,
+    GH_AW_GITHUB_EVENT_ISSUE_NUMBER: process.env.GH_AW_GITHUB_EVENT_ISSUE_NUMBER,
+    GH_AW_GITHUB_EVENT_PULL_REQUEST_NUMBER: process.env.GH_AW_GITHUB_EVENT_PULL_REQUEST_NUMBER,
+    GH_AW_GITHUB_REPOSITORY: process.env.GH_AW_GITHUB_REPOSITORY,
+    GH_AW_GITHUB_RUN_ID: process.env.GH_AW_GITHUB_RUN_ID,
+    GH_AW_GITHUB_WORKSPACE: process.env.GH_AW_GITHUB_WORKSPACE
+  }
+});
+
+2026-04-29T19:07:26.3863280Z   github-token: ***
+2026-04-29T19:07:26.3863470Z   debug: false
+2026-04-29T19:07:26.3863662Z   user-agent: actions/github-script
+2026-04-29T19:07:26.3863905Z   result-encoding: json
+2026-04-29T19:07:26.3864091Z   retries: 0
+2026-04-29T19:07:26.3864294Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-04-29T19:07:26.3864556Z env:
+2026-04-29T19:07:26.3868802Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:07:26.3875249Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:07:26.3875964Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 821d64e1eb93fafa
+2026-04-29T19:07:26.3876253Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489633855
+2026-04-29T19:07:26.3876546Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-04-29T19:07:26.3876814Z   GH_AW_ALLOWED_EXTENSIONS: 
+2026-04-29T19:07:26.3877047Z   GH_AW_CACHE_DESCRIPTION: 
+2026-04-29T19:07:26.3878195Z   GH_AW_CACHE_DIR: /tmp/gh-aw/cache-memory/
+2026-04-29T19:07:26.3878476Z   GH_AW_GITHUB_ACTOR: kawax
+2026-04-29T19:07:26.3878702Z   GH_AW_GITHUB_EVENT_COMMENT_ID: 
+2026-04-29T19:07:26.3879684Z   GH_AW_GITHUB_EVENT_DISCUSSION_NUMBER: 
+2026-04-29T19:07:26.3880953Z   GH_AW_GITHUB_EVENT_ISSUE_NUMBER: 
+2026-04-29T19:07:26.3881483Z   GH_AW_GITHUB_EVENT_PULL_REQUEST_NUMBER: 
+2026-04-29T19:07:26.3882371Z   GH_AW_GITHUB_REPOSITORY: invokable/laravel-fullfeed
+2026-04-29T19:07:26.3882692Z   GH_AW_GITHUB_RUN_ID: 25128117684
+2026-04-29T19:07:26.3883057Z   GH_AW_GITHUB_WORKSPACE: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-29T19:07:26.3883417Z ##[endgroup]
+2026-04-29T19:07:26.5501396Z [substitutePlaceholders] /tmp/gh-aw/aw-prompts/prompt.txt (11 substitution(s))

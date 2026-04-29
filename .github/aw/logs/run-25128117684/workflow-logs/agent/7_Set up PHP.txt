@@ -1,0 +1,87 @@
+﻿2026-04-29T19:07:49.8283035Z ##[group]Run shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f
+2026-04-29T19:07:49.8283730Z with:
+2026-04-29T19:07:49.8283924Z   extensions: mbstring
+2026-04-29T19:07:49.8284172Z   php-version: 8.5
+2026-04-29T19:07:49.8284373Z   ini-file: production
+2026-04-29T19:07:49.8284762Z   github-token: ***
+2026-04-29T19:07:49.8284975Z env:
+2026-04-29T19:07:49.8285149Z   DEFAULT_BRANCH: main
+2026-04-29T19:07:49.8285379Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-04-29T19:07:49.8285607Z   GH_AW_ASSETS_BRANCH: 
+2026-04-29T19:07:49.8285813Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-04-29T19:07:49.8286084Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:07:49.8286404Z   GH_AW_WORKFLOW_ID_SANITIZED: portrulesdirect
+2026-04-29T19:07:49.8290737Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:07:49.8295919Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:07:49.8296264Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fafde3ee818bbe3
+2026-04-29T19:07:49.8296559Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489668662
+2026-04-29T19:07:49.8296814Z ##[endgroup]
+2026-04-29T19:07:49.8677163Z [command]/usr/bin/bash /home/runner/work/_actions/shivammathur/setup-php/accd6127cb78bee3e8082180cb391013d204ef9f/src/scripts/run.sh
+2026-04-29T19:07:49.9161906Z 
+2026-04-29T19:07:49.9162567Z [90;1m==> [0m[37;1mSetup PHP[0m
+2026-04-29T19:07:55.3982151Z [32;1m✓ [0m[34;1mPHP [0m[90;1mInstalled PHP 8.5.5[0m
+2026-04-29T19:07:55.3983019Z 
+2026-04-29T19:07:55.3983360Z [90;1m==> [0m[37;1mSetup Extensions[0m
+2026-04-29T19:07:55.4627012Z [32;1m✓ [0m[34;1mmbstring [0m[90;1mEnabled[0m
+2026-04-29T19:07:55.4627583Z 
+2026-04-29T19:07:55.4627868Z [90;1m==> [0m[37;1mSetup Tools[0m
+2026-04-29T19:07:55.7733803Z [32;1m✓ [0m[34;1mcomposer [0m[90;1mAdded composer 2.9.7[0m
+2026-04-29T19:07:55.7735258Z 
+2026-04-29T19:07:55.7735617Z [90;1m==> [0m[37;1mSponsor setup-php[0m
+2026-04-29T19:07:55.7736358Z [32;1m✓ [0m[34;1msetup-php [0m[90;1mhttps://setup-php.com/sponsor[0m

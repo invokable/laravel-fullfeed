@@ -1,0 +1,87 @@
+﻿2026-04-29T19:08:05.9364748Z ##[group]Run actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae
+2026-04-29T19:08:05.9365146Z with:
+2026-04-29T19:08:05.9365403Z   key: memory-none-nopolicy-portrulesdirect-25128117684
+2026-04-29T19:08:05.9365739Z   path: /tmp/gh-aw/cache-memory
+2026-04-29T19:08:05.9366052Z   restore-keys: memory-none-nopolicy-portrulesdirect-
+
+2026-04-29T19:08:05.9366388Z   enableCrossOsArchive: false
+2026-04-29T19:08:05.9366621Z   fail-on-cache-miss: false
+2026-04-29T19:08:05.9366853Z   lookup-only: false
+2026-04-29T19:08:05.9367057Z   save-always: false
+2026-04-29T19:08:05.9367254Z env:
+2026-04-29T19:08:05.9367429Z   DEFAULT_BRANCH: main
+2026-04-29T19:08:05.9367630Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-04-29T19:08:05.9367851Z   GH_AW_ASSETS_BRANCH: 
+2026-04-29T19:08:05.9368051Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-04-29T19:08:05.9368307Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:08:05.9368631Z   GH_AW_WORKFLOW_ID_SANITIZED: portrulesdirect
+2026-04-29T19:08:05.9373264Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:05.9377940Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:05.9378285Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fafde3ee818bbe3
+2026-04-29T19:08:05.9378575Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489668662
+2026-04-29T19:08:05.9378843Z   COMPOSER_PROCESS_TIMEOUT: 0
+2026-04-29T19:08:05.9379076Z   COMPOSER_NO_INTERACTION: 1
+2026-04-29T19:08:05.9379298Z   COMPOSER_NO_AUDIT: 1
+2026-04-29T19:08:05.9379509Z ##[endgroup]
+2026-04-29T19:08:06.3308362Z Cache hit for restore-key: memory-none-nopolicy-portrulesdirect-25072525992
+2026-04-29T19:08:07.0085862Z Received 24339 of 24339 (100.0%), 0.1 MBs/sec
+2026-04-29T19:08:07.0086427Z Cache Size: ~0 MB (24339 B)
+2026-04-29T19:08:07.0122104Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1b4cdd69-b072-4551-8d2c-e6266479ba12/cache.tzst -P -C /home/runner/work/laravel-fullfeed/laravel-fullfeed --use-compress-program unzstd
+2026-04-29T19:08:07.0223324Z Cache restored successfully
+2026-04-29T19:08:07.0304421Z Cache restored from key: memory-none-nopolicy-portrulesdirect-25072525992

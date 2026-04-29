@@ -1,0 +1,25 @@
+﻿2026-04-29T19:08:51.3248920Z ##[group]Run github/gh-aw-actions/setup@239aec45b78c8799417efdd5bc6d8cc036629ec1
+2026-04-29T19:08:51.3250478Z with:
+2026-04-29T19:08:51.3250933Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-04-29T19:08:51.3251499Z   job-name: safe_outputs
+2026-04-29T19:08:51.3251941Z   trace-id: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:51.3252525Z   safe-output-artifact-client: false
+2026-04-29T19:08:51.3253328Z env:
+2026-04-29T19:08:51.3253838Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-29T19:08:51.3254502Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-29T19:08:51.3254918Z   GH_AW_ENGINE_ID: copilot
+2026-04-29T19:08:51.3255330Z   GH_AW_ENGINE_MODEL: auto
+2026-04-29T19:08:51.3255735Z   GH_AW_ENGINE_VERSION: 1.0.35
+2026-04-29T19:08:51.3256182Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-29T19:08:51.3256718Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-29T19:08:51.3257220Z ##[endgroup]
+2026-04-29T19:08:52.2543103Z Successfully copied 334 files to /home/runner/work/_temp/gh-aw/actions
+2026-04-29T19:08:52.3806782Z Successfully copied 24 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-04-29T19:08:52.4491447Z Successfully copied 59 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-04-29T19:08:52.4574921Z [otlp] INPUT_TRACE_ID=aeddfc875c93f2e969d6e7590a457ab3 (will reuse activation trace)
+2026-04-29T19:08:52.4590705Z [otlp] OTEL_EXPORTER_OTLP_ENDPOINT not set, skipping setup span
+2026-04-29T19:08:52.4606358Z [otlp] resolved trace-id=aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:52.4611156Z [otlp] trace-id=aeddfc875c93f2e969d6e7590a457ab3 written to GITHUB_OUTPUT
+2026-04-29T19:08:52.4616087Z [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-04-29T19:08:52.4620687Z [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-04-29T19:08:52.4624627Z [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV

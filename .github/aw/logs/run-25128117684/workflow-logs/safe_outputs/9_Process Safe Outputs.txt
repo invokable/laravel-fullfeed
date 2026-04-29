@@ -1,0 +1,94 @@
+﻿2026-04-29T19:08:53.5909688Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-04-29T19:08:53.5910468Z with:
+2026-04-29T19:08:53.5911124Z   github-token: ***
+2026-04-29T19:08:53.5912779Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/safe_output_handler_manager.cjs');
+await main();
+
+2026-04-29T19:08:53.5914557Z   debug: false
+2026-04-29T19:08:53.5914967Z   user-agent: actions/github-script
+2026-04-29T19:08:53.5915475Z   result-encoding: json
+2026-04-29T19:08:53.5915898Z   retries: 0
+2026-04-29T19:08:53.5916783Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-04-29T19:08:53.5917322Z env:
+2026-04-29T19:08:53.5917856Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-29T19:08:53.5918534Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-29T19:08:53.5918976Z   GH_AW_ENGINE_ID: copilot
+2026-04-29T19:08:53.5919654Z   GH_AW_ENGINE_MODEL: auto
+2026-04-29T19:08:53.5920155Z   GH_AW_ENGINE_VERSION: 1.0.35
+2026-04-29T19:08:53.5920625Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-29T19:08:53.5921159Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-29T19:08:53.5928036Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:53.5950856Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:53.5951572Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 35abaaed1c7d0d38
+2026-04-29T19:08:53.5952171Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489732462
+2026-04-29T19:08:53.5952710Z   GH_HOST: github.com
+2026-04-29T19:08:53.5953194Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-04-29T19:08:53.5966910Z   GH_AW_ALLOWED_DOMAINS: api.business.githubcopilot.com,api.enterprise.githubcopilot.com,api.github.com,api.githubcopilot.com,api.individual.githubcopilot.com,api.snapcraft.io,archive.ubuntu.com,azure.archive.ubuntu.com,crl.geotrust.com,crl.globalsign.com,crl.identrust.com,crl.sectigo.com,crl.thawte.com,crl.usertrust.com,crl.verisign.com,crl3.digicert.com,crl4.digicert.com,crls.ssl.com,github.com,host.docker.internal,json-schema.org,json.schemastore.org,keyserver.ubuntu.com,ocsp.digicert.com,ocsp.geotrust.com,ocsp.globalsign.com,ocsp.identrust.com,ocsp.sectigo.com,ocsp.ssl.com,ocsp.thawte.com,ocsp.usertrust.com,ocsp.verisign.com,packagecloud.io,packages.cloud.google.com,packages.microsoft.com,ppa.launchpad.net,raw.githubusercontent.com,registry.npmjs.org,s.symcb.com,s.symcd.com,security.ubuntu.com,telemetry.enterprise.githubcopilot.com,ts-crl.ws.symantec.com,ts-ocsp.ws.symantec.com,www.googleapis.com
+2026-04-29T19:08:53.5979991Z   GITHUB_SERVER_URL: https://github.com
+2026-04-29T19:08:53.5980539Z   GITHUB_API_URL: https://api.github.com
+2026-04-29T19:08:53.5985890Z   GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["port"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","AGENTS.md","CLAUDE.md","GEMINI.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/",".githooks/",".husky/"],"reviewers":["kawax"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-04-29T19:08:53.5991378Z   GH_AW_CI_TRIGGER_TOKEN: 
+2026-04-29T19:08:53.5991818Z ##[endgroup]
+2026-04-29T19:08:53.7250727Z Safe Output Handler Manager starting...
+2026-04-29T19:08:53.7262381Z Loaded config from GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["port"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","AGENTS.md","CLAUDE.md","GEMINI.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/",".githooks/",".husky/"],"reviewers":["kawax"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-04-29T19:08:53.7276111Z Agent output content length: 13
+2026-04-29T19:08:53.7278057Z Found 0 message(s) in agent output
+2026-04-29T19:08:53.7281515Z No safe-output messages available - nothing to process

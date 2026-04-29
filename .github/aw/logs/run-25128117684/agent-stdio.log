@@ -1,0 +1,10 @@
+[copilot-driver] 2026-04-29T19:08:23.271Z starting: command=copilot maxRetries=3 initialDelayMs=5000 backoffMultiplier=2 maxDelayMs=60000 nodeVersion=v20.20.2 platform=linux
+[copilot-driver] 2026-04-29T19:08:23.275Z pre-flight: command not found: copilot (F_OK check failed — binary does not exist at this path)
+[copilot-driver] 2026-04-29T19:08:23.275Z resolved --prompt-file: path=/tmp/gh-aw/aw-prompts/prompt.txt size=7535B
+[copilot-driver] 2026-04-29T19:08:23.275Z attempt 1: spawning: copilot --add-dir /tmp/ --add-dir /tmp/gh-aw/ --add-dir /tmp/gh-aw/agent/ --log-level all --log-dir /tmp/gh-aw/sandbox/agent/logs/ --disable-builtin-mcps --no-ask-user --agent port-rules --allow-all-tools --add-dir /tmp/gh-aw/cache-memory/ --allow-all-paths -p <redacted>
+[copilot-driver] 2026-04-29T19:08:23.278Z attempt 1: process started (pid=4592)
+[copilot-driver] 2026-04-29T19:08:26.019Z attempt 1: process exit event exitCode=1
+[copilot-driver] 2026-04-29T19:08:26.019Z attempt 1: process closed exitCode=1 duration=2s stdout=0B stderr=0B hasOutput=false
+[copilot-driver] 2026-04-29T19:08:26.019Z attempt 1 failed: exitCode=1 isCAPIError400=false isMCPPolicyError=false isModelNotSupportedError=false isAuthError=false hasOutput=false retriesRemaining=3
+[copilot-driver] 2026-04-29T19:08:26.019Z attempt 1: no output produced — not retrying (possible causes: binary not found, permission denied, auth failure, or silent startup crash)
+[copilot-driver] 2026-04-29T19:08:26.019Z done: exitCode=1 totalDuration=2s

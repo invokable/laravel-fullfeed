@@ -1,0 +1,45 @@
+From be62db8d66b7f18f15d0c8971192c1fde19ae387 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Tue, 28 Apr 2026 19:14:30 +0000
+Subject: [PATCH] chore: ignore iroirosokuhou rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 13 -------------
+ 2 files changed, 1 insertion(+), 13 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index e1b707a..ee2ad1f 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -35,3 +35,4 @@ ## 今後無視するURL
+ - `^http://rakukan\.net/article/\d+\.html$` (rakukan.net) - 2026-04-08 確認、リダイレクトにより接続不可
+ - `^https://www\.mangajunky\.net/blog-entry-\d+\.html$` (マンガ中毒) - 2026-04-13 確認、サイトがオンラインカジノに転換、記事URLは404
+ - `^https?://oeste\.jp/(blog|kodawari)/` (オエステ会) - 2026-04-20 確認、接続不可
++- `^http://iroirosokuhou\.com/archives/\d+\.html$` (色々まとめ速報) - 2026-04-28 確認、接続不可（403 Forbidden）
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index 2b4b80e..91fd005 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,17 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82035",
+-        "name": "色々まとめ速報",
+-        "created_by": "r5hbne30",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2018-12-09T22:20:03+09:00",
+-        "data": {
+-            "url": "^http://iroirosokuhou\\.com/archives/\\d+\\.html$",
+-            "type": "IND",
+-            "xpath": "id(\"main-inner\")//div[@class=\"article-body-inner\"]"
+-        },
+-        "created_at": "2018-12-07T15:45:16+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82034",
+         "name": "ちゃん速",
+-- 
+2.54.0
+

@@ -1,0 +1,70 @@
+From 83935ce9f5c2bd8492b912f9319caa15ba4c1455 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Sun, 26 Apr 2026 18:34:46 +0000
+Subject: [PATCH] Port comic-news24.info fullfeed rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 16 ----------------
+ resources/fullfeed/plus.json      |  7 +++++++
+ 3 files changed, 8 insertions(+), 16 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index 20afd5f..e1b707a 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -24,6 +24,7 @@ ## 移植完了
+ - `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
+ - `^https?://www\.buntobi\.com/` (文具のとびら) - 2026-04-23 移植完了
+ - `^https://kakakumag\.com/` (価格.comマガジン) - 2026-04-25 移植完了
++- `^https://comic-news24\.info/archives/\d+$` (ワールドトリガーまとめブログ) - 2026-04-26 移植完了
+ 
+ ## 今後無視するURL
+ 
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index 72c8d62..2b4b80e 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,20 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82036",
+-        "name": "2f3a03c89dbf8a0bd53d6055d0acd801",
+-        "created_by": "r5hbne30",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2018-12-07T15:51:04+09:00",
+-        "data": {
+-            "microformats": "",
+-            "base": "",
+-            "type": "IND",
+-            "url": "^http://comic-news24\\.info/archives/\\d+$",
+-            "enc": "",
+-            "xpath": "id(\"the-content\")"
+-        },
+-        "created_at": "2018-12-07T15:51:04+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82035",
+         "name": "色々まとめ速報",
+diff --git a/resources/fullfeed/plus.json b/resources/fullfeed/plus.json
+index e0956e6..7250043 100644
+--- a/resources/fullfeed/plus.json
++++ b/resources/fullfeed/plus.json
+@@ -313,6 +313,13 @@
+             "selector": "div.articleBody"
+         }
+     },
++    {
++        "name": "ワールドトリガーまとめブログ",
++        "data": {
++            "url": "^https:\/\/comic-news24\\.info\/archives\/\\d+$",
++            "selector": "div#the-content"
++        }
++    },
+     {
+         "name": "一生非正規雇用で生きてくブログ",
+         "data": {
+-- 
+2.53.0
+

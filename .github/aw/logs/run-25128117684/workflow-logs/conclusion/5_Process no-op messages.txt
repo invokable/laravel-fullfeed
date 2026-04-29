@@ -1,0 +1,83 @@
+﻿2026-04-29T19:10:33.6963478Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-04-29T19:10:33.6964457Z with:
+2026-04-29T19:10:33.6965127Z   github-token: ***
+2026-04-29T19:10:33.6966044Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/handle_noop_message.cjs');
+await main();
+
+2026-04-29T19:10:33.6967009Z   debug: false
+2026-04-29T19:10:33.6967220Z   user-agent: actions/github-script
+2026-04-29T19:10:33.6967481Z   result-encoding: json
+2026-04-29T19:10:33.6967714Z   retries: 0
+2026-04-29T19:10:33.6967930Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-04-29T19:10:33.6968203Z env:
+2026-04-29T19:10:33.6972149Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:10:33.6977219Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:10:33.6977598Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 427ada8e4c89fc98
+2026-04-29T19:10:33.6977894Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489832337
+2026-04-29T19:10:33.6978215Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-04-29T19:10:33.6978500Z   GH_AW_NOOP_MAX: 1
+2026-04-29T19:10:33.6978738Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-29T19:10:33.6979187Z   GH_AW_RUN_URL: https://github.com/invokable/laravel-fullfeed/actions/runs/25128117684
+2026-04-29T19:10:33.6979713Z   GH_AW_AGENT_CONCLUSION: failure
+2026-04-29T19:10:33.6979975Z   GH_AW_NOOP_REPORT_AS_ISSUE: true
+2026-04-29T19:10:33.6980230Z ##[endgroup]
+2026-04-29T19:10:33.8519575Z Agent output content length: 13
+2026-04-29T19:10:33.8524843Z No noop items found in agent output

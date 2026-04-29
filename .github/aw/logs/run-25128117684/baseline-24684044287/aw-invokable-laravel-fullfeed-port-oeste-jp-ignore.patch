@@ -1,0 +1,45 @@
+From 53d0dc7f9363a8a215456e7e45ec64afc216a473 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Mon, 20 Apr 2026 18:46:05 +0000
+Subject: [PATCH] chore: ignore unavailable oeste.jp rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 13 -------------
+ 2 files changed, 1 insertion(+), 13 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index 57168a5..0b96677 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -28,3 +28,4 @@ ## 今後無視するURL
+ - `https://moti-soku.com/` (気になるVtuber速報) - 2026-04-06 確認、ドメインパーキング（ParkLogic）により接続不可
+ - `^http://rakukan\.net/article/\d+\.html$` (rakukan.net) - 2026-04-08 確認、リダイレクトにより接続不可
+ - `^https://www\.mangajunky\.net/blog-entry-\d+\.html$` (マンガ中毒) - 2026-04-13 確認、サイトがオンラインカジノに転換、記事URLは404
++- `^https?://oeste\.jp/(blog|kodawari)/` (オエステ会) - 2026-04-20 確認、接続不可
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index 76d65bf..7ad87eb 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,17 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82153",
+-        "data": {
+-            "type": "IND",
+-            "xpath": "//div[@class='post_content clearfix']/p",
+-            "url": "^https?://oeste\\.jp/(blog|kodawari)/"
+-        },
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "created_by": "zxcvbnm001",
+-        "name": "オエステ会",
+-        "created_at": "2019-05-16T17:41:05+09:00",
+-        "updated_at": "2020-08-03T12:00:02+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82144",
+         "name": "0d479f5c395013bdb1b3f17e0629a645",
+-- 
+2.53.0
+

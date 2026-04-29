@@ -1,0 +1,1058 @@
+﻿2026-04-25T18:31:39.1295821Z Current runner version: '2.333.1'
+2026-04-25T18:31:39.1319500Z ##[group]Runner Image Provisioner
+2026-04-25T18:31:39.1320317Z Hosted Compute Agent
+2026-04-25T18:31:39.1320928Z Version: 20260213.493
+2026-04-25T18:31:39.1321591Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-25T18:31:39.1322457Z Build Date: 2026-02-13T00:28:41Z
+2026-04-25T18:31:39.1323564Z Worker ID: {fea5a3e1-4c97-47b5-90ab-84acbad7813c}
+2026-04-25T18:31:39.1324294Z Azure Region: northcentralus
+2026-04-25T18:31:39.1324888Z ##[endgroup]
+2026-04-25T18:31:39.1326288Z ##[group]VM Image
+2026-04-25T18:31:39.1326863Z - OS: Linux (x64)
+2026-04-25T18:31:39.1327417Z - Source: Docker
+2026-04-25T18:31:39.1327910Z - Name: ubuntu:24.04
+2026-04-25T18:31:39.1328386Z - Version: 20260413.54.1
+2026-04-25T18:31:39.1328928Z ##[endgroup]
+2026-04-25T18:31:39.1330066Z ##[group]GITHUB_TOKEN Permissions
+2026-04-25T18:31:39.1332194Z Contents: write
+2026-04-25T18:31:39.1332732Z Issues: write
+2026-04-25T18:31:39.1333738Z Metadata: read
+2026-04-25T18:31:39.1334360Z PullRequests: write
+2026-04-25T18:31:39.1334883Z ##[endgroup]
+2026-04-25T18:31:39.1337035Z Secret source: Actions
+2026-04-25T18:31:39.1337890Z Prepare workflow directory
+2026-04-25T18:31:39.2247951Z Prepare all required actions
+2026-04-25T18:31:39.2296602Z Getting action download info
+2026-04-25T18:31:39.8539448Z Download action repository 'github/gh-aw-actions@ba90f2186d7ad780ec640f364005fa24e797b360' (SHA:ba90f2186d7ad780ec640f364005fa24e797b360)
+2026-04-25T18:31:40.4044237Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+2026-04-25T18:31:40.8044549Z Download action repository 'actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd' (SHA:de0fac2e4500dabe0009e67214ff5f5447ce83dd)
+2026-04-25T18:31:40.9648117Z Download action repository 'actions/github-script@373c709c69115d41ff229c7e5df9f8788daa9553' (SHA:373c709c69115d41ff229c7e5df9f8788daa9553)
+2026-04-25T18:31:41.3599976Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-04-25T18:31:42.0742206Z Complete job name: safe_outputs
+2026-04-25T18:31:42.1783851Z ##[group]Run github/gh-aw-actions/setup@ba90f2186d7ad780ec640f364005fa24e797b360
+2026-04-25T18:31:42.1785792Z with:
+2026-04-25T18:31:42.1786272Z   destination: /home/runner/work/_temp/gh-aw/actions
+2026-04-25T18:31:42.1787662Z   job-name: safe_outputs
+2026-04-25T18:31:42.1788134Z   trace-id: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:42.1788948Z   safe-output-artifact-client: false
+2026-04-25T18:31:42.1790151Z env:
+2026-04-25T18:31:42.1790693Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:42.1792073Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:42.1792506Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:42.1793725Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:42.1794216Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:42.1794749Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:42.1795946Z ##[endgroup]
+2026-04-25T18:31:43.9635564Z Successfully copied 309 files to /home/runner/work/_temp/gh-aw/actions
+2026-04-25T18:31:44.1716808Z Successfully copied 24 mcp-scripts files to /home/runner/work/_temp/gh-aw/mcp-scripts
+2026-04-25T18:31:44.2845394Z Successfully copied 55 safe-outputs files to /home/runner/work/_temp/gh-aw/safeoutputs
+2026-04-25T18:31:44.3063022Z [otlp] INPUT_TRACE_ID=45ba7233946642924a85947bbd7ab2bd (will reuse activation trace)
+2026-04-25T18:31:44.3067809Z [otlp] OTEL_EXPORTER_OTLP_ENDPOINT not set, skipping setup span
+2026-04-25T18:31:44.3096035Z [otlp] resolved trace-id=45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:44.3101648Z [otlp] trace-id=45ba7233946642924a85947bbd7ab2bd written to GITHUB_OUTPUT
+2026-04-25T18:31:44.3108484Z [otlp] GITHUB_AW_OTEL_TRACE_ID written to GITHUB_ENV
+2026-04-25T18:31:44.3112858Z [otlp] GITHUB_AW_OTEL_PARENT_SPAN_ID written to GITHUB_ENV
+2026-04-25T18:31:44.3124938Z [otlp] GITHUB_AW_OTEL_JOB_START_MS written to GITHUB_ENV
+2026-04-25T18:31:44.3581270Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-04-25T18:31:44.3584207Z with:
+2026-04-25T18:31:44.3584593Z   name: agent
+2026-04-25T18:31:44.3585415Z   path: /tmp/gh-aw/
+2026-04-25T18:31:44.3585841Z   merge-multiple: false
+2026-04-25T18:31:44.3586290Z   repository: invokable/laravel-fullfeed
+2026-04-25T18:31:44.3587439Z   run-id: 24937652426
+2026-04-25T18:31:44.3588546Z   skip-decompress: false
+2026-04-25T18:31:44.3589005Z   digest-mismatch: error
+2026-04-25T18:31:44.3589399Z env:
+2026-04-25T18:31:44.3590816Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:44.3592822Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:44.3593555Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:44.3593996Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:44.3594442Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:44.3595413Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:44.3615398Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:44.3631121Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:44.3632531Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:44.3633825Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:44.3634359Z ##[endgroup]
+2026-04-25T18:31:44.6629165Z Downloading single artifact
+2026-04-25T18:31:44.8162474Z Preparing to download the following artifacts:
+2026-04-25T18:31:44.8166683Z - agent (ID: 6641799588, Size: 952789, Expected Digest: sha256:7a41d0c513f6b5b4d093a3c45bed17d2a0beeb57bb87742406ee17756cee8d39)
+2026-04-25T18:31:45.0072295Z Redirecting to blob download url: https://productionresultssa9.blob.core.windows.net/actions-results/ae146370-2c8a-41e1-80e7-2ee02cf6bdcd/workflow-job-run-8930ba94-71ab-5794-b06d-704d26c4008a/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-04-25T18:31:45.0077827Z Starting download of artifact to: /tmp/gh-aw
+2026-04-25T18:31:45.1346946Z (node:1037) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-04-25T18:31:45.1348786Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-25T18:31:45.3553026Z SHA256 digest of downloaded artifact is 7a41d0c513f6b5b4d093a3c45bed17d2a0beeb57bb87742406ee17756cee8d39
+2026-04-25T18:31:45.3557494Z Artifact download completed successfully.
+2026-04-25T18:31:45.3561052Z Total of 1 artifact(s) downloaded
+2026-04-25T18:31:45.3568890Z Download artifact has finished successfully
+2026-04-25T18:31:45.3698207Z ##[group]Run mkdir -p /tmp/gh-aw/
+2026-04-25T18:31:45.3698809Z [36;1mmkdir -p /tmp/gh-aw/[0m
+2026-04-25T18:31:45.3699346Z [36;1mfind "/tmp/gh-aw/" -type f -print[0m
+2026-04-25T18:31:45.3700119Z [36;1mecho "GH_AW_AGENT_OUTPUT=/tmp/gh-aw/agent_output.json" >> "$GITHUB_OUTPUT"[0m
+2026-04-25T18:31:45.3709189Z shell: /usr/bin/bash -e {0}
+2026-04-25T18:31:45.3709676Z env:
+2026-04-25T18:31:45.3710234Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:45.3710922Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:45.3711365Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:45.3711812Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:45.3712261Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:45.3712797Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:45.3720174Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:45.3728120Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:45.3728767Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:45.3729340Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:45.3729842Z ##[endgroup]
+2026-04-25T18:31:45.3824875Z /tmp/gh-aw/agent-stdio.log
+2026-04-25T18:31:45.3825607Z /tmp/gh-aw/safeoutputs.jsonl
+2026-04-25T18:31:45.3826239Z /tmp/gh-aw/aw-prompts/prompt.txt
+2026-04-25T18:31:45.3868726Z /tmp/gh-aw/github_rate_limits.jsonl
+2026-04-25T18:31:45.3869484Z /tmp/gh-aw/aw-invokable-laravel-fullfeed-port-kakakumag-20260425.patch
+2026-04-25T18:31:45.3870211Z /tmp/gh-aw/otel.jsonl
+2026-04-25T18:31:45.3870642Z /tmp/gh-aw/mcp-logs/gateway.md
+2026-04-25T18:31:45.3871115Z /tmp/gh-aw/mcp-logs/tools.json
+2026-04-25T18:31:45.3871586Z /tmp/gh-aw/mcp-logs/rpc-messages.jsonl
+2026-04-25T18:31:45.3872097Z /tmp/gh-aw/mcp-logs/mcp-gateway.log
+2026-04-25T18:31:45.3872598Z /tmp/gh-aw/mcp-logs/safeoutputs.log
+2026-04-25T18:31:45.3873389Z /tmp/gh-aw/mcp-logs/github.log
+2026-04-25T18:31:45.3874011Z /tmp/gh-aw/mcp-logs/stderr.log
+2026-04-25T18:31:45.3874485Z /tmp/gh-aw/mcp-logs/start-gateway.log
+2026-04-25T18:31:45.3875018Z /tmp/gh-aw/mcp-logs/safeoutputs/server.log
+2026-04-25T18:31:45.3875653Z /tmp/gh-aw/sandbox/agent/logs/process-1777141716044-4539.log
+2026-04-25T18:31:45.3876658Z /tmp/gh-aw/sandbox/agent/logs/copilot-session-state/23abfc49-d0da-450b-a389-5171e9bb899b/checkpoints/index.md
+2026-04-25T18:31:45.3877897Z /tmp/gh-aw/sandbox/agent/logs/copilot-session-state/23abfc49-d0da-450b-a389-5171e9bb899b/workspace.yaml
+2026-04-25T18:31:45.3879357Z /tmp/gh-aw/sandbox/agent/logs/copilot-session-state/23abfc49-d0da-450b-a389-5171e9bb899b/plan.md
+2026-04-25T18:31:45.3880529Z /tmp/gh-aw/sandbox/agent/logs/copilot-session-state/23abfc49-d0da-450b-a389-5171e9bb899b/events.jsonl
+2026-04-25T18:31:45.3881394Z /tmp/gh-aw/agent_output.json
+2026-04-25T18:31:45.3966066Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-04-25T18:31:45.3966795Z with:
+2026-04-25T18:31:45.3967146Z   name: agent
+2026-04-25T18:31:45.3967519Z   path: /tmp/gh-aw/
+2026-04-25T18:31:45.3967915Z   merge-multiple: false
+2026-04-25T18:31:45.3968365Z   repository: invokable/laravel-fullfeed
+2026-04-25T18:31:45.3969174Z   run-id: 24937652426
+2026-04-25T18:31:45.3969578Z   skip-decompress: false
+2026-04-25T18:31:45.3970013Z   digest-mismatch: error
+2026-04-25T18:31:45.3970419Z env:
+2026-04-25T18:31:45.3970931Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:45.3971608Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:45.3972149Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:45.3972572Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:45.3973021Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:45.3973890Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:45.3980803Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:45.3988358Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:45.3988993Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:45.3989554Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:45.3990044Z ##[endgroup]
+2026-04-25T18:31:45.5524022Z Downloading single artifact
+2026-04-25T18:31:45.6723001Z Preparing to download the following artifacts:
+2026-04-25T18:31:45.6727212Z - agent (ID: 6641799588, Size: 952789, Expected Digest: sha256:7a41d0c513f6b5b4d093a3c45bed17d2a0beeb57bb87742406ee17756cee8d39)
+2026-04-25T18:31:45.9870583Z (node:1055) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-04-25T18:31:45.9872165Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-25T18:31:45.9877178Z Redirecting to blob download url: https://productionresultssa9.blob.core.windows.net/actions-results/ae146370-2c8a-41e1-80e7-2ee02cf6bdcd/workflow-job-run-8930ba94-71ab-5794-b06d-704d26c4008a/artifacts/d4f0bc5a29de06b510f9aa428f1eedba926012b591fef7a518e776a7c9bd1824.zip
+2026-04-25T18:31:45.9879360Z Starting download of artifact to: /tmp/gh-aw
+2026-04-25T18:31:46.2139946Z SHA256 digest of downloaded artifact is 7a41d0c513f6b5b4d093a3c45bed17d2a0beeb57bb87742406ee17756cee8d39
+2026-04-25T18:31:46.2140980Z Artifact download completed successfully.
+2026-04-25T18:31:46.2142871Z Total of 1 artifact(s) downloaded
+2026-04-25T18:31:46.2144732Z Download artifact has finished successfully
+2026-04-25T18:31:46.2384515Z ##[group]Run actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+2026-04-25T18:31:46.2385789Z with:
+2026-04-25T18:31:46.2386197Z   ref: main
+2026-04-25T18:31:46.2386774Z   token: ***
+2026-04-25T18:31:46.2387716Z   persist-credentials: false
+2026-04-25T18:31:46.2388200Z   fetch-depth: 1
+2026-04-25T18:31:46.2388629Z   repository: invokable/laravel-fullfeed
+2026-04-25T18:31:46.2389136Z   ssh-strict: true
+2026-04-25T18:31:46.2390017Z   ssh-user: git
+2026-04-25T18:31:46.2390447Z   clean: true
+2026-04-25T18:31:46.2390869Z   sparse-checkout-cone-mode: true
+2026-04-25T18:31:46.2391828Z   fetch-tags: false
+2026-04-25T18:31:46.2392259Z   show-progress: true
+2026-04-25T18:31:46.2392659Z   lfs: false
+2026-04-25T18:31:46.2393025Z   submodules: false
+2026-04-25T18:31:46.2394303Z   set-safe-directory: true
+2026-04-25T18:31:46.2394773Z env:
+2026-04-25T18:31:46.2395317Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:46.2396523Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:46.2396982Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:46.2397429Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:46.2398388Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:46.2398979Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:46.2408660Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:46.2418313Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:46.2419525Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:46.2420677Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:46.2421200Z ##[endgroup]
+2026-04-25T18:31:46.7778158Z Syncing repository: invokable/laravel-fullfeed
+2026-04-25T18:31:46.7779893Z ##[group]Getting Git version info
+2026-04-25T18:31:46.7780674Z Working directory is '/home/runner/work/laravel-fullfeed/laravel-fullfeed'
+2026-04-25T18:31:46.7781694Z [command]/usr/bin/git version
+2026-04-25T18:31:46.7782162Z git version 2.53.0
+2026-04-25T18:31:46.7784220Z ##[endgroup]
+2026-04-25T18:31:46.7786222Z Temporarily overriding HOME='/home/runner/work/_temp/41183166-71a8-40e6-9f9f-3d83bb19cccd' before making global git config changes
+2026-04-25T18:31:46.7787497Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-25T18:31:46.7788632Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-25T18:31:46.7790434Z Deleting the contents of '/home/runner/work/laravel-fullfeed/laravel-fullfeed'
+2026-04-25T18:31:46.7791473Z ##[group]Initializing the repository
+2026-04-25T18:31:46.7792184Z [command]/usr/bin/git init /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-25T18:31:46.7793370Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-25T18:31:46.7794445Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-25T18:31:46.7795456Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-25T18:31:46.7796142Z hint: call:
+2026-04-25T18:31:46.7796498Z hint:
+2026-04-25T18:31:46.7796960Z hint: 	git config --global init.defaultBranch <name>
+2026-04-25T18:31:46.7797524Z hint:
+2026-04-25T18:31:46.7798053Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-25T18:31:46.7798923Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-25T18:31:46.7799603Z hint:
+2026-04-25T18:31:46.7799984Z hint: 	git branch -m <name>
+2026-04-25T18:31:46.7800423Z hint:
+2026-04-25T18:31:46.7800986Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-25T18:31:46.7801995Z Initialized empty Git repository in /home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/
+2026-04-25T18:31:46.7803752Z [command]/usr/bin/git remote add origin https://github.com/invokable/laravel-fullfeed
+2026-04-25T18:31:46.7805214Z ##[endgroup]
+2026-04-25T18:31:46.7805875Z ##[group]Disabling automatic garbage collection
+2026-04-25T18:31:46.7806480Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-25T18:31:46.7807722Z ##[endgroup]
+2026-04-25T18:31:46.7808340Z ##[group]Setting up auth
+2026-04-25T18:31:46.7808790Z Removing SSH command configuration
+2026-04-25T18:31:46.7809487Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-25T18:31:46.7811406Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-25T18:31:46.7813296Z Removing HTTP extra header
+2026-04-25T18:31:46.7814097Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-25T18:31:46.7816380Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-25T18:31:46.7818480Z Removing includeIf entries pointing to credentials config files
+2026-04-25T18:31:46.7819355Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-25T18:31:46.7821036Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-25T18:31:46.7827032Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-25T18:31:46.7829784Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:46.7832700Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:46.7835583Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:46.7838216Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:46.7840177Z ##[endgroup]
+2026-04-25T18:31:46.7840807Z ##[group]Fetching the repository
+2026-04-25T18:31:46.7842205Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2026-04-25T18:31:47.0716851Z From https://github.com/invokable/laravel-fullfeed
+2026-04-25T18:31:47.0804752Z  * [new branch]      main       -> origin/main
+2026-04-25T18:31:47.0807203Z ##[endgroup]
+2026-04-25T18:31:47.0807993Z ##[group]Determining the checkout info
+2026-04-25T18:31:47.0865114Z [command]/usr/bin/git branch --list --remote origin/main
+2026-04-25T18:31:47.0870135Z   origin/main
+2026-04-25T18:31:47.0886180Z ##[endgroup]
+2026-04-25T18:31:47.0886662Z [command]/usr/bin/git sparse-checkout disable
+2026-04-25T18:31:47.0951257Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-25T18:31:47.0985830Z ##[group]Checking out the ref
+2026-04-25T18:31:47.0989074Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-25T18:31:47.1139839Z Switched to a new branch 'main'
+2026-04-25T18:31:47.1146736Z branch 'main' set up to track 'origin/main'.
+2026-04-25T18:31:47.1155458Z ##[endgroup]
+2026-04-25T18:31:47.1195161Z [command]/usr/bin/git log -1 --format=%H
+2026-04-25T18:31:47.1217385Z 4969b8288de42af9ce9111c1eeb1371a1ab0b4ab
+2026-04-25T18:31:47.1235136Z ##[group]Removing auth
+2026-04-25T18:31:47.1235809Z Removing SSH command configuration
+2026-04-25T18:31:47.1240565Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-25T18:31:47.1284004Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-25T18:31:47.1471424Z Removing HTTP extra header
+2026-04-25T18:31:47.1477824Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-25T18:31:47.1509002Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-25T18:31:47.1684480Z Removing includeIf entries pointing to credentials config files
+2026-04-25T18:31:47.1688904Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-25T18:31:47.1707500Z includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path
+2026-04-25T18:31:47.1708736Z includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path
+2026-04-25T18:31:47.1709731Z includeif.gitdir:/github/workspace/.git.path
+2026-04-25T18:31:47.1710517Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-04-25T18:31:47.1728059Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path
+2026-04-25T18:31:47.1750369Z /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.1766591Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git.path /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.1798033Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path
+2026-04-25T18:31:47.1816957Z /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.1834691Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/laravel-fullfeed/laravel-fullfeed/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.1867263Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-04-25T18:31:47.1886476Z /github/runner_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.1918940Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.1953793Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-04-25T18:31:47.1988400Z /github/runner_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.2002074Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config
+2026-04-25T18:31:47.2036926Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-25T18:31:47.2292624Z Removing credentials config '/home/runner/work/_temp/git-credentials-797f6c65-004f-4dee-9d2a-e51bc3a255d1.config'
+2026-04-25T18:31:47.2305066Z ##[endgroup]
+2026-04-25T18:31:47.2431312Z ##[group]Run git config --global user.email "github-actions[bot]@users.noreply.github.com"
+2026-04-25T18:31:47.2432440Z [36;1mgit config --global user.email "github-actions[bot]@users.noreply.github.com"[0m
+2026-04-25T18:31:47.2433664Z [36;1mgit config --global user.name "github-actions[bot]"[0m
+2026-04-25T18:31:47.2434308Z [36;1mgit config --global am.keepcr true[0m
+2026-04-25T18:31:47.2434908Z [36;1m# Re-authenticate git with GitHub token[0m
+2026-04-25T18:31:47.2435541Z [36;1mSERVER_URL_STRIPPED="${SERVER_URL#https://}"[0m
+2026-04-25T18:31:47.2436498Z [36;1mgit remote set-url origin "https://x-access-token:${GIT_TOKEN}@${SERVER_URL_STRIPPED}/${REPO_NAME}.git"[0m
+2026-04-25T18:31:47.2437556Z [36;1mecho "Git configured with standard GitHub Actions identity"[0m
+2026-04-25T18:31:47.2442717Z shell: /usr/bin/bash -e {0}
+2026-04-25T18:31:47.2443551Z env:
+2026-04-25T18:31:47.2444138Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:47.2444889Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:47.2445343Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:47.2445785Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:47.2446247Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:47.2446797Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:47.2453994Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:47.2482224Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:47.2482904Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:47.2483717Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:47.2484263Z   REPO_NAME: invokable/laravel-fullfeed
+2026-04-25T18:31:47.2484793Z   SERVER_URL: https://github.com
+2026-04-25T18:31:47.2485498Z   GIT_TOKEN: ***
+2026-04-25T18:31:47.2485904Z ##[endgroup]
+2026-04-25T18:31:47.2570384Z Git configured with standard GitHub Actions identity
+2026-04-25T18:31:47.2609442Z ##[group]Run # Derive GH_HOST from GITHUB_SERVER_URL so the gh CLI targets the correct
+2026-04-25T18:31:47.2610450Z [36;1m# Derive GH_HOST from GITHUB_SERVER_URL so the gh CLI targets the correct[0m
+2026-04-25T18:31:47.2611361Z [36;1m# GitHub instance (GHES/GHEC). On github.com this is a harmless no-op.[0m
+2026-04-25T18:31:47.2612112Z [36;1mGH_HOST="${GITHUB_SERVER_URL#https://}"[0m
+2026-04-25T18:31:47.2612684Z [36;1mGH_HOST="${GH_HOST#http://}"[0m
+2026-04-25T18:31:47.2613552Z [36;1mecho "GH_HOST=${GH_HOST}" >> "$GITHUB_ENV"[0m
+2026-04-25T18:31:47.2619557Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-04-25T18:31:47.2620170Z env:
+2026-04-25T18:31:47.2620713Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:47.2621398Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:47.2621880Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:47.2622329Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:47.2622833Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:47.2623774Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:47.2630711Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:47.2638516Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:47.2639170Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:47.2639740Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:47.2640241Z ##[endgroup]
+2026-04-25T18:31:47.2749917Z ##[group]Run actions/github-script@373c709c69115d41ff229c7e5df9f8788daa9553
+2026-04-25T18:31:47.2750642Z with:
+2026-04-25T18:31:47.2751215Z   github-token: ***
+2026-04-25T18:31:47.2752876Z   script: const { setupGlobals } = require('/home/runner/work/_temp/gh-aw/actions/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require('/home/runner/work/_temp/gh-aw/actions/safe_output_handler_manager.cjs');
+await main();
+
+2026-04-25T18:31:47.2755175Z   debug: false
+2026-04-25T18:31:47.2755577Z   user-agent: actions/github-script
+2026-04-25T18:31:47.2756073Z   result-encoding: json
+2026-04-25T18:31:47.2756493Z   retries: 0
+2026-04-25T18:31:47.2756932Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-04-25T18:31:47.2757474Z env:
+2026-04-25T18:31:47.2758002Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:47.2758692Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:47.2759139Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:47.2759613Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:47.2760074Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:47.2760608Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:47.2767750Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:47.2775242Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:47.2775883Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:47.2776462Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:47.2776973Z   GH_HOST: github.com
+2026-04-25T18:31:47.2777442Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-04-25T18:31:47.2789301Z   GH_AW_ALLOWED_DOMAINS: api.business.githubcopilot.com,api.enterprise.githubcopilot.com,api.github.com,api.githubcopilot.com,api.individual.githubcopilot.com,api.snapcraft.io,archive.ubuntu.com,azure.archive.ubuntu.com,crl.geotrust.com,crl.globalsign.com,crl.identrust.com,crl.sectigo.com,crl.thawte.com,crl.usertrust.com,crl.verisign.com,crl3.digicert.com,crl4.digicert.com,crls.ssl.com,github.com,host.docker.internal,json-schema.org,json.schemastore.org,keyserver.ubuntu.com,ocsp.digicert.com,ocsp.geotrust.com,ocsp.globalsign.com,ocsp.identrust.com,ocsp.sectigo.com,ocsp.ssl.com,ocsp.thawte.com,ocsp.usertrust.com,ocsp.verisign.com,packagecloud.io,packages.cloud.google.com,packages.microsoft.com,ppa.launchpad.net,raw.githubusercontent.com,registry.npmjs.org,s.symcb.com,s.symcd.com,security.ubuntu.com,telemetry.enterprise.githubcopilot.com,ts-crl.ws.symantec.com,ts-ocsp.ws.symantec.com,www.googleapis.com
+2026-04-25T18:31:47.2800976Z   GITHUB_SERVER_URL: https://github.com
+2026-04-25T18:31:47.2801518Z   GITHUB_API_URL: https://api.github.com
+2026-04-25T18:31:47.2806721Z   GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["automation"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","AGENTS.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-04-25T18:31:47.2811881Z   GH_AW_CI_TRIGGER_TOKEN: 
+2026-04-25T18:31:47.2812316Z ##[endgroup]
+2026-04-25T18:31:47.4489399Z Safe Output Handler Manager starting...
+2026-04-25T18:31:47.4500676Z Loaded config from GH_AW_SAFE_OUTPUTS_HANDLER_CONFIG: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["automation"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","AGENTS.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-04-25T18:31:47.4514195Z Agent output content length: 1232
+2026-04-25T18:31:47.4517403Z Found 1 message(s) in agent output
+2026-04-25T18:31:47.4523935Z Loading and initializing safe output handlers based on configuration...
+2026-04-25T18:31:47.4592854Z Base branch: (dynamic - resolved per target repo)
+2026-04-25T18:31:47.4596267Z Default target repo: invokable/laravel-fullfeed
+2026-04-25T18:31:47.4598990Z Default labels: automation
+2026-04-25T18:31:47.4601562Z Title prefix: [port] 
+2026-04-25T18:31:47.4604591Z Draft default: true
+2026-04-25T18:31:47.4607184Z If no changes: warn
+2026-04-25T18:31:47.4609645Z Allow empty: false
+2026-04-25T18:31:47.4612322Z Auto-merge: false
+2026-04-25T18:31:47.4615341Z Max count: 1
+2026-04-25T18:31:47.4618041Z Max patch size: 1024 KB
+2026-04-25T18:31:47.4621251Z ✓ Loaded and initialized handler for: create_pull_request
+2026-04-25T18:31:47.4655502Z Max count: unlimited
+2026-04-25T18:31:47.4657047Z ✓ Loaded and initialized handler for: missing_tool
+2026-04-25T18:31:47.4662233Z Max count: unlimited
+2026-04-25T18:31:47.4664110Z ✓ Loaded and initialized handler for: missing_data
+2026-04-25T18:31:47.4668105Z Max count: 1
+2026-04-25T18:31:47.4669661Z ✓ Loaded and initialized handler for: noop
+2026-04-25T18:31:47.4673858Z Max count: unlimited
+2026-04-25T18:31:47.4675369Z ✓ Loaded and initialized handler for: report_incomplete
+2026-04-25T18:31:47.4682856Z Title prefix: [incomplete]
+2026-04-25T18:31:47.4684923Z Default labels: agentic-workflows
+2026-04-25T18:31:47.4686268Z Max count: 1
+2026-04-25T18:31:47.4687709Z ✓ Loaded and initialized handler for: create_report_incomplete_issue
+2026-04-25T18:31:47.4695240Z Loaded 6 handler(s)
+2026-04-25T18:31:47.4704514Z Collected 0 missing tool(s), 0 missing data item(s), 0 noop message(s), and 0 incomplete signal(s)
+2026-04-25T18:31:47.4707331Z Processing 1 message(s) in order of appearance...
+2026-04-25T18:31:47.4708823Z Processing message 1/1: create_pull_request
+2026-04-25T18:31:47.4726534Z Processing create_pull_request: title=Port kakakumag fullfeed rule, bodyLength=824
+2026-04-25T18:31:47.4728551Z Patch file path: /tmp/gh-aw/aw-invokable-laravel-fullfeed-port-kakakumag-20260425.patch
+2026-04-25T18:31:47.4731794Z Target repository: invokable/laravel-fullfeed
+2026-04-25T18:31:47.7556792Z Base branch for invokable/laravel-fullfeed: main
+2026-04-25T18:31:47.7558916Z Patch size: 3 KB (maximum allowed: 1024 KB)
+2026-04-25T18:31:47.7560625Z Patch size validation passed
+2026-04-25T18:31:47.7564746Z Patch content validation passed
+2026-04-25T18:31:47.7576831Z Using branch name from JSONL with added salt: port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:47.7580369Z Branch name sanitized: "port-kakakumag-20260425" -> "port-kakakumag-20260425-4e0f374219658d51"
+2026-04-25T18:31:47.7727800Z Creating pull request with title: [port] Port kakakumag fullfeed rule
+2026-04-25T18:31:47.7730206Z Labels: ["automation","automation"]
+2026-04-25T18:31:47.7732059Z Draft: true
+2026-04-25T18:31:47.7733502Z Body length: 1353
+2026-04-25T18:31:47.7735957Z Generated branch name: port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:47.7737387Z Base branch: main
+2026-04-25T18:31:47.7739034Z Fetching base branch: main
+2026-04-25T18:31:47.7815634Z [command]/usr/bin/git fetch origin main
+2026-04-25T18:31:47.9778829Z From https://github.com/invokable/laravel-fullfeed
+2026-04-25T18:31:47.9793972Z  * branch            main       -> FETCH_HEAD
+2026-04-25T18:31:47.9923478Z [command]/usr/bin/git checkout main
+2026-04-25T18:31:48.0200991Z Already on 'main'
+2026-04-25T18:31:48.0212745Z Your branch is up to date with 'origin/main'.
+2026-04-25T18:31:48.0227904Z Branch should not exist locally, creating new branch from base: port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:48.0284952Z [command]/usr/bin/git checkout -b port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:48.0335045Z Switched to a new branch 'port-kakakumag-20260425-4e0f374219658d51'
+2026-04-25T18:31:48.0366988Z Created new branch from base: port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:48.0367890Z Applying patch...
+2026-04-25T18:31:48.0368926Z Patch preview (first 77 of 77 lines):
+2026-04-25T18:31:48.0369675Z From 40b61ece0b7755ef63aa0ca0a1d394a39c095d51 Mon Sep 17 00:00:00 2001
+2026-04-25T18:31:48.0371093Z From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+2026-04-25T18:31:48.0371871Z Date: Sat, 25 Apr 2026 18:31:13 +0000
+2026-04-25T18:31:48.0372979Z Subject: [PATCH] Port kakakumag fullfeed rule
+2026-04-25T18:31:48.0373809Z 
+2026-04-25T18:31:48.0374167Z Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+2026-04-25T18:31:48.0375398Z ---
+2026-04-25T18:31:48.0375817Z  .github/port.md                   |  1 +
+2026-04-25T18:31:48.0376929Z  resources/fullfeed/items_all.json | 16 ----------------
+2026-04-25T18:31:48.0377657Z  resources/fullfeed/plus.json      | 13 +++++++++++++
+2026-04-25T18:31:48.0378311Z  3 files changed, 14 insertions(+), 16 deletions(-)
+2026-04-25T18:31:48.0378702Z 
+2026-04-25T18:31:48.0379427Z diff --git a/.github/port.md b/.github/port.md
+2026-04-25T18:31:48.0380035Z index 9512812..20afd5f 100644
+2026-04-25T18:31:48.0380952Z --- a/.github/port.md
+2026-04-25T18:31:48.0381428Z +++ b/.github/port.md
+2026-04-25T18:31:48.0382145Z @@ -23,6 +23,7 @@ ## 移植完了
+2026-04-25T18:31:48.0382996Z  - `^http://namekkutake\.livedoor\.blog/archives/\d+\.html$` (まとメメちゃん) - 2026-04-19 移植完了
+2026-04-25T18:31:48.0385755Z  - `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
+2026-04-25T18:31:48.0386839Z  - `^https?://www\.buntobi\.com/` (文具のとびら) - 2026-04-23 移植完了
+2026-04-25T18:31:48.0387616Z +- `^https://kakakumag\.com/` (価格.comマガジン) - 2026-04-25 移植完了
+2026-04-25T18:31:48.0388759Z  
+2026-04-25T18:31:48.0389180Z  ## 今後無視するURL
+2026-04-25T18:31:48.0390350Z  
+2026-04-25T18:31:48.0391013Z diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+2026-04-25T18:31:48.0391780Z index 26e3ef5..72c8d62 100644
+2026-04-25T18:31:48.0392864Z --- a/resources/fullfeed/items_all.json
+2026-04-25T18:31:48.0419888Z +++ b/resources/fullfeed/items_all.json
+2026-04-25T18:31:48.0430563Z @@ -1,20 +1,4 @@
+2026-04-25T18:31:48.0431491Z  [
+2026-04-25T18:31:48.0431885Z -    {
+2026-04-25T18:31:48.0432356Z -        "resource_url": "http://wedata.net/items/82075",
+2026-04-25T18:31:48.0433434Z -        "name": "価格.comマガジン",
+2026-04-25T18:31:48.0434500Z -        "created_by": "zxcvbnm001",
+2026-04-25T18:31:48.0435211Z -        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+2026-04-25T18:31:48.0436561Z -        "updated_at": "2019-02-07T15:30:53+09:00",
+2026-04-25T18:31:48.0439211Z -        "data": {
+2026-04-25T18:31:48.0440278Z -            "microformats": "",
+2026-04-25T18:31:48.0440785Z -            "base": "",
+2026-04-25T18:31:48.0441246Z -            "type": "IND",
+2026-04-25T18:31:48.0441745Z -            "url": "^https://kakakumag\\.com/",
+2026-04-25T18:31:48.0442834Z -            "enc": "",
+2026-04-25T18:31:48.0443563Z -            "xpath": "div[@class=\"article-edit\"]"
+2026-04-25T18:31:48.0444606Z -        },
+2026-04-25T18:31:48.0445058Z -        "created_at": "2019-02-07T15:30:53+09:00"
+2026-04-25T18:31:48.0445585Z -    },
+2026-04-25T18:31:48.0445932Z      {
+2026-04-25T18:31:48.0446892Z          "resource_url": "http://wedata.net/items/82036",
+2026-04-25T18:31:48.0447592Z          "name": "2f3a03c89dbf8a0bd53d6055d0acd801",
+2026-04-25T18:31:48.0448824Z diff --git a/resources/fullfeed/plus.json b/resources/fullfeed/plus.json
+2026-04-25T18:31:48.0449557Z index dce851b..e0956e6 100644
+2026-04-25T18:31:48.0450038Z --- a/resources/fullfeed/plus.json
+2026-04-25T18:31:48.0451022Z +++ b/resources/fullfeed/plus.json
+2026-04-25T18:31:48.0451581Z @@ -327,6 +327,19 @@
+2026-04-25T18:31:48.0452037Z              "selector": "div.topics-articleBody"
+2026-04-25T18:31:48.0453247Z          }
+2026-04-25T18:31:48.0453631Z      },
+2026-04-25T18:31:48.0453971Z +    {
+2026-04-25T18:31:48.0454487Z +        "name": "価格.comマガジン",
+2026-04-25T18:31:48.0455510Z +        "data": {
+2026-04-25T18:31:48.0455969Z +            "url": "^https:\/\/kakakumag\\.com\/",
+2026-04-25T18:31:48.0457032Z +            "selector": "div.article-edit",
+2026-04-25T18:31:48.0457597Z +            "after_callable": [
+2026-04-25T18:31:48.0458158Z +                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
+2026-04-25T18:31:48.0458737Z +            ],
+2026-04-25T18:31:48.0459639Z +            "remove": [
+2026-04-25T18:31:48.0460152Z +                "script"
+2026-04-25T18:31:48.0460567Z +            ]
+2026-04-25T18:31:48.0461435Z +        }
+2026-04-25T18:31:48.0461809Z +    },
+2026-04-25T18:31:48.0462148Z      {
+2026-04-25T18:31:48.0462596Z          "name": "情報管理LOG",
+2026-04-25T18:31:48.0463030Z          "data": {
+2026-04-25T18:31:48.0483945Z -- 
+2026-04-25T18:31:48.0484922Z 2.53.0
+2026-04-25T18:31:48.0485184Z 
+2026-04-25T18:31:48.0485192Z 
+2026-04-25T18:31:48.0485811Z [command]/usr/bin/git am --3way /tmp/gh-aw/aw-invokable-laravel-fullfeed-port-kakakumag-20260425.patch
+2026-04-25T18:31:48.1092700Z Applying: Port kakakumag fullfeed rule
+2026-04-25T18:31:48.1144478Z Patch applied successfully
+2026-04-25T18:31:48.1164896Z [command]/usr/bin/git ls-remote --heads origin port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:48.2711660Z [command]/usr/bin/git rev-list --parents --topo-order --reverse origin/main..HEAD
+2026-04-25T18:31:48.2744427Z bd55fbeefa7ab1dcf929e4ab1efc6377cbc0786b 4969b8288de42af9ce9111c1eeb1371a1ab0b4ab
+2026-04-25T18:31:48.2757064Z pushSignedCommits: replaying 1 commit(s) via GraphQL createCommitOnBranch (branch: port-kakakumag-20260425-4e0f374219658d51, repo: invokable/laravel-fullfeed)
+2026-04-25T18:31:48.2768018Z [command]/usr/bin/git diff-tree -r --raw bd55fbeefa7ab1dcf929e4ab1efc6377cbc0786b
+2026-04-25T18:31:48.2797528Z bd55fbeefa7ab1dcf929e4ab1efc6377cbc0786b
+2026-04-25T18:31:48.2798998Z :100644 100644 95128129cd923738fc9626aaf1d493a6887249ae 20afd5f436002f1efd7fa78ee6d703573b1bfff5 M	.github/port.md
+2026-04-25T18:31:48.2800706Z :100644 100644 26e3ef56f5b31152abb34c3738b0e234767b2fe8 72c8d62197cc93715d30af6ba68221f0d710ad8d M	resources/fullfeed/items_all.json
+2026-04-25T18:31:48.2802612Z :100644 100644 dce851bf69173aea2fcabaed7092074094f938de e0956e60f29e9b6cd0879cfd6d975423c5015dff M	resources/fullfeed/plus.json
+2026-04-25T18:31:48.3316987Z pushSignedCommits: processing commit 1/1 sha=bd55fbeefa7ab1dcf929e4ab1efc6377cbc0786b
+2026-04-25T18:31:48.3329242Z [command]/usr/bin/git ls-remote origin refs/heads/port-kakakumag-20260425-4e0f374219658d51
+2026-04-25T18:31:48.4610686Z pushSignedCommits: branch port-kakakumag-20260425-4e0f374219658d51 not yet on the remote, resolving parent OID for first commit
+2026-04-25T18:31:48.4620623Z [command]/usr/bin/git rev-parse bd55fbeefa7ab1dcf929e4ab1efc6377cbc0786b^
+2026-04-25T18:31:48.4652663Z 4969b8288de42af9ce9111c1eeb1371a1ab0b4ab
+2026-04-25T18:31:48.4664951Z pushSignedCommits: creating remote branch port-kakakumag-20260425-4e0f374219658d51 at parent OID 4969b8288de42af9ce9111c1eeb1371a1ab0b4ab
+2026-04-25T18:31:48.9891876Z pushSignedCommits: remote branch port-kakakumag-20260425-4e0f374219658d51 created successfully
+2026-04-25T18:31:48.9918424Z [command]/usr/bin/git log -1 --format=%B bd55fbeefa7ab1dcf929e4ab1efc6377cbc0786b
+2026-04-25T18:31:48.9976559Z Port kakakumag fullfeed rule
+2026-04-25T18:31:48.9976991Z 
+2026-04-25T18:31:48.9978845Z Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+2026-04-25T18:31:48.9979522Z 
+2026-04-25T18:31:49.0004655Z pushSignedCommits: commit message headline: "Port kakakumag fullfeed rule"
+2026-04-25T18:31:49.0007782Z pushSignedCommits: file changes: 3 addition(s), 0 deletion(s)
+2026-04-25T18:31:49.0010201Z pushSignedCommits: calling createCommitOnBranch mutation (expectedHeadOid=4969b8288de42af9ce9111c1eeb1371a1ab0b4ab)
+2026-04-25T18:31:50.4801107Z pushSignedCommits: signed commit created: 28723016a53931fc3727ca3db0780f87a494345b
+2026-04-25T18:31:50.4805551Z pushSignedCommits: all 1 commit(s) pushed as signed commits
+2026-04-25T18:31:50.4807788Z Changes pushed to branch
+2026-04-25T18:31:50.4817598Z [command]/usr/bin/git rev-list --count origin/main..HEAD
+2026-04-25T18:31:50.4844034Z 1
+2026-04-25T18:31:50.4855423Z 1 new commit(s) on branch relative to origin/main
+2026-04-25T18:31:51.4437375Z Created pull request #52: https://github.com/invokable/laravel-fullfeed/pull/52
+2026-04-25T18:31:52.0588798Z Added labels to pull request: ["automation","automation"]
+2026-04-25T18:31:52.0600322Z No activation comment to update (GH_AW_COMMENT_ID not set)
+2026-04-25T18:31:52.0617198Z No extra empty commit token configured - skipping
+2026-04-25T18:31:52.0622047Z 📝 Manifest: logged create_pull_request
+2026-04-25T18:31:52.0627885Z ✓ Message 1 (create_pull_request) completed successfully
+2026-04-25T18:31:52.0632275Z Stored 0 missing tool(s), 0 missing data item(s), 0 noop message(s), and 0 incomplete signal(s) for footer generation
+2026-04-25T18:31:52.0641579Z 📝 Safe output summaries written to step summary
+2026-04-25T18:31:52.0645589Z 
+2026-04-25T18:31:52.0646121Z === Processing Summary ===
+2026-04-25T18:31:52.0649163Z Total messages: 1
+2026-04-25T18:31:52.0651733Z Successful: 1
+2026-04-25T18:31:52.0654770Z Failed: 0
+2026-04-25T18:31:52.0657444Z Temporary IDs registered: 0
+2026-04-25T18:31:52.0660087Z Synthetic updates: 0
+2026-04-25T18:31:52.0667561Z Exported temporary ID map with 0 mapping(s)
+2026-04-25T18:31:52.0672321Z Wrote temporary ID map to file for artifact upload
+2026-04-25T18:31:52.0681115Z Exported created_pr_number: 52
+2026-04-25T18:31:52.0686195Z Exported created_pr_url: https://github.com/invokable/laravel-fullfeed/pull/52
+2026-04-25T18:31:52.0689947Z Safe Output Handler Manager completed
+2026-04-25T18:31:52.0880266Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-04-25T18:31:52.0881085Z with:
+2026-04-25T18:31:52.0881504Z   name: safe-outputs-items
+2026-04-25T18:31:52.0882240Z   path: /tmp/gh-aw/safe-output-items.jsonl
+/tmp/gh-aw/temporary-id-map.json
+
+2026-04-25T18:31:52.0883035Z   if-no-files-found: ignore
+2026-04-25T18:31:52.0883917Z   compression-level: 6
+2026-04-25T18:31:52.0884377Z   overwrite: false
+2026-04-25T18:31:52.0884812Z   include-hidden-files: false
+2026-04-25T18:31:52.0885500Z   archive: true
+2026-04-25T18:31:52.0885905Z env:
+2026-04-25T18:31:52.0886485Z   GH_AW_CALLER_WORKFLOW_ID: invokable/laravel-fullfeed/port-rules-direct
+2026-04-25T18:31:52.0887209Z   GH_AW_EFFECTIVE_TOKENS: 
+2026-04-25T18:31:52.0887687Z   GH_AW_ENGINE_ID: copilot
+2026-04-25T18:31:52.0888160Z   GH_AW_ENGINE_MODEL: auto
+2026-04-25T18:31:52.0888666Z   GH_AW_WORKFLOW_ID: port-rules-direct
+2026-04-25T18:31:52.0889267Z   GH_AW_WORKFLOW_NAME: LDRFullFeed ルール移植（直接作業）
+2026-04-25T18:31:52.0896990Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-25T18:31:52.0905367Z   GITHUB_AW_OTEL_TRACE_ID: 45ba7233946642924a85947bbd7ab2bd
+2026-04-25T18:31:52.0906077Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8465a574d0a3c7ed
+2026-04-25T18:31:52.0906698Z   GITHUB_AW_OTEL_JOB_START_MS: 1777141904312
+2026-04-25T18:31:52.0907244Z   GH_HOST: github.com
+2026-04-25T18:31:52.0907687Z ##[endgroup]
+2026-04-25T18:31:52.2596422Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-04-25T18:31:52.2607441Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-04-25T18:31:52.2611049Z With the provided path, there will be 2 files uploaded
+2026-04-25T18:31:52.2622187Z Artifact name is valid!
+2026-04-25T18:31:52.2626347Z Root directory input is valid!
+2026-04-25T18:31:52.3887223Z Uploading artifact: safe-outputs-items.zip
+2026-04-25T18:31:52.3948065Z Beginning upload of artifact content to blob storage
+2026-04-25T18:31:52.5702279Z Uploaded bytes 399
+2026-04-25T18:31:52.6071345Z Finished uploading artifact content to blob storage!
+2026-04-25T18:31:52.6076948Z SHA256 digest of uploaded artifact is 8236a8e997c9fa5750dc6a19f93558ac8acd607b619df773db34a4441035d689
+2026-04-25T18:31:52.6080634Z Finalizing artifact upload
+2026-04-25T18:31:52.7932030Z Artifact safe-outputs-items successfully finalized. Artifact ID 6641801669
+2026-04-25T18:31:52.7936798Z Artifact safe-outputs-items has been successfully uploaded! Final size is 399 bytes. Artifact ID is 6641801669
+2026-04-25T18:31:52.7944713Z Artifact download URL: https://github.com/invokable/laravel-fullfeed/actions/runs/24937652426/artifacts/6641801669
+2026-04-25T18:31:52.8140704Z Post job cleanup.
+2026-04-25T18:31:52.9038323Z [command]/usr/bin/git version
+2026-04-25T18:31:52.9164232Z git version 2.53.0
+2026-04-25T18:31:52.9212968Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/5f5ab833-1296-4056-a6f7-212d39e4cebf/.gitconfig'
+2026-04-25T18:31:52.9227361Z Temporarily overriding HOME='/home/runner/work/_temp/5f5ab833-1296-4056-a6f7-212d39e4cebf' before making global git config changes
+2026-04-25T18:31:52.9233898Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-25T18:31:52.9242559Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-25T18:31:52.9284970Z Removing SSH command configuration
+2026-04-25T18:31:52.9289843Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-25T18:31:52.9334344Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-25T18:31:52.9522253Z Removing HTTP extra header
+2026-04-25T18:31:52.9529082Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-25T18:31:52.9565851Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-25T18:31:52.9745451Z Removing includeIf entries pointing to credentials config files
+2026-04-25T18:31:52.9754627Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-25T18:31:52.9788828Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-25T18:31:53.0165744Z Post job cleanup.
+2026-04-25T18:31:53.0442169Z [otlp] OTEL_EXPORTER_OTLP_ENDPOINT not set, skipping OTLP export (will attempt JSONL mirror)
+2026-04-25T18:31:53.0460853Z Cleaning up /tmp/gh-aw...
+2026-04-25T18:31:53.0626093Z Cleaned up /tmp/gh-aw
+2026-04-25T18:31:53.0720701Z Evaluate and set job outputs
+2026-04-25T18:31:53.0730645Z Set output 'code_push_failure_count'
+2026-04-25T18:31:53.0732917Z Set output 'create_discussion_error_count'
+2026-04-25T18:31:53.0734427Z Set output 'created_pr_number'
+2026-04-25T18:31:53.0735305Z Set output 'created_pr_url'
+2026-04-25T18:31:53.0736074Z Set output 'process_safe_outputs_processed_count'
+2026-04-25T18:31:53.0736944Z Set output 'process_safe_outputs_temporary_id_map'
+2026-04-25T18:31:53.0738223Z Cleaning up orphan processes

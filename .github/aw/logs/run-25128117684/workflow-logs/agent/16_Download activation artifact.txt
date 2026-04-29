@@ -1,0 +1,91 @@
+﻿2026-04-29T19:08:11.3093002Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-04-29T19:08:11.3093473Z with:
+2026-04-29T19:08:11.3093654Z   name: activation
+2026-04-29T19:08:11.3093861Z   path: /tmp/gh-aw
+2026-04-29T19:08:11.3094076Z   merge-multiple: false
+2026-04-29T19:08:11.3094337Z   repository: invokable/laravel-fullfeed
+2026-04-29T19:08:11.3094598Z   run-id: 25128117684
+2026-04-29T19:08:11.3094804Z   skip-decompress: false
+2026-04-29T19:08:11.3095024Z   digest-mismatch: error
+2026-04-29T19:08:11.3095236Z env:
+2026-04-29T19:08:11.3095402Z   DEFAULT_BRANCH: main
+2026-04-29T19:08:11.3095616Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-04-29T19:08:11.3095850Z   GH_AW_ASSETS_BRANCH: 
+2026-04-29T19:08:11.3096071Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-04-29T19:08:11.3096339Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:08:11.3096682Z   GH_AW_WORKFLOW_ID_SANITIZED: portrulesdirect
+2026-04-29T19:08:11.3101094Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:11.3106294Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:11.3106653Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fafde3ee818bbe3
+2026-04-29T19:08:11.3106949Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489668662
+2026-04-29T19:08:11.3107224Z   COMPOSER_PROCESS_TIMEOUT: 0
+2026-04-29T19:08:11.3107462Z   COMPOSER_NO_INTERACTION: 1
+2026-04-29T19:08:11.3107685Z   COMPOSER_NO_AUDIT: 1
+2026-04-29T19:08:11.3107882Z ##[endgroup]
+2026-04-29T19:08:11.4553406Z Downloading single artifact
+2026-04-29T19:08:11.6986516Z Preparing to download the following artifacts:
+2026-04-29T19:08:11.6987698Z - activation (ID: 6715526797, Size: 4797, Expected Digest: sha256:c6bb4df7c39b50f0a5542ea663b8230ada4b14950d99c1cc8c8fd25e38172809)
+2026-04-29T19:08:12.1899063Z Redirecting to blob download url: https://productionresultssa8.blob.core.windows.net/actions-results/aea8a463-87ce-49c4-ab5f-f7d688ffe0dc/workflow-job-run-d4fd827b-6e47-5002-bd5b-ce2beacef00e/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip
+2026-04-29T19:08:12.1901292Z Starting download of artifact to: /tmp/gh-aw
+2026-04-29T19:08:12.4759056Z (node:4064) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-04-29T19:08:12.4760778Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-04-29T19:08:12.4818463Z SHA256 digest of downloaded artifact is c6bb4df7c39b50f0a5542ea663b8230ada4b14950d99c1cc8c8fd25e38172809
+2026-04-29T19:08:12.4819816Z Artifact download completed successfully.
+2026-04-29T19:08:12.4820353Z Total of 1 artifact(s) downloaded
+2026-04-29T19:08:12.4824626Z Download artifact has finished successfully

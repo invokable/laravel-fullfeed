@@ -1,0 +1,521 @@
+﻿2026-04-29T19:07:55.7913917Z ##[group]Run composer install --prefer-dist --no-interaction --no-progress
+2026-04-29T19:07:55.7914538Z [36;1mcomposer install --prefer-dist --no-interaction --no-progress[0m
+2026-04-29T19:07:55.7939963Z shell: /usr/bin/bash -e {0}
+2026-04-29T19:07:55.7940231Z env:
+2026-04-29T19:07:55.7940410Z   DEFAULT_BRANCH: main
+2026-04-29T19:07:55.7940636Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-04-29T19:07:55.7940877Z   GH_AW_ASSETS_BRANCH: 
+2026-04-29T19:07:55.7941079Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-04-29T19:07:55.7941354Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:07:55.7941683Z   GH_AW_WORKFLOW_ID_SANITIZED: portrulesdirect
+2026-04-29T19:07:55.7946366Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:07:55.7951028Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:07:55.7951379Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fafde3ee818bbe3
+2026-04-29T19:07:55.7951688Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489668662
+2026-04-29T19:07:55.7951961Z   COMPOSER_PROCESS_TIMEOUT: 0
+2026-04-29T19:07:55.7952198Z   COMPOSER_NO_INTERACTION: 1
+2026-04-29T19:07:55.7952417Z   COMPOSER_NO_AUDIT: 1
+2026-04-29T19:07:55.7952883Z ##[endgroup]
+2026-04-29T19:07:56.0201803Z No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+2026-04-29T19:07:56.0204108Z Loading composer repositories with package information
+2026-04-29T19:07:58.6173227Z Updating dependencies
+2026-04-29T19:07:58.7813698Z Lock file operations: 136 installs, 0 updates, 0 removals
+2026-04-29T19:07:58.7815057Z   - Locking brianium/paratest (v7.20.0)
+2026-04-29T19:07:58.7815676Z   - Locking brick/math (0.14.8)
+2026-04-29T19:07:58.7816296Z   - Locking carbonphp/carbon-doctrine-types (3.2.0)
+2026-04-29T19:07:58.7816895Z   - Locking composer/semver (3.4.4)
+2026-04-29T19:07:58.7817430Z   - Locking dflydev/dot-access-data (v3.0.3)
+2026-04-29T19:07:58.7818037Z   - Locking doctrine/deprecations (1.1.6)
+2026-04-29T19:07:58.7818651Z   - Locking doctrine/inflector (2.1.0)
+2026-04-29T19:07:58.7819222Z   - Locking doctrine/lexer (3.0.1)
+2026-04-29T19:07:58.7819852Z   - Locking dragonmantank/cron-expression (v3.6.0)
+2026-04-29T19:07:58.7820573Z   - Locking egulias/email-validator (4.0.4)
+2026-04-29T19:07:58.7821194Z   - Locking fakerphp/faker (v1.24.1)
+2026-04-29T19:07:58.7821794Z   - Locking fidry/cpu-core-counter (1.3.0)
+2026-04-29T19:07:58.7822396Z   - Locking filp/whoops (2.18.4)
+2026-04-29T19:07:58.7823271Z   - Locking fruitcake/php-cors (v1.4.0)
+2026-04-29T19:07:58.7824472Z   - Locking graham-campbell/result-type (v1.1.4)
+2026-04-29T19:07:58.7825063Z   - Locking guzzlehttp/guzzle (7.10.0)
+2026-04-29T19:07:58.7825810Z   - Locking guzzlehttp/promises (2.3.0)
+2026-04-29T19:07:58.7826386Z   - Locking guzzlehttp/psr7 (2.9.0)
+2026-04-29T19:07:58.7826979Z   - Locking guzzlehttp/uri-template (v1.0.5)
+2026-04-29T19:07:58.7827553Z   - Locking hamcrest/hamcrest-php (v2.1.1)
+2026-04-29T19:07:58.7828283Z   - Locking jean85/pretty-package-versions (2.1.1)
+2026-04-29T19:07:58.7829667Z   - Locking laravel/boost (v2.4.6)
+2026-04-29T19:07:58.7830298Z   - Locking laravel/framework (v13.7.0)
+2026-04-29T19:07:58.7830938Z   - Locking laravel/mcp (v0.7.0)
+2026-04-29T19:07:58.7831555Z   - Locking laravel/pail (v1.2.6)
+2026-04-29T19:07:58.7832135Z   - Locking laravel/pint (v1.29.1)
+2026-04-29T19:07:58.7832931Z   - Locking laravel/prompts (v0.3.17)
+2026-04-29T19:07:58.7833630Z   - Locking laravel/roster (v0.5.1)
+2026-04-29T19:07:58.7834279Z   - Locking laravel/serializable-closure (v2.0.13)
+2026-04-29T19:07:58.7835017Z   - Locking laravel/tinker (v3.0.2)
+2026-04-29T19:07:58.7835597Z   - Locking league/commonmark (2.8.2)
+2026-04-29T19:07:58.7836233Z   - Locking league/config (v1.2.0)
+2026-04-29T19:07:58.7836822Z   - Locking league/flysystem (3.33.0)
+2026-04-29T19:07:58.7837410Z   - Locking league/flysystem-local (3.31.0)
+2026-04-29T19:07:58.7838078Z   - Locking league/mime-type-detection (1.16.0)
+2026-04-29T19:07:58.7838725Z   - Locking league/uri (7.8.1)
+2026-04-29T19:07:58.7839303Z   - Locking league/uri-interfaces (7.8.1)
+2026-04-29T19:07:58.7839876Z   - Locking mockery/mockery (1.6.12)
+2026-04-29T19:07:58.7840466Z   - Locking monolog/monolog (3.10.0)
+2026-04-29T19:07:58.7841091Z   - Locking myclabs/deep-copy (1.13.4)
+2026-04-29T19:07:58.7841745Z   - Locking nesbot/carbon (3.11.4)
+2026-04-29T19:07:58.7842365Z   - Locking nette/schema (v1.3.5)
+2026-04-29T19:07:58.7843255Z   - Locking nette/utils (v4.1.3)
+2026-04-29T19:07:58.7843820Z   - Locking nikic/php-parser (v5.7.0)
+2026-04-29T19:07:58.7844455Z   - Locking nunomaduro/collision (v8.9.4)
+2026-04-29T19:07:58.7845054Z   - Locking nunomaduro/termwind (v2.4.0)
+2026-04-29T19:07:58.7845631Z   - Locking orchestra/canvas (v11.0.1)
+2026-04-29T19:07:58.7846211Z   - Locking orchestra/canvas-core (v11.0.0)
+2026-04-29T19:07:58.7846826Z   - Locking orchestra/sidekick (v1.2.20)
+2026-04-29T19:07:58.7847430Z   - Locking orchestra/testbench (v11.1.0)
+2026-04-29T19:07:58.7848118Z   - Locking orchestra/testbench-core (v11.3.1)
+2026-04-29T19:07:58.7848796Z   - Locking orchestra/workbench (v11.1.0)
+2026-04-29T19:07:58.7849423Z   - Locking pestphp/pest (v4.6.3)
+2026-04-29T19:07:58.7850022Z   - Locking pestphp/pest-plugin (v4.0.0)
+2026-04-29T19:07:58.7851023Z   - Locking pestphp/pest-plugin-arch (v4.0.2)
+2026-04-29T19:07:58.7851716Z   - Locking pestphp/pest-plugin-laravel (v4.1.0)
+2026-04-29T19:07:58.7852467Z   - Locking pestphp/pest-plugin-mutate (v4.0.1)
+2026-04-29T19:07:58.7853301Z   - Locking pestphp/pest-plugin-profanity (v4.2.1)
+2026-04-29T19:07:58.7853916Z   - Locking phar-io/manifest (2.0.4)
+2026-04-29T19:07:58.7854364Z   - Locking phar-io/version (3.2.1)
+2026-04-29T19:07:58.7854862Z   - Locking phpdocumentor/reflection-common (2.2.0)
+2026-04-29T19:07:58.7855449Z   - Locking phpdocumentor/reflection-docblock (6.0.3)
+2026-04-29T19:07:58.7856028Z   - Locking phpdocumentor/type-resolver (2.0.0)
+2026-04-29T19:07:58.7856559Z   - Locking phpoption/phpoption (1.9.5)
+2026-04-29T19:07:58.7857053Z   - Locking phpstan/phpdoc-parser (2.3.2)
+2026-04-29T19:07:58.7857584Z   - Locking phpunit/php-code-coverage (12.5.6)
+2026-04-29T19:07:58.7858118Z   - Locking phpunit/php-file-iterator (6.0.1)
+2026-04-29T19:07:58.7858664Z   - Locking phpunit/php-invoker (6.0.0)
+2026-04-29T19:07:58.7859173Z   - Locking phpunit/php-text-template (5.0.0)
+2026-04-29T19:07:58.7859696Z   - Locking phpunit/php-timer (8.0.0)
+2026-04-29T19:07:58.7860176Z   - Locking phpunit/phpunit (12.5.23)
+2026-04-29T19:07:58.7860632Z   - Locking psr/clock (1.0.0)
+2026-04-29T19:07:58.7861051Z   - Locking psr/container (2.0.2)
+2026-04-29T19:07:58.7861814Z   - Locking psr/event-dispatcher (1.0.0)
+2026-04-29T19:07:58.7862289Z   - Locking psr/http-client (1.0.3)
+2026-04-29T19:07:58.7863012Z   - Locking psr/http-factory (1.1.0)
+2026-04-29T19:07:58.7863496Z   - Locking psr/http-message (2.0)
+2026-04-29T19:07:58.7863928Z   - Locking psr/log (3.0.2)
+2026-04-29T19:07:58.7864331Z   - Locking psr/simple-cache (3.0.0)
+2026-04-29T19:07:58.7864773Z   - Locking psy/psysh (v0.12.22)
+2026-04-29T19:07:58.7865230Z   - Locking ralouphie/getallheaders (3.0.3)
+2026-04-29T19:07:58.7865726Z   - Locking ramsey/collection (2.1.1)
+2026-04-29T19:07:58.7866159Z   - Locking ramsey/uuid (4.9.2)
+2026-04-29T19:07:58.7866689Z   - Locking revolution/laravel-boost-copilot-cli (2.2.1)
+2026-04-29T19:07:58.7867259Z   - Locking sebastian/cli-parser (4.2.0)
+2026-04-29T19:07:58.7867775Z   - Locking sebastian/comparator (7.1.6)
+2026-04-29T19:07:58.7868259Z   - Locking sebastian/complexity (5.0.0)
+2026-04-29T19:07:58.7868716Z   - Locking sebastian/diff (7.0.0)
+2026-04-29T19:07:58.7869180Z   - Locking sebastian/environment (8.1.0)
+2026-04-29T19:07:58.7869670Z   - Locking sebastian/exporter (7.0.2)
+2026-04-29T19:07:58.7870144Z   - Locking sebastian/global-state (8.0.2)
+2026-04-29T19:07:58.7870636Z   - Locking sebastian/lines-of-code (4.0.0)
+2026-04-29T19:07:58.7871151Z   - Locking sebastian/object-enumerator (7.0.0)
+2026-04-29T19:07:58.7871718Z   - Locking sebastian/object-reflector (5.0.0)
+2026-04-29T19:07:58.7872291Z   - Locking sebastian/recursion-context (7.0.1)
+2026-04-29T19:07:58.7873068Z   - Locking sebastian/type (6.0.3)
+2026-04-29T19:07:58.7873536Z   - Locking sebastian/version (6.0.0)
+2026-04-29T19:07:58.7874033Z   - Locking staabm/side-effects-detector (1.0.5)
+2026-04-29T19:07:58.7874551Z   - Locking symfony/clock (v8.0.8)
+2026-04-29T19:07:58.7874951Z   - Locking symfony/console (v8.0.8)
+2026-04-29T19:07:58.7875410Z   - Locking symfony/css-selector (v8.0.8)
+2026-04-29T19:07:58.7875934Z   - Locking symfony/deprecation-contracts (v3.6.0)
+2026-04-29T19:07:58.7876515Z   - Locking symfony/error-handler (v8.0.8)
+2026-04-29T19:07:58.7877043Z   - Locking symfony/event-dispatcher (v8.0.8)
+2026-04-29T19:07:58.7877636Z   - Locking symfony/event-dispatcher-contracts (v3.6.0)
+2026-04-29T19:07:58.7878202Z   - Locking symfony/finder (v8.0.8)
+2026-04-29T19:07:58.7878707Z   - Locking symfony/http-foundation (v8.0.8)
+2026-04-29T19:07:58.7879229Z   - Locking symfony/http-kernel (v8.0.8)
+2026-04-29T19:07:58.7879725Z   - Locking symfony/mailer (v8.0.8)
+2026-04-29T19:07:58.7880208Z   - Locking symfony/mime (v8.0.8)
+2026-04-29T19:07:58.7880715Z   - Locking symfony/polyfill-ctype (v1.37.0)
+2026-04-29T19:07:58.7881325Z   - Locking symfony/polyfill-intl-grapheme (v1.37.0)
+2026-04-29T19:07:58.7882382Z   - Locking symfony/polyfill-intl-idn (v1.37.0)
+2026-04-29T19:07:58.7883383Z   - Locking symfony/polyfill-intl-normalizer (v1.37.0)
+2026-04-29T19:07:58.7884081Z   - Locking symfony/polyfill-mbstring (v1.37.0)
+2026-04-29T19:07:58.7884681Z   - Locking symfony/polyfill-php80 (v1.37.0)
+2026-04-29T19:07:58.7885280Z   - Locking symfony/polyfill-php83 (v1.37.0)
+2026-04-29T19:07:58.7885768Z   - Locking symfony/polyfill-php84 (v1.37.0)
+2026-04-29T19:07:58.7886281Z   - Locking symfony/polyfill-php85 (v1.37.0)
+2026-04-29T19:07:58.7886794Z   - Locking symfony/polyfill-php86 (v1.37.0)
+2026-04-29T19:07:58.7907932Z   - Locking symfony/polyfill-uuid (v1.37.0)
+2026-04-29T19:07:58.7908589Z   - Locking symfony/process (v8.0.8)
+2026-04-29T19:07:58.7909017Z   - Locking symfony/routing (v8.0.8)
+2026-04-29T19:07:58.7909479Z   - Locking symfony/service-contracts (v3.6.1)
+2026-04-29T19:07:58.7909931Z   - Locking symfony/string (v8.0.8)
+2026-04-29T19:07:58.7910372Z   - Locking symfony/translation (v8.0.8)
+2026-04-29T19:07:58.7910853Z   - Locking symfony/translation-contracts (v3.6.1)
+2026-04-29T19:07:58.7911333Z   - Locking symfony/uid (v8.0.8)
+2026-04-29T19:07:58.7911795Z   - Locking symfony/var-dumper (v8.0.8)
+2026-04-29T19:07:58.7912290Z   - Locking symfony/yaml (v8.0.8)
+2026-04-29T19:07:58.7913331Z   - Locking ta-tikoma/phpunit-architecture-test (0.8.7)
+2026-04-29T19:07:58.7913890Z   - Locking theseer/tokenizer (2.0.1)
+2026-04-29T19:07:58.7914382Z   - Locking tijsverkoyen/css-to-inline-styles (v2.4.0)
+2026-04-29T19:07:58.7914874Z   - Locking vlucas/phpdotenv (v5.6.3)
+2026-04-29T19:07:58.7915288Z   - Locking voku/portable-ascii (2.1.1)
+2026-04-29T19:07:58.7915715Z   - Locking webmozart/assert (2.3.0)
+2026-04-29T19:07:58.7916139Z Writing lock file
+2026-04-29T19:07:58.7916577Z Installing dependencies from lock file (including require-dev)
+2026-04-29T19:07:58.7953323Z Package operations: 136 installs, 0 updates, 0 removals
+2026-04-29T19:07:58.7961530Z   - Downloading pestphp/pest-plugin (v4.0.0)
+2026-04-29T19:07:58.7966639Z   - Downloading symfony/process (v8.0.8)
+2026-04-29T19:07:58.7969351Z   - Downloading symfony/polyfill-mbstring (v1.37.0)
+2026-04-29T19:07:58.7971985Z   - Downloading symfony/polyfill-intl-normalizer (v1.37.0)
+2026-04-29T19:07:58.7975103Z   - Downloading symfony/polyfill-intl-grapheme (v1.37.0)
+2026-04-29T19:07:58.7977626Z   - Downloading symfony/polyfill-ctype (v1.37.0)
+2026-04-29T19:07:58.7980182Z   - Downloading symfony/string (v8.0.8)
+2026-04-29T19:07:58.7983110Z   - Downloading symfony/deprecation-contracts (v3.6.0)
+2026-04-29T19:07:58.7986153Z   - Downloading psr/container (2.0.2)
+2026-04-29T19:07:58.7988762Z   - Downloading symfony/service-contracts (v3.6.1)
+2026-04-29T19:07:58.7991299Z   - Downloading symfony/console (v8.0.8)
+2026-04-29T19:07:58.7994735Z   - Downloading sebastian/environment (8.1.0)
+2026-04-29T19:07:58.7997684Z   - Downloading staabm/side-effects-detector (1.0.5)
+2026-04-29T19:07:58.7999302Z   - Downloading sebastian/version (6.0.0)
+2026-04-29T19:07:58.8000938Z   - Downloading sebastian/type (6.0.3)
+2026-04-29T19:07:58.8002610Z   - Downloading sebastian/recursion-context (7.0.1)
+2026-04-29T19:07:58.8004639Z   - Downloading sebastian/object-reflector (5.0.0)
+2026-04-29T19:07:58.8006150Z   - Downloading sebastian/object-enumerator (7.0.0)
+2026-04-29T19:07:58.8007711Z   - Downloading sebastian/global-state (8.0.2)
+2026-04-29T19:07:58.8009274Z   - Downloading sebastian/exporter (7.0.2)
+2026-04-29T19:07:58.8010840Z   - Downloading sebastian/diff (7.0.0)
+2026-04-29T19:07:58.8012391Z   - Downloading sebastian/comparator (7.1.6)
+2026-04-29T19:07:58.8014454Z   - Downloading sebastian/cli-parser (4.2.0)
+2026-04-29T19:07:58.8016471Z   - Downloading phpunit/php-timer (8.0.0)
+2026-04-29T19:07:58.8018135Z   - Downloading phpunit/php-text-template (5.0.0)
+2026-04-29T19:07:58.8019747Z   - Downloading phpunit/php-invoker (6.0.0)
+2026-04-29T19:07:58.8021375Z   - Downloading phpunit/php-file-iterator (6.0.1)
+2026-04-29T19:07:58.8023523Z   - Downloading theseer/tokenizer (2.0.1)
+2026-04-29T19:07:58.8025552Z   - Downloading nikic/php-parser (v5.7.0)
+2026-04-29T19:07:58.8027171Z   - Downloading sebastian/lines-of-code (4.0.0)
+2026-04-29T19:07:58.8028782Z   - Downloading sebastian/complexity (5.0.0)
+2026-04-29T19:07:58.8030504Z   - Downloading phpunit/php-code-coverage (12.5.6)
+2026-04-29T19:07:58.8032527Z   - Downloading phar-io/version (3.2.1)
+2026-04-29T19:07:58.8034355Z   - Downloading phar-io/manifest (2.0.4)
+2026-04-29T19:07:58.8036345Z   - Downloading myclabs/deep-copy (1.13.4)
+2026-04-29T19:07:58.8037950Z   - Downloading phpunit/phpunit (12.5.23)
+2026-04-29T19:07:58.8040048Z   - Downloading jean85/pretty-package-versions (2.1.1)
+2026-04-29T19:07:58.8041978Z   - Downloading fidry/cpu-core-counter (1.3.0)
+2026-04-29T19:07:58.8044449Z   - Downloading brianium/paratest (v7.20.0)
+2026-04-29T19:07:58.8046291Z   - Downloading doctrine/inflector (2.1.0)
+2026-04-29T19:07:58.8047850Z   - Downloading doctrine/lexer (3.0.1)
+2026-04-29T19:07:58.8049919Z   - Downloading dragonmantank/cron-expression (v3.6.0)
+2026-04-29T19:07:58.8051406Z   - Downloading psr/log (3.0.2)
+2026-04-29T19:07:58.8053619Z   - Downloading filp/whoops (2.18.4)
+2026-04-29T19:07:58.8055424Z   - Downloading symfony/http-foundation (v8.0.8)
+2026-04-29T19:07:58.8057579Z   - Downloading fruitcake/php-cors (v1.4.0)
+2026-04-29T19:07:58.8059453Z   - Downloading psr/http-message (2.0)
+2026-04-29T19:07:58.8061465Z   - Downloading psr/http-client (1.0.3)
+2026-04-29T19:07:58.8064068Z   - Downloading ralouphie/getallheaders (3.0.3)
+2026-04-29T19:07:58.8065568Z   - Downloading psr/http-factory (1.1.0)
+2026-04-29T19:07:58.8068293Z   - Downloading guzzlehttp/psr7 (2.9.0)
+2026-04-29T19:07:58.8070078Z   - Downloading guzzlehttp/promises (2.3.0)
+2026-04-29T19:07:58.8072013Z   - Downloading guzzlehttp/guzzle (7.10.0)
+2026-04-29T19:07:58.8074238Z   - Downloading symfony/polyfill-php80 (v1.37.0)
+2026-04-29T19:07:58.8075844Z   - Downloading guzzlehttp/uri-template (v1.0.5)
+2026-04-29T19:07:58.8078455Z   - Downloading hamcrest/hamcrest-php (v2.1.1)
+2026-04-29T19:07:58.8080840Z   - Downloading voku/portable-ascii (2.1.1)
+2026-04-29T19:07:58.8083273Z   - Downloading phpoption/phpoption (1.9.5)
+2026-04-29T19:07:58.8085956Z   - Downloading graham-campbell/result-type (v1.1.4)
+2026-04-29T19:07:58.8088360Z   - Downloading vlucas/phpdotenv (v5.6.3)
+2026-04-29T19:07:58.8089920Z   - Downloading symfony/css-selector (v8.0.8)
+2026-04-29T19:07:58.8092718Z   - Downloading tijsverkoyen/css-to-inline-styles (v2.4.0)
+2026-04-29T19:07:58.8094546Z   - Downloading symfony/var-dumper (v8.0.8)
+2026-04-29T19:07:58.8096863Z   - Downloading symfony/polyfill-uuid (v1.37.0)
+2026-04-29T19:07:58.8098427Z   - Downloading symfony/uid (v8.0.8)
+2026-04-29T19:07:58.8100594Z   - Downloading symfony/routing (v8.0.8)
+2026-04-29T19:07:58.8102328Z   - Downloading symfony/polyfill-php86 (v1.37.0)
+2026-04-29T19:07:58.8104618Z   - Downloading symfony/polyfill-php85 (v1.37.0)
+2026-04-29T19:07:58.8106276Z   - Downloading symfony/polyfill-php84 (v1.37.0)
+2026-04-29T19:07:58.8108318Z   - Downloading symfony/polyfill-intl-idn (v1.37.0)
+2026-04-29T19:07:58.8110155Z   - Downloading symfony/mime (v8.0.8)
+2026-04-29T19:07:58.8112244Z   - Downloading psr/event-dispatcher (1.0.0)
+2026-04-29T19:07:58.8114500Z   - Downloading symfony/event-dispatcher-contracts (v3.6.0)
+2026-04-29T19:07:58.8116489Z   - Downloading symfony/event-dispatcher (v8.0.8)
+2026-04-29T19:07:58.8118870Z   - Downloading egulias/email-validator (4.0.4)
+2026-04-29T19:07:58.8120819Z   - Downloading symfony/mailer (v8.0.8)
+2026-04-29T19:07:58.8122960Z   - Downloading symfony/error-handler (v8.0.8)
+2026-04-29T19:07:58.8124783Z   - Downloading symfony/http-kernel (v8.0.8)
+2026-04-29T19:07:58.8126897Z   - Downloading symfony/finder (v8.0.8)
+2026-04-29T19:07:58.8129369Z   - Downloading ramsey/collection (2.1.1)
+2026-04-29T19:07:58.8131741Z   - Downloading brick/math (0.14.8)
+2026-04-29T19:07:58.8133812Z   - Downloading ramsey/uuid (4.9.2)
+2026-04-29T19:07:58.8135698Z   - Downloading psr/simple-cache (3.0.0)
+2026-04-29T19:07:58.8138302Z   - Downloading nunomaduro/termwind (v2.4.0)
+2026-04-29T19:07:58.8140022Z   - Downloading symfony/translation-contracts (v3.6.1)
+2026-04-29T19:07:58.8141883Z   - Downloading symfony/translation (v8.0.8)
+2026-04-29T19:07:58.8143794Z   - Downloading psr/clock (1.0.0)
+2026-04-29T19:07:58.8145805Z   - Downloading symfony/clock (v8.0.8)
+2026-04-29T19:07:58.8148269Z   - Downloading carbonphp/carbon-doctrine-types (3.2.0)
+2026-04-29T19:07:58.8150672Z   - Downloading nesbot/carbon (3.11.4)
+2026-04-29T19:07:58.8153081Z   - Downloading monolog/monolog (3.10.0)
+2026-04-29T19:07:58.8155806Z   - Downloading league/uri-interfaces (7.8.1)
+2026-04-29T19:07:58.8157291Z   - Downloading league/uri (7.8.1)
+2026-04-29T19:07:58.8159463Z   - Downloading league/mime-type-detection (1.16.0)
+2026-04-29T19:07:58.8161224Z   - Downloading league/flysystem-local (3.31.0)
+2026-04-29T19:07:58.8163161Z   - Downloading league/flysystem (3.33.0)
+2026-04-29T19:07:58.8165930Z   - Downloading nette/utils (v4.1.3)
+2026-04-29T19:07:58.8167443Z   - Downloading nette/schema (v1.3.5)
+2026-04-29T19:07:58.8170118Z   - Downloading dflydev/dot-access-data (v3.0.3)
+2026-04-29T19:07:58.8171603Z   - Downloading league/config (v1.2.0)
+2026-04-29T19:07:58.8174031Z   - Downloading league/commonmark (2.8.2)
+2026-04-29T19:07:58.8176587Z   - Downloading laravel/serializable-closure (v2.0.13)
+2026-04-29T19:07:58.8178156Z   - Downloading laravel/prompts (v0.3.17)
+2026-04-29T19:07:58.8180314Z   - Downloading laravel/framework (v13.7.0)
+2026-04-29T19:07:58.8181993Z   - Downloading laravel/mcp (v0.7.0)
+2026-04-29T19:07:58.8184400Z   - Downloading laravel/pint (v1.29.1)
+2026-04-29T19:07:58.8186275Z   - Downloading symfony/yaml (v8.0.8)
+2026-04-29T19:07:58.8188162Z   - Downloading laravel/roster (v0.5.1)
+2026-04-29T19:07:58.8190084Z   - Downloading symfony/polyfill-php83 (v1.37.0)
+2026-04-29T19:07:58.8192092Z   - Downloading composer/semver (3.4.4)
+2026-04-29T19:07:58.8194842Z   - Downloading orchestra/sidekick (v1.2.20)
+2026-04-29T19:07:58.8196399Z   - Downloading orchestra/canvas-core (v11.0.0)
+2026-04-29T19:07:58.8198533Z   - Downloading orchestra/testbench-core (v11.3.1)
+2026-04-29T19:07:58.8200098Z   - Downloading orchestra/canvas (v11.0.1)
+2026-04-29T19:07:58.8202322Z   - Downloading nunomaduro/collision (v8.9.4)
+2026-04-29T19:07:58.8205080Z   - Downloading psy/psysh (v0.12.22)
+2026-04-29T19:07:58.8206738Z   - Downloading laravel/tinker (v3.0.2)
+2026-04-29T19:07:58.8208624Z   - Downloading laravel/pail (v1.2.6)
+2026-04-29T19:07:58.8210905Z   - Downloading fakerphp/faker (v1.24.1)
+2026-04-29T19:07:58.8212667Z   - Downloading orchestra/workbench (v11.1.0)
+2026-04-29T19:07:58.8215075Z   - Downloading mockery/mockery (1.6.12)
+2026-04-29T19:07:58.8216809Z   - Downloading orchestra/testbench (v11.1.0)
+2026-04-29T19:07:58.8218992Z   - Downloading webmozart/assert (2.3.0)
+2026-04-29T19:07:58.8221262Z   - Downloading phpstan/phpdoc-parser (2.3.2)
+2026-04-29T19:07:58.8223862Z   - Downloading phpdocumentor/reflection-common (2.2.0)
+2026-04-29T19:07:58.8225576Z   - Downloading doctrine/deprecations (1.1.6)
+2026-04-29T19:07:58.8227316Z   - Downloading phpdocumentor/type-resolver (2.0.0)
+2026-04-29T19:07:58.8229057Z   - Downloading phpdocumentor/reflection-docblock (6.0.3)
+2026-04-29T19:07:58.8231305Z   - Downloading ta-tikoma/phpunit-architecture-test (0.8.7)
+2026-04-29T19:07:58.8233136Z   - Downloading pestphp/pest-plugin-arch (v4.0.2)
+2026-04-29T19:07:58.8235129Z   - Downloading pestphp/pest-plugin-profanity (v4.2.1)
+2026-04-29T19:07:58.8236875Z   - Downloading pestphp/pest-plugin-mutate (v4.0.1)
+2026-04-29T19:07:58.8238594Z   - Downloading pestphp/pest (v4.6.3)
+2026-04-29T19:07:58.8240642Z   - Downloading pestphp/pest-plugin-laravel (v4.1.0)
+2026-04-29T19:07:58.8242075Z   - Downloading laravel/boost (v2.4.6)
+2026-04-29T19:07:58.8245154Z   - Downloading revolution/laravel-boost-copilot-cli (2.2.1)
+2026-04-29T19:08:03.5772175Z   - Installing pestphp/pest-plugin (v4.0.0): Extracting archive
+2026-04-29T19:08:03.6065284Z   - Installing symfony/process (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6070893Z   - Installing symfony/polyfill-mbstring (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6077442Z   - Installing symfony/polyfill-intl-normalizer (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6083893Z   - Installing symfony/polyfill-intl-grapheme (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6119835Z   - Installing symfony/polyfill-ctype (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6120851Z   - Installing symfony/string (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6126449Z   - Installing symfony/deprecation-contracts (v3.6.0): Extracting archive
+2026-04-29T19:08:03.6143593Z   - Installing psr/container (2.0.2): Extracting archive
+2026-04-29T19:08:03.6166479Z   - Installing symfony/service-contracts (v3.6.1): Extracting archive
+2026-04-29T19:08:03.6173520Z   - Installing symfony/console (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6185431Z   - Installing sebastian/environment (8.1.0): Extracting archive
+2026-04-29T19:08:03.6191187Z   - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+2026-04-29T19:08:03.6193706Z   - Installing sebastian/version (6.0.0): Extracting archive
+2026-04-29T19:08:03.6196558Z   - Installing sebastian/type (6.0.3): Extracting archive
+2026-04-29T19:08:03.6202200Z   - Installing sebastian/recursion-context (7.0.1): Extracting archive
+2026-04-29T19:08:03.6203971Z   - Installing sebastian/object-reflector (5.0.0): Extracting archive
+2026-04-29T19:08:03.6205331Z   - Installing sebastian/object-enumerator (7.0.0): Extracting archive
+2026-04-29T19:08:03.6207522Z   - Installing sebastian/global-state (8.0.2): Extracting archive
+2026-04-29T19:08:03.6209874Z   - Installing sebastian/exporter (7.0.2): Extracting archive
+2026-04-29T19:08:03.6212376Z   - Installing sebastian/diff (7.0.0): Extracting archive
+2026-04-29T19:08:03.6215110Z   - Installing sebastian/comparator (7.1.6): Extracting archive
+2026-04-29T19:08:03.6217314Z   - Installing sebastian/cli-parser (4.2.0): Extracting archive
+2026-04-29T19:08:03.6219475Z   - Installing phpunit/php-timer (8.0.0): Extracting archive
+2026-04-29T19:08:03.6221767Z   - Installing phpunit/php-text-template (5.0.0): Extracting archive
+2026-04-29T19:08:03.6224868Z   - Installing phpunit/php-invoker (6.0.0): Extracting archive
+2026-04-29T19:08:03.6227276Z   - Installing phpunit/php-file-iterator (6.0.1): Extracting archive
+2026-04-29T19:08:03.6229734Z   - Installing theseer/tokenizer (2.0.1): Extracting archive
+2026-04-29T19:08:03.6232041Z   - Installing nikic/php-parser (v5.7.0): Extracting archive
+2026-04-29T19:08:03.6234706Z   - Installing sebastian/lines-of-code (4.0.0): Extracting archive
+2026-04-29T19:08:03.6237141Z   - Installing sebastian/complexity (5.0.0): Extracting archive
+2026-04-29T19:08:03.6239364Z   - Installing phpunit/php-code-coverage (12.5.6): Extracting archive
+2026-04-29T19:08:03.6241497Z   - Installing phar-io/version (3.2.1): Extracting archive
+2026-04-29T19:08:03.6243949Z   - Installing phar-io/manifest (2.0.4): Extracting archive
+2026-04-29T19:08:03.6246003Z   - Installing myclabs/deep-copy (1.13.4): Extracting archive
+2026-04-29T19:08:03.6248097Z   - Installing phpunit/phpunit (12.5.23): Extracting archive
+2026-04-29T19:08:03.6250358Z   - Installing jean85/pretty-package-versions (2.1.1): Extracting archive
+2026-04-29T19:08:03.6252458Z   - Installing fidry/cpu-core-counter (1.3.0): Extracting archive
+2026-04-29T19:08:03.6255301Z   - Installing brianium/paratest (v7.20.0): Extracting archive
+2026-04-29T19:08:03.6257516Z   - Installing doctrine/inflector (2.1.0): Extracting archive
+2026-04-29T19:08:03.6259783Z   - Installing doctrine/lexer (3.0.1): Extracting archive
+2026-04-29T19:08:03.6262030Z   - Installing dragonmantank/cron-expression (v3.6.0): Extracting archive
+2026-04-29T19:08:03.6264329Z   - Installing psr/log (3.0.2): Extracting archive
+2026-04-29T19:08:03.6266814Z   - Installing filp/whoops (2.18.4): Extracting archive
+2026-04-29T19:08:03.6269106Z   - Installing symfony/http-foundation (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6271275Z   - Installing fruitcake/php-cors (v1.4.0): Extracting archive
+2026-04-29T19:08:03.6273715Z   - Installing psr/http-message (2.0): Extracting archive
+2026-04-29T19:08:03.6275905Z   - Installing psr/http-client (1.0.3): Extracting archive
+2026-04-29T19:08:03.6278226Z   - Installing ralouphie/getallheaders (3.0.3): Extracting archive
+2026-04-29T19:08:03.6280309Z   - Installing psr/http-factory (1.1.0): Extracting archive
+2026-04-29T19:08:03.6282520Z   - Installing guzzlehttp/psr7 (2.9.0): Extracting archive
+2026-04-29T19:08:03.6285029Z   - Installing guzzlehttp/promises (2.3.0): Extracting archive
+2026-04-29T19:08:03.6287060Z   - Installing guzzlehttp/guzzle (7.10.0): Extracting archive
+2026-04-29T19:08:03.6289235Z   - Installing symfony/polyfill-php80 (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6291331Z   - Installing guzzlehttp/uri-template (v1.0.5): Extracting archive
+2026-04-29T19:08:03.6293862Z   - Installing hamcrest/hamcrest-php (v2.1.1): Extracting archive
+2026-04-29T19:08:03.6296010Z   - Installing voku/portable-ascii (2.1.1): Extracting archive
+2026-04-29T19:08:03.6298265Z   - Installing phpoption/phpoption (1.9.5): Extracting archive
+2026-04-29T19:08:03.6300471Z   - Installing graham-campbell/result-type (v1.1.4): Extracting archive
+2026-04-29T19:08:03.6302584Z   - Installing vlucas/phpdotenv (v5.6.3): Extracting archive
+2026-04-29T19:08:03.6305123Z   - Installing symfony/css-selector (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6307359Z   - Installing tijsverkoyen/css-to-inline-styles (v2.4.0): Extracting archive
+2026-04-29T19:08:03.6309457Z   - Installing symfony/var-dumper (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6311653Z   - Installing symfony/polyfill-uuid (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6313972Z   - Installing symfony/uid (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6316141Z   - Installing symfony/routing (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6318718Z   - Installing symfony/polyfill-php86 (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6320838Z   - Installing symfony/polyfill-php85 (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6323206Z   - Installing symfony/polyfill-php84 (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6325408Z   - Installing symfony/polyfill-intl-idn (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6327449Z   - Installing symfony/mime (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6329611Z   - Installing psr/event-dispatcher (1.0.0): Extracting archive
+2026-04-29T19:08:03.6331807Z   - Installing symfony/event-dispatcher-contracts (v3.6.0): Extracting archive
+2026-04-29T19:08:03.6334199Z   - Installing symfony/event-dispatcher (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6336365Z   - Installing egulias/email-validator (4.0.4): Extracting archive
+2026-04-29T19:08:03.6338490Z   - Installing symfony/mailer (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6340685Z   - Installing symfony/error-handler (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6343085Z   - Installing symfony/http-kernel (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6345125Z   - Installing symfony/finder (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6347315Z   - Installing ramsey/collection (2.1.1): Extracting archive
+2026-04-29T19:08:03.6349417Z   - Installing brick/math (0.14.8): Extracting archive
+2026-04-29T19:08:03.6351568Z   - Installing ramsey/uuid (4.9.2): Extracting archive
+2026-04-29T19:08:03.6353908Z   - Installing psr/simple-cache (3.0.0): Extracting archive
+2026-04-29T19:08:03.6356094Z   - Installing nunomaduro/termwind (v2.4.0): Extracting archive
+2026-04-29T19:08:03.6358298Z   - Installing symfony/translation-contracts (v3.6.1): Extracting archive
+2026-04-29T19:08:03.6360426Z   - Installing symfony/translation (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6362471Z   - Installing psr/clock (1.0.0): Extracting archive
+2026-04-29T19:08:03.6364785Z   - Installing symfony/clock (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6367020Z   - Installing carbonphp/carbon-doctrine-types (3.2.0): Extracting archive
+2026-04-29T19:08:03.6369008Z   - Installing nesbot/carbon (3.11.4): Extracting archive
+2026-04-29T19:08:03.6371233Z   - Installing monolog/monolog (3.10.0): Extracting archive
+2026-04-29T19:08:03.6374248Z   - Installing league/uri-interfaces (7.8.1): Extracting archive
+2026-04-29T19:08:03.6376381Z   - Installing league/uri (7.8.1): Extracting archive
+2026-04-29T19:08:03.6378736Z   - Installing league/mime-type-detection (1.16.0): Extracting archive
+2026-04-29T19:08:03.6380935Z   - Installing league/flysystem-local (3.31.0): Extracting archive
+2026-04-29T19:08:03.6383444Z   - Installing league/flysystem (3.33.0): Extracting archive
+2026-04-29T19:08:03.6386623Z   - Installing nette/utils (v4.1.3): Extracting archive
+2026-04-29T19:08:03.6388640Z   - Installing nette/schema (v1.3.5): Extracting archive
+2026-04-29T19:08:03.6391193Z   - Installing dflydev/dot-access-data (v3.0.3): Extracting archive
+2026-04-29T19:08:03.6393626Z   - Installing league/config (v1.2.0): Extracting archive
+2026-04-29T19:08:03.6395951Z   - Installing league/commonmark (2.8.2): Extracting archive
+2026-04-29T19:08:03.6398296Z   - Installing laravel/serializable-closure (v2.0.13): Extracting archive
+2026-04-29T19:08:03.6401076Z   - Installing laravel/prompts (v0.3.17): Extracting archive
+2026-04-29T19:08:03.6403193Z   - Installing laravel/framework (v13.7.0): Extracting archive
+2026-04-29T19:08:03.6405466Z   - Installing laravel/mcp (v0.7.0): Extracting archive
+2026-04-29T19:08:03.6407654Z   - Installing laravel/pint (v1.29.1): Extracting archive
+2026-04-29T19:08:03.6409817Z   - Installing symfony/yaml (v8.0.8): Extracting archive
+2026-04-29T19:08:03.6411982Z   - Installing laravel/roster (v0.5.1): Extracting archive
+2026-04-29T19:08:03.6414850Z   - Installing symfony/polyfill-php83 (v1.37.0): Extracting archive
+2026-04-29T19:08:03.6417205Z   - Installing composer/semver (3.4.4): Extracting archive
+2026-04-29T19:08:03.6419482Z   - Installing orchestra/sidekick (v1.2.20): Extracting archive
+2026-04-29T19:08:03.6421738Z   - Installing orchestra/canvas-core (v11.0.0): Extracting archive
+2026-04-29T19:08:03.6424302Z   - Installing orchestra/testbench-core (v11.3.1): Extracting archive
+2026-04-29T19:08:03.6426443Z   - Installing orchestra/canvas (v11.0.1): Extracting archive
+2026-04-29T19:08:03.6428680Z   - Installing nunomaduro/collision (v8.9.4): Extracting archive
+2026-04-29T19:08:03.6430854Z   - Installing psy/psysh (v0.12.22): Extracting archive
+2026-04-29T19:08:03.6433133Z   - Installing laravel/tinker (v3.0.2): Extracting archive
+2026-04-29T19:08:03.6435584Z   - Installing laravel/pail (v1.2.6): Extracting archive
+2026-04-29T19:08:03.6437843Z   - Installing fakerphp/faker (v1.24.1): Extracting archive
+2026-04-29T19:08:03.6440788Z   - Installing orchestra/workbench (v11.1.0): Extracting archive
+2026-04-29T19:08:03.6442493Z   - Installing mockery/mockery (1.6.12): Extracting archive
+2026-04-29T19:08:03.6444995Z   - Installing orchestra/testbench (v11.1.0): Extracting archive
+2026-04-29T19:08:03.6447141Z   - Installing webmozart/assert (2.3.0): Extracting archive
+2026-04-29T19:08:03.6449424Z   - Installing phpstan/phpdoc-parser (2.3.2): Extracting archive
+2026-04-29T19:08:03.6451695Z   - Installing phpdocumentor/reflection-common (2.2.0): Extracting archive
+2026-04-29T19:08:03.6454137Z   - Installing doctrine/deprecations (1.1.6): Extracting archive
+2026-04-29T19:08:03.6456400Z   - Installing phpdocumentor/type-resolver (2.0.0): Extracting archive
+2026-04-29T19:08:03.6458844Z   - Installing phpdocumentor/reflection-docblock (6.0.3): Extracting archive
+2026-04-29T19:08:03.6461148Z   - Installing ta-tikoma/phpunit-architecture-test (0.8.7): Extracting archive
+2026-04-29T19:08:03.6463420Z   - Installing pestphp/pest-plugin-arch (v4.0.2): Extracting archive
+2026-04-29T19:08:03.6465436Z   - Installing pestphp/pest-plugin-profanity (v4.2.1): Extracting archive
+2026-04-29T19:08:03.6467531Z   - Installing pestphp/pest-plugin-mutate (v4.0.1): Extracting archive
+2026-04-29T19:08:03.6469548Z   - Installing pestphp/pest (v4.6.3): Extracting archive
+2026-04-29T19:08:03.6471642Z   - Installing pestphp/pest-plugin-laravel (v4.1.0): Extracting archive
+2026-04-29T19:08:03.6474485Z   - Installing laravel/boost (v2.4.6): Extracting archive
+2026-04-29T19:08:03.6477334Z   - Installing revolution/laravel-boost-copilot-cli (2.2.1): Extracting archive
+2026-04-29T19:08:04.9033285Z 41 package suggestions were added by new dependencies, use `composer suggest` to see details.
+2026-04-29T19:08:04.9054959Z Generating autoload files
+2026-04-29T19:08:05.3178837Z > @php vendor/bin/testbench package:purge-skeleton --ansi
+2026-04-29T19:08:05.5501120Z 
+2026-04-29T19:08:05.5502525Z   [37;44m INFO [39;49m Configuration cache cleared successfully.  
+2026-04-29T19:08:05.5503334Z 
+2026-04-29T19:08:05.5513266Z   [37;44m INFO [39;49m Cached events cleared successfully.  
+2026-04-29T19:08:05.5513984Z 
+2026-04-29T19:08:05.5524726Z   [37;44m INFO [39;49m Route cache cleared successfully.  
+2026-04-29T19:08:05.5525156Z 
+2026-04-29T19:08:05.5568752Z   [37;44m INFO [39;49m Compiled views cleared successfully.  
+2026-04-29T19:08:05.5569303Z 
+2026-04-29T19:08:05.5893654Z > @php vendor/bin/testbench package:discover --ansi
+2026-04-29T19:08:05.8163448Z 
+2026-04-29T19:08:05.8164275Z   [37;44m INFO [39;49m Discovering packages.  
+2026-04-29T19:08:05.8164574Z 
+2026-04-29T19:08:05.8218085Z   laravel/boost [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8237895Z   laravel/mcp [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8257811Z   laravel/pail [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8277023Z   laravel/roster [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8295947Z   laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8316179Z   nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8336874Z   nunomaduro/collision [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8354308Z   nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8378929Z   orchestra/canvas [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8395121Z   orchestra/canvas-core [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8410966Z   pestphp/pest-plugin-laravel [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8424092Z   revolution/laravel-boost-copilot-cli [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8441125Z   revolution/laravel-fullfeed [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+2026-04-29T19:08:05.8443515Z 
+2026-04-29T19:08:05.8764141Z 89 packages you are using are looking for funding.
+2026-04-29T19:08:05.8764729Z Use the `composer fund` command to find out more!

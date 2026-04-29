@@ -1,0 +1,183 @@
+﻿2026-04-29T19:08:16.8055279Z ##[group]Run # Environment variables are set above to prevent template injection
+2026-04-29T19:08:16.8055884Z [36;1m# Environment variables are set above to prevent template injection[0m
+2026-04-29T19:08:16.8056276Z [36;1mexport DEBUG[0m
+2026-04-29T19:08:16.8056509Z [36;1mexport GH_AW_SAFE_OUTPUTS[0m
+2026-04-29T19:08:16.8056787Z [36;1mexport GH_AW_SAFE_OUTPUTS_PORT[0m
+2026-04-29T19:08:16.8057092Z [36;1mexport GH_AW_SAFE_OUTPUTS_API_KEY[0m
+2026-04-29T19:08:16.8057415Z [36;1mexport GH_AW_SAFE_OUTPUTS_TOOLS_PATH[0m
+2026-04-29T19:08:16.8057735Z [36;1mexport GH_AW_SAFE_OUTPUTS_CONFIG_PATH[0m
+2026-04-29T19:08:16.8058035Z [36;1mexport GH_AW_MCP_LOG_DIR[0m
+2026-04-29T19:08:16.8058281Z [36;1m[0m
+2026-04-29T19:08:16.8058581Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/start_safe_outputs_server.sh"[0m
+2026-04-29T19:08:16.8080086Z shell: /usr/bin/bash -e {0}
+2026-04-29T19:08:16.8080359Z env:
+2026-04-29T19:08:16.8080554Z   DEFAULT_BRANCH: main
+2026-04-29T19:08:16.8080787Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-04-29T19:08:16.8081081Z   GH_AW_ASSETS_BRANCH: 
+2026-04-29T19:08:16.8081306Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-04-29T19:08:16.8081595Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:08:16.8081955Z   GH_AW_WORKFLOW_ID_SANITIZED: portrulesdirect
+2026-04-29T19:08:16.8086627Z   GH_AW_MODEL_MULTIPLIERS: {
+  "version": "1",
+  "description": "Effective Tokens (ET) computation data per the gh-aw Effective Tokens Specification v0.2.0. Token class weights are applied first to normalize across token classes, then the per-model multiplier scales the result relative to the reference model.",
+  "reference_model": "claude-sonnet-4.5",
+  "token_class_weights": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "output": 4.0,
+    "reasoning": 4.0,
+    "cache_write": 1.0
+  },
+  "multipliers": {
+    "claude-haiku-4.5": 0.1,
+    "claude-3-5-haiku": 0.1,
+    "claude-3-haiku": 0.1,
+    "claude-sonnet-4.5": 1.0,
+    "claude-sonnet-4.6": 1.0,
+    "claude-3-5-sonnet": 1.0,
+    "claude-3-7-sonnet": 1.0,
+    "claude-3-sonnet": 1.0,
+    "claude-opus-4.5": 5.0,
+    "claude-opus-4.6": 5.0,
+    "claude-3-5-opus": 5.0,
+    "claude-3-opus": 5.0,
+    "gpt-4o": 1.0,
+    "gpt-4o-mini": 0.1,
+    "gpt-4.1": 1.0,
+    "gpt-4.1-2025-04-14": 1.0,
+    "gpt-41-copilot": 1.0,
+    "gpt-4.1-mini": 0.1,
+    "gpt-4.1-nano": 0.05,
+    "gpt-4-turbo": 1.0,
+    "gpt-4": 1.0,
+    "gpt-5": 1.0,
+    "gpt-5-mini": 0,
+    "gpt-5.1": 1.0,
+    "gpt-5.1-codex": 1.0,
+    "gpt-5.1-codex-mini": 0.33,
+    "gpt-5.1-codex-max": 1.0,
+    "gpt-5.2": 1.0,
+    "gpt-5.2-codex": 1.0,
+    "gpt-5.3-codex": 1.0,
+    "gpt-5.4": 1.0,
+    "gpt-5.4-mini": 0.33,
+    "o1": 3.0,
+    "o1-mini": 0.5,
+    "o1-pro": 10.0,
+    "o3": 3.0,
+    "o3-mini": 0.5,
+    "o4-mini": 0.5,
+    "gemini-2.5-pro": 1.0,
+    "gemini-2.5-flash": 0.2,
+    "gemini-2.0-flash": 0.1,
+    "gemini-1.5-pro": 1.0,
+    "gemini-1.5-flash": 0.1
+  }
+}
+2026-04-29T19:08:16.8091320Z   GITHUB_AW_OTEL_TRACE_ID: aeddfc875c93f2e969d6e7590a457ab3
+2026-04-29T19:08:16.8091695Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 8fafde3ee818bbe3
+2026-04-29T19:08:16.8092024Z   GITHUB_AW_OTEL_JOB_START_MS: 1777489668662
+2026-04-29T19:08:16.8092313Z   COMPOSER_PROCESS_TIMEOUT: 0
+2026-04-29T19:08:16.8092570Z   COMPOSER_NO_INTERACTION: 1
+2026-04-29T19:08:16.8093090Z   COMPOSER_NO_AUDIT: 1
+2026-04-29T19:08:16.8093310Z   DEBUG: *
+2026-04-29T19:08:16.8093632Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-04-29T19:08:16.8094224Z   GH_AW_SAFE_OUTPUTS_PORT: 3001
+2026-04-29T19:08:16.8094726Z   GH_AW_SAFE_OUTPUTS_API_KEY: ***
+2026-04-29T19:08:16.8095144Z   GH_AW_SAFE_OUTPUTS_TOOLS_PATH: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+2026-04-29T19:08:16.8095702Z   GH_AW_SAFE_OUTPUTS_CONFIG_PATH: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+2026-04-29T19:08:16.8096114Z ##[endgroup]
+2026-04-29T19:08:16.8155047Z Verifying safe-outputs setup...
+2026-04-29T19:08:16.8158365Z Configuration files verified
+2026-04-29T19:08:16.8159089Z All 9 required dependency files present
+2026-04-29T19:08:16.8159573Z Server configuration:
+2026-04-29T19:08:16.8160066Z   Port: 3001
+2026-04-29T19:08:16.8160268Z   API Key: N2VWutXq...
+2026-04-29T19:08:16.8163236Z   Working directory: /home/runner/work/_temp/gh-aw/safeoutputs
+2026-04-29T19:08:16.8189637Z Starting safe-outputs MCP HTTP server...
+2026-04-29T19:08:16.8191937Z Started safe-outputs MCP server with PID 4176
+2026-04-29T19:08:16.8192530Z Waiting for server to become ready...
+2026-04-29T19:08:16.8256724Z Waiting for server... (attempt 1/60)
+2026-04-29T19:08:17.8386614Z Safe Outputs MCP server is ready (attempt 2/60)
+2026-04-29T19:08:17.8387860Z ##[group]Server Log Contents
+2026-04-29T19:08:17.8398522Z Safe Outputs MCP Server Log
+2026-04-29T19:08:17.8399017Z Start time: Wed Apr 29 19:08:16 UTC 2026
+2026-04-29T19:08:17.8399505Z ===========================================
+2026-04-29T19:08:17.8399809Z 
+2026-04-29T19:08:17.8400129Z [2026-04-29T19:08:16.840Z] [safe-outputs-entry] Entry point script executing
+2026-04-29T19:08:17.8400976Z [2026-04-29T19:08:16.941Z] [safe_outputs_mcp_server_http] Module is being loaded
+2026-04-29T19:08:17.8401811Z [2026-04-29T19:08:16.941Z] [mcp_http_transport] Module is being loaded
+2026-04-29T19:08:17.8402552Z [2026-04-29T19:08:16.946Z] [mcp_server_core] Module is being loaded
+2026-04-29T19:08:17.8403659Z [2026-04-29T19:08:16.947Z] [safe_outputs_mcp_server_http] Loaded mcp_http_transport.cjs
+2026-04-29T19:08:17.8404304Z [2026-04-29T19:08:16.947Z] [safe_outputs_mcp_server_http] Loaded mcp_logger.cjs
+2026-04-29T19:08:17.8404857Z [2026-04-29T19:08:16.950Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_bootstrap.cjs
+2026-04-29T19:08:17.8405435Z [2026-04-29T19:08:16.951Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_append.cjs
+2026-04-29T19:08:17.8406109Z [2026-04-29T19:08:16.957Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_handlers.cjs
+2026-04-29T19:08:17.8407270Z [2026-04-29T19:08:16.957Z] [safe_outputs_mcp_server_http] Loaded safe_outputs_tools_loader.cjs
+2026-04-29T19:08:17.8408218Z [2026-04-29T19:08:16.957Z] [safe_outputs_mcp_server_http] All modules loaded successfully
+2026-04-29T19:08:17.8408893Z [2026-04-29T19:08:16.957Z] [safe-outputs-entry] Successfully required safe_outputs_mcp_server_http.cjs
+2026-04-29T19:08:17.8409473Z [2026-04-29T19:08:16.957Z] [safe-outputs-entry] In require.main === module block
+2026-04-29T19:08:17.8410037Z [2026-04-29T19:08:16.958Z] [safe-outputs-entry] Port: 3001, LogDir: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-04-29T19:08:17.8410590Z [2026-04-29T19:08:16.958Z] [safe-outputs-entry] Calling startHttpServer...
+2026-04-29T19:08:17.8411119Z [2026-04-29T19:08:16.958Z] [safe-outputs-startup] startHttpServer called with port=3001
+2026-04-29T19:08:17.8411697Z [2026-04-29T19:08:16.958Z] [safe-outputs-startup] === Starting Safe Outputs MCP HTTP Server ===
+2026-04-29T19:08:17.8412233Z [2026-04-29T19:08:16.958Z] [safe-outputs-startup] Port: 3001
+2026-04-29T19:08:17.8412638Z [2026-04-29T19:08:16.958Z] [safe-outputs-startup] Mode: stateless
+2026-04-29T19:08:17.8413452Z [2026-04-29T19:08:16.958Z] [safe-outputs-startup] Environment: NODE_VERSION=v20.20.2, PLATFORM=linux
+2026-04-29T19:08:17.8414045Z [2026-04-29T19:08:16.958Z] [safe-outputs-startup] About to call createMCPServer...
+2026-04-29T19:08:17.8414514Z [2026-04-29T19:08:16.958Z] [safeoutputs] === Creating MCP Server ===
+2026-04-29T19:08:17.8414949Z [2026-04-29T19:08:16.958Z] [safeoutputs] Loading safe-outputs configuration
+2026-04-29T19:08:17.8415775Z [2026-04-29T19:08:16.958Z] [safeoutputs] Reading config from file: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+2026-04-29T19:08:17.8416510Z [2026-04-29T19:08:16.958Z] [safeoutputs] Config file exists at: /home/runner/work/_temp/gh-aw/safeoutputs/config.json
+2026-04-29T19:08:17.8417118Z [2026-04-29T19:08:16.959Z] [safeoutputs] Config file content length: 983 characters
+2026-04-29T19:08:17.8417664Z [2026-04-29T19:08:16.959Z] [safeoutputs] Config file read successfully, attempting to parse JSON
+2026-04-29T19:08:17.8418301Z [2026-04-29T19:08:16.959Z] [safeoutputs] Successfully parsed config from file with 6 configuration keys
+2026-04-29T19:08:17.8422109Z [2026-04-29T19:08:16.959Z] [safeoutputs] Final processed config: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["port"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","AGENTS.md","CLAUDE.md","GEMINI.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/",".githooks/",".husky/"],"reviewers":["kawax"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-04-29T19:08:17.8426111Z [2026-04-29T19:08:16.959Z] [safeoutputs] Loading safe-outputs tools
+2026-04-29T19:08:17.8426722Z [2026-04-29T19:08:16.959Z] [safeoutputs] Reading tools from file: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+2026-04-29T19:08:17.8427450Z [2026-04-29T19:08:16.959Z] [safeoutputs] Tools file exists at: /home/runner/work/_temp/gh-aw/safeoutputs/tools.json
+2026-04-29T19:08:17.8428060Z [2026-04-29T19:08:16.959Z] [safeoutputs] Tools file content length: 8081 characters
+2026-04-29T19:08:17.8428606Z [2026-04-29T19:08:16.959Z] [safeoutputs] Tools file read successfully, attempting to parse JSON
+2026-04-29T19:08:17.8429146Z [2026-04-29T19:08:16.959Z] [safeoutputs] Successfully parsed 5 tools from file
+2026-04-29T19:08:17.8429594Z [2026-04-29T19:08:16.959Z] [safeoutputs] Server name: safeoutputs
+2026-04-29T19:08:17.8429997Z [2026-04-29T19:08:16.959Z] [safeoutputs] Server version: 1.0.0
+2026-04-29T19:08:17.8430529Z [2026-04-29T19:08:16.959Z] [safeoutputs] Output file: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-04-29T19:08:17.8434481Z [2026-04-29T19:08:16.959Z] [safeoutputs] Config: {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["port"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","AGENTS.md","CLAUDE.md","GEMINI.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/",".githooks/",".husky/"],"reviewers":["kawax"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
+2026-04-29T19:08:17.8438118Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering predefined tools...
+2026-04-29T19:08:17.8438579Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering tool: create_pull_request
+2026-04-29T19:08:17.8439201Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registered tool: create_pull_request
+2026-04-29T19:08:17.8439656Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering tool: missing_tool
+2026-04-29T19:08:17.8440086Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registered tool: missing_tool
+2026-04-29T19:08:17.8440503Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering tool: noop
+2026-04-29T19:08:17.8440897Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registered tool: noop
+2026-04-29T19:08:17.8441308Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering tool: missing_data
+2026-04-29T19:08:17.8441734Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registered tool: missing_data
+2026-04-29T19:08:17.8442300Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering tool: report_incomplete
+2026-04-29T19:08:17.8443005Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registered tool: report_incomplete
+2026-04-29T19:08:17.8443481Z [2026-04-29T19:08:16.960Z] [safeoutputs] Registering dynamic tools...
+2026-04-29T19:08:17.8443941Z [2026-04-29T19:08:16.960Z] [safeoutputs] Tool registration complete: 5 registered
+2026-04-29T19:08:17.8444438Z [2026-04-29T19:08:16.960Z] [safeoutputs] === MCP Server Creation Complete ===
+2026-04-29T19:08:17.8444884Z [2026-04-29T19:08:16.960Z] [safeoutputs] MCP server created successfully
+2026-04-29T19:08:17.8445333Z [2026-04-29T19:08:16.960Z] [safeoutputs] Server name: safeoutputs
+2026-04-29T19:08:17.8445727Z [2026-04-29T19:08:16.960Z] [safeoutputs] Server version: 1.0.0
+2026-04-29T19:08:17.8446101Z [2026-04-29T19:08:16.960Z] [safeoutputs] Tools configured: 6
+2026-04-29T19:08:17.8446490Z [2026-04-29T19:08:16.960Z] [safeoutputs] Creating HTTP transport...
+2026-04-29T19:08:17.8446911Z [2026-04-29T19:08:16.960Z] [safeoutputs] HTTP transport created
+2026-04-29T19:08:17.8447333Z [2026-04-29T19:08:16.960Z] [safeoutputs] Connecting server to transport...
+2026-04-29T19:08:17.8447817Z [2026-04-29T19:08:16.960Z] [safeoutputs] About to call server.connect(transport)...
+2026-04-29T19:08:17.8448259Z [2026-04-29T19:08:16.960Z] [MCPServer] Starting connect...
+2026-04-29T19:08:17.8448611Z [2026-04-29T19:08:16.960Z] [MCPServer] Set transport
+2026-04-29T19:08:17.8448942Z [2026-04-29T19:08:16.960Z] [MCPServer] Called setServer
+2026-04-29T19:08:17.8449319Z [2026-04-29T19:08:16.961Z] [MCPHTTPTransport] Called, started=false
+2026-04-29T19:08:17.8449727Z [2026-04-29T19:08:16.961Z] [MCPHTTPTransport] Set started=true
+2026-04-29T19:08:17.8450181Z [2026-04-29T19:08:16.961Z] [safe-outputs-entry] startHttpServer call initiated (async)
+2026-04-29T19:08:17.8450663Z [2026-04-29T19:08:16.961Z] [MCPServer] Transport.start() completed
+2026-04-29T19:08:17.8451141Z [2026-04-29T19:08:16.961Z] [safeoutputs] server.connect(transport) completed successfully
+2026-04-29T19:08:17.8451677Z [2026-04-29T19:08:16.961Z] [safeoutputs] Server connected to transport successfully
+2026-04-29T19:08:17.8452133Z [2026-04-29T19:08:16.961Z] [safeoutputs] Creating HTTP server...
+2026-04-29T19:08:17.8452561Z [2026-04-29T19:08:16.961Z] [safeoutputs] Attempting to bind to port 3001...
+2026-04-29T19:08:17.8453357Z [2026-04-29T19:08:16.963Z] [safeoutputs] === Safe Outputs MCP HTTP Server Started Successfully ===
+2026-04-29T19:08:17.8453993Z [2026-04-29T19:08:16.963Z] [safeoutputs] HTTP server listening on http://localhost:3001
+2026-04-29T19:08:17.8454542Z [2026-04-29T19:08:16.963Z] [safeoutputs] MCP endpoint: POST http://localhost:3001/
+2026-04-29T19:08:17.8455032Z [2026-04-29T19:08:16.963Z] [safeoutputs] Server is ready to accept requests
+2026-04-29T19:08:17.8455639Z ##[endgroup]

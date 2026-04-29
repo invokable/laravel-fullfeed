@@ -1,0 +1,73 @@
+2026-04-29T19:08:24.254Z [DEBUG] Sending telemetry event: copilot-cli/extension.activate
+2026-04-29T19:08:24.636Z [DEBUG] ExP request: GET https://telemetry.individual.githubcopilot.com/telemetry?tas-endpoint=githubdevdiv
+2026-04-29T19:08:24.636Z [DEBUG] ExP headers: {"User-Agent":"copilot-cli","X-ExP-SDK-Version":"1","X-VSCode-ExtensionName":"CopilotCLI","X-MSEdge-ClientId":"283c4016-825d-4cbe-81b8-cd796d80650a","x-exp-parameters":"copilottrackingid=eee96bc278c51a06e6e312e8b2a83bcf,github_copilotcli_cliversion=1.0.35.9999,github_copilotcli_prerelease=0,github_copilotcli_audience=external,github_copilotcli_experimentationoptin=0,extensionname=CopilotCLI,github_copilotcli_firstlaunchat=1777489704,github_copilotcli_copilotplan=individual_pro"}
+2026-04-29T19:08:24.638Z [DEBUG] OpenTelemetry not enabled (resolveOtelConfig returned null)
+2026-04-29T19:08:24.638Z [INFO] Session indexing debug: SESSION_INDEXING=false, repository=undefined, savedIndexingLevel=undefined
+2026-04-29T19:08:24.668Z [DEBUG] No auth info or provider available, skipping custom agents load
+2026-04-29T19:08:24.684Z [INFO] Workspace initialized: c4f80efb-c8a0-46ae-a7c7-c2f2692a4dc2 (checkpoints: 0)
+2026-04-29T19:08:24.686Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: session_start)
+2026-04-29T19:08:24.687Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: memory_usage)
+2026-04-29T19:08:24.688Z [INFO] Session indexing debug: showSessionSyncPrompt=false
+2026-04-29T19:08:24.688Z [INFO] Starting Copilot CLI: 1.0.35
+2026-04-29T19:08:24.688Z [INFO] Node.js version: v24.11.1
+2026-04-29T19:08:24.688Z [DEBUG] [remoteHosts] Starting remote host detection for cwd=/home/runner/work/laravel-fullfeed/laravel-fullfeed, featureFlagEnabled=false
+2026-04-29T19:08:24.688Z [DEBUG] [remoteHosts] Feature flag ADO_DETECTION is disabled, skipping detection
+2026-04-29T19:08:24.688Z [DEBUG] Remote exporter setup: enableRemote=false, effectiveEnableRemote=false, shouldStart=undefined, showSyncPrompt=false, connectMode=false
+2026-04-29T19:08:24.911Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: exp_context_fetch)
+2026-04-29T19:08:24.911Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: copilot_user_info)
+2026-04-29T19:08:24.911Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: first_launch)
+2026-04-29T19:08:25.407Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: subagent_selected)
+2026-04-29T19:08:25.415Z [DEBUG] Loaded workspace MCP config from /home/runner/work/laravel-fullfeed/laravel-fullfeed/.mcp.json
+2026-04-29T19:08:25.416Z [DEBUG] Loaded MCP config from /home/runner/work/laravel-fullfeed/laravel-fullfeed/.mcp.json (project): 1 server(s): laravel-boost
+2026-04-29T19:08:25.417Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: mcp_policy_check)
+2026-04-29T19:08:25.425Z [ERROR] Starting remote MCP client for github with url: http://localhost:8080/mcp/github
+2026-04-29T19:08:25.426Z [ERROR] Creating MCP client for github...
+2026-04-29T19:08:25.427Z [ERROR] Connecting MCP client for github...
+2026-04-29T19:08:25.428Z [ERROR] Starting remote MCP client for safeoutputs with url: http://localhost:8080/mcp/safeoutputs
+2026-04-29T19:08:25.428Z [ERROR] Creating MCP client for safeoutputs...
+2026-04-29T19:08:25.428Z [ERROR] Connecting MCP client for safeoutputs...
+2026-04-29T19:08:25.430Z [ERROR] Starting MCP client for laravel-boost with 
+command: ./vendor/bin/testbench 
+args: boost:mcp 
+cwd: /home/runner/work/laravel-fullfeed/laravel-fullfeed
+2026-04-29T19:08:25.430Z [ERROR] Starting MCP client for laravel-boost with command: ./vendor/bin/testbench and args: boost:mcp
+2026-04-29T19:08:25.432Z [ERROR] Creating MCP client for laravel-boost...
+2026-04-29T19:08:25.432Z [ERROR] Connecting MCP client for laravel-boost...
+2026-04-29T19:08:25.525Z [ERROR] MCP client for safeoutputs connected, took 97ms
+2026-04-29T19:08:25.527Z [ERROR] Started MCP client for remote server safeoutputs
+2026-04-29T19:08:25.532Z [ERROR] MCP client for github connected, took 105ms
+2026-04-29T19:08:25.532Z [ERROR] Started MCP client for remote server github
+2026-04-29T19:08:25.716Z [ERROR] MCP client for laravel-boost connected, took 284ms
+2026-04-29T19:08:25.716Z [ERROR] MCP server laravel-boost provided deferred instructions: Laravel ecosystem MCP server offering database schema access, error logs, semantic documentation sea...
+2026-04-29T19:08:25.716Z [ERROR] Started MCP client for laravel-boost
+2026-04-29T19:08:25.717Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: mcp_allowlist_policy_check)
+2026-04-29T19:08:25.718Z [DEBUG] GitHub MCP server is disabled, registering config for later use
+2026-04-29T19:08:25.718Z [DEBUG] Creating copilot-client for integration ID agentic-workflows with token authentication. User-agent: copilot/1.0.35 (linux v24.11.1) term/unknown
+2026-04-29T19:08:25.793Z [ERROR] Error loading models: Error: 400 "checking third-party user token: bad request: Personal Access Tokens are not supported for this endpoint\n"
+2026-04-29T19:08:25.793Z [DEBUG] runPromptMode: executePromptDirectly returned succeeded=false
+2026-04-29T19:08:25.793Z [DEBUG] runPromptMode: exiting with code 1
+2026-04-29T19:08:25.794Z [DEBUG] [shutdown] Starting shutdown with 8 disposables
+2026-04-29T19:08:25.794Z [DEBUG] [shutdown] Starting dispose: Session.abort+shutdown
+2026-04-29T19:08:25.795Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: session_shutdown)
+2026-04-29T19:08:25.795Z [DEBUG] Sending telemetry event: copilot-cli/cli.telemetry (kind: memory_usage)
+2026-04-29T19:08:25.795Z [DEBUG] [shutdown] Completed dispose: Session.abort+shutdown (1ms)
+2026-04-29T19:08:25.795Z [DEBUG] [shutdown] Starting dispose: closeAllDatabases
+2026-04-29T19:08:25.796Z [DEBUG] [shutdown] Starting dispose: closeSessionStore
+2026-04-29T19:08:25.796Z [DEBUG] [shutdown] Starting dispose: seaInUseLockCleanup
+2026-04-29T19:08:25.796Z [DEBUG] [shutdown] Starting dispose: LSPClientFactory.shutdownAll
+2026-04-29T19:08:25.796Z [DEBUG] [shutdown] Starting dispose: Jce
+2026-04-29T19:08:25.796Z [DEBUG] [shutdown] Starting dispose: autoUpdate
+2026-04-29T19:08:25.796Z [DEBUG] [shutdown] Starting dispose: w5
+2026-04-29T19:08:25.797Z [DEBUG] [shutdown] Starting dispose: fme
+2026-04-29T19:08:25.797Z [DEBUG] [shutdown] Completed dispose: closeSessionStore (1ms)
+2026-04-29T19:08:25.797Z [DEBUG] [shutdown] Completed dispose: autoUpdate (1ms)
+2026-04-29T19:08:25.797Z [DEBUG] [shutdown] Completed dispose: fme (0ms)
+2026-04-29T19:08:25.797Z [DEBUG] [shutdown] Completed dispose: closeAllDatabases (2ms)
+2026-04-29T19:08:25.798Z [DEBUG] [shutdown] Completed dispose: LSPClientFactory.shutdownAll (2ms)
+2026-04-29T19:08:25.800Z [DEBUG] [telemetry-queue] Flushing 11 events (46393 B → 4527 B gzipped)
+2026-04-29T19:08:25.803Z [DEBUG] [shutdown] Completed dispose: seaInUseLockCleanup (6ms)
+2026-04-29T19:08:25.803Z [DEBUG] [shutdown] Completed dispose: w5 (7ms)
+2026-04-29T19:08:25.999Z [DEBUG] [shutdown] Completed dispose: Jce (203ms)
+2026-04-29T19:08:25.999Z [DEBUG] [shutdown] Starting dispose: logger
+2026-04-29T19:08:26.000Z [DEBUG] [shutdown] Completed dispose: logger (1ms)
+2026-04-29T19:08:26.000Z [DEBUG] [shutdown] Shutdown complete

@@ -1,0 +1,76 @@
+From 40b61ece0b7755ef63aa0ca0a1d394a39c095d51 Mon Sep 17 00:00:00 2001
+From: "github-actions[bot]" <github-actions[bot]@users.noreply.github.com>
+Date: Sat, 25 Apr 2026 18:31:13 +0000
+Subject: [PATCH] Port kakakumag fullfeed rule
+
+Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
+---
+ .github/port.md                   |  1 +
+ resources/fullfeed/items_all.json | 16 ----------------
+ resources/fullfeed/plus.json      | 13 +++++++++++++
+ 3 files changed, 14 insertions(+), 16 deletions(-)
+
+diff --git a/.github/port.md b/.github/port.md
+index 9512812..20afd5f 100644
+--- a/.github/port.md
++++ b/.github/port.md
+@@ -23,6 +23,7 @@ ## 移植完了
+ - `^http://namekkutake\.livedoor\.blog/archives/\d+\.html$` (まとメメちゃん) - 2026-04-19 移植完了
+ - `^http://musyoku\.tokyo/\d{4}/\d{2}/\d{2}/post-\d+/$` (一生非正規雇用で生きてくブログ) - 2026-04-21 移植完了
+ - `^https?://www\.buntobi\.com/` (文具のとびら) - 2026-04-23 移植完了
++- `^https://kakakumag\.com/` (価格.comマガジン) - 2026-04-25 移植完了
+ 
+ ## 今後無視するURL
+ 
+diff --git a/resources/fullfeed/items_all.json b/resources/fullfeed/items_all.json
+index 26e3ef5..72c8d62 100644
+--- a/resources/fullfeed/items_all.json
++++ b/resources/fullfeed/items_all.json
+@@ -1,20 +1,4 @@
+ [
+-    {
+-        "resource_url": "http://wedata.net/items/82075",
+-        "name": "価格.comマガジン",
+-        "created_by": "zxcvbnm001",
+-        "database_resource_url": "http://wedata.net/databases/LDRFullFeed",
+-        "updated_at": "2019-02-07T15:30:53+09:00",
+-        "data": {
+-            "microformats": "",
+-            "base": "",
+-            "type": "IND",
+-            "url": "^https://kakakumag\\.com/",
+-            "enc": "",
+-            "xpath": "div[@class=\"article-edit\"]"
+-        },
+-        "created_at": "2019-02-07T15:30:53+09:00"
+-    },
+     {
+         "resource_url": "http://wedata.net/items/82036",
+         "name": "2f3a03c89dbf8a0bd53d6055d0acd801",
+diff --git a/resources/fullfeed/plus.json b/resources/fullfeed/plus.json
+index dce851b..e0956e6 100644
+--- a/resources/fullfeed/plus.json
++++ b/resources/fullfeed/plus.json
+@@ -327,6 +327,19 @@
+             "selector": "div.topics-articleBody"
+         }
+     },
++    {
++        "name": "価格.comマガジン",
++        "data": {
++            "url": "^https:\/\/kakakumag\\.com\/",
++            "selector": "div.article-edit",
++            "after_callable": [
++                "Revolution\\Fullfeed\\Extractor\\RemoveElements"
++            ],
++            "remove": [
++                "script"
++            ]
++        }
++    },
+     {
+         "name": "情報管理LOG",
+         "data": {
+-- 
+2.53.0
+

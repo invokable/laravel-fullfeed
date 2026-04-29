@@ -1,0 +1,7 @@
+[2026-04-20T18:43:53Z] [DEBUG] [backend] GetOrLaunch called for server: safeoutputs
+[2026-04-20T18:43:53Z] [INFO] [backend] Configuring HTTP MCP backend: safeoutputs, url=http://localhost:3001
+[2026-04-20T18:43:53Z] [INFO] [backend] Successfully configured HTTP MCP backend: safeoutputs
+[2026-04-20T18:43:53Z] [INFO] [backend] Backend server info: name=safeoutputs, version=1.0.0
+[2026-04-20T18:43:54Z] [INFO] [backend] Successfully registered tools from safeoutputs (took 211.19581ms)
+[2026-04-20T18:46:17Z] [DEBUG] [backend] GetOrLaunchForSession called: server=safeoutputs, session=BiNtTMDI2HqhFisBummeoMCiaZZ5cDnmMAL7BfTjjqBpHAhlgoLFPn3s
+[2026-04-20T18:46:17Z] [DEBUG] [backend] GetOrLaunch called for server: safeoutputs
