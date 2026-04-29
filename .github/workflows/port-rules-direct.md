@@ -5,7 +5,6 @@ on:
 
 engine:
   id: copilot
-  command: /usr/local/bin/copilot
   agent: port-rules
 
 strict: false
