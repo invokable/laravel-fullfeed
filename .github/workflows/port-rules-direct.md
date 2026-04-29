@@ -41,7 +41,8 @@ safe-outputs:
   threat-detection: false
   create-pull-request:
     title-prefix: "[port] "
-    labels: [automation]
+    labels: [port]
+    reviewers: [kawax]
     draft: true
     fallback-as-issue: true
     protected-files: "allowed"
@@ -67,7 +68,7 @@ safe-outputs:
 1. `items_all.json` 内のルールから候補を選ぶ
 2. `plus.json` に同じ `data.url` パターンのルールが既にあるものは除外
 3. `.github/port.md` の「移植完了」「今後無視するURL」に記載されているものは除外
-4. 既存の `[port]` issueで作業中のものは除外
+4. 既存のプルリクエストで作業中のものは除外
 5. 残った候補から1つを選ぶ（先頭から順に処理）
 
 移植するURLがない場合は何もせずに終了してください。
