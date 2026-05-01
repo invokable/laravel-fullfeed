@@ -42,7 +42,6 @@ safe-outputs:
   create-pull-request:
     title-prefix: "[port] "
     labels: [port]
-    reviewers: [kawax]
     draft: true
     fallback-as-issue: true
     protected-files: "allowed"
