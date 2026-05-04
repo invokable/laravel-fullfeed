@@ -26,9 +26,6 @@ tools:
   cache-memory: true
 
 steps:
-  - uses: actions/checkout@v6
-    with:
-      persist-credentials: false
   - name: Set up PHP
     uses: shivammathur/setup-php@2.37.0
     with:

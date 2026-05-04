@@ -1,5 +1,5 @@
-# gh-aw-metadata: {"schema_version":"v3","frontmatter_hash":"e36cc0582634f2cb951ef7e5f5e821ec09ed92ce78e9b0320e0b6870894b61f3","compiler_version":"v0.71.1","agent_id":"copilot"}
-# gh-aw-manifest: {"version":1,"secrets":["COPILOT_GITHUB_TOKEN","GH_AW_CI_TRIGGER_TOKEN","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/cache","sha":"27d5ce7f107fe9357f9df03efb73ab90386fccae","version":"v5.0.5"},{"repo":"actions/checkout","sha":"de0fac2e4500dabe0009e67214ff5f5447ce83dd","version":"v6"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"239aec45b78c8799417efdd5bc6d8cc036629ec1","version":"v0.71.1"},{"repo":"shivammathur/setup-php","sha":"accd6127cb78bee3e8082180cb391013d204ef9f","version":"2.37.0"}],"containers":[{"image":"ghcr.io/github/github-mcp-server:v1.0.2"},{"image":"node:lts-alpine","digest":"sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f","pinned_image":"node:lts-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f"}]}
+# gh-aw-metadata: {"schema_version":"v3","frontmatter_hash":"ae5d1583d720edc68596c247d07615b7afbb178e9bab648a2852a7c138192dc2","compiler_version":"v0.71.1","agent_id":"copilot"}
+# gh-aw-manifest: {"version":1,"secrets":["COPILOT_GITHUB_TOKEN","GH_AW_CI_TRIGGER_TOKEN","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/cache","sha":"27d5ce7f107fe9357f9df03efb73ab90386fccae","version":"v5.0.5"},{"repo":"actions/checkout","sha":"de0fac2e4500dabe0009e67214ff5f5447ce83dd","version":"v6.0.2"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"239aec45b78c8799417efdd5bc6d8cc036629ec1","version":"v0.71.1"},{"repo":"shivammathur/setup-php","sha":"accd6127cb78bee3e8082180cb391013d204ef9f","version":"2.37.0"}],"containers":[{"image":"ghcr.io/github/github-mcp-server:v1.0.2"},{"image":"node:lts-alpine","digest":"sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f","pinned_image":"node:lts-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f"}]}
 #    ___                   _   _      
 #   / _ \                 | | (_)     
 #  | |_| | __ _  ___ _ __ | |_ _  ___ 
@@ -32,7 +32,6 @@
 #
 # Custom actions used:
 #   - actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
-#   - actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
 #   - actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 #   - actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
 #   - actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9
@@ -172,20 +171,20 @@ jobs:
         run: |
           bash "${RUNNER_TEMP}/gh-aw/actions/create_prompt_first.sh"
           {
-          cat << 'GH_AW_PROMPT_14a486c84d5a41f4_EOF'
+          cat << 'GH_AW_PROMPT_2722a95010af61fc_EOF'
           <system>
-          GH_AW_PROMPT_14a486c84d5a41f4_EOF
+          GH_AW_PROMPT_2722a95010af61fc_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/xpia.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/temp_folder_prompt.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/markdown.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/cache_memory_prompt.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_prompt.md"
-          cat << 'GH_AW_PROMPT_14a486c84d5a41f4_EOF'
+          cat << 'GH_AW_PROMPT_2722a95010af61fc_EOF'
           <safe-output-tools>
           Tools: create_pull_request, missing_tool, missing_data, noop
-          GH_AW_PROMPT_14a486c84d5a41f4_EOF
+          GH_AW_PROMPT_2722a95010af61fc_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_create_pull_request.md"
-          cat << 'GH_AW_PROMPT_14a486c84d5a41f4_EOF'
+          cat << 'GH_AW_PROMPT_2722a95010af61fc_EOF'
           </safe-output-tools>
           <github-context>
           The following GitHub context information is available for this workflow:
@@ -215,12 +214,12 @@ jobs:
           {{/if}}
           </github-context>
           
-          GH_AW_PROMPT_14a486c84d5a41f4_EOF
+          GH_AW_PROMPT_2722a95010af61fc_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/github_mcp_tools_with_safeoutputs_prompt.md"
-          cat << 'GH_AW_PROMPT_14a486c84d5a41f4_EOF'
+          cat << 'GH_AW_PROMPT_2722a95010af61fc_EOF'
           </system>
           {{#runtime-import .github/workflows/port-rules-direct.md}}
-          GH_AW_PROMPT_14a486c84d5a41f4_EOF
+          GH_AW_PROMPT_2722a95010af61fc_EOF
           } > "$GH_AW_PROMPT"
       - name: Interpolate variables and render templates
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9
@@ -336,15 +335,16 @@ jobs:
             echo "GH_AW_SAFE_OUTPUTS_CONFIG_PATH=${RUNNER_TEMP}/gh-aw/safeoutputs/config.json"
             echo "GH_AW_SAFE_OUTPUTS_TOOLS_PATH=${RUNNER_TEMP}/gh-aw/safeoutputs/tools.json"
           } >> "$GITHUB_OUTPUT"
+      - name: Checkout repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
       - name: Create gh-aw temp directory
         run: bash "${RUNNER_TEMP}/gh-aw/actions/create_gh_aw_tmp_dir.sh"
       - name: Configure gh CLI for GitHub Enterprise
         run: bash "${RUNNER_TEMP}/gh-aw/actions/configure_gh_for_ghe.sh"
         env:
           GH_TOKEN: ${{ github.token }}
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
-        with:
-          persist-credentials: false
       - name: Set up PHP
         uses: shivammathur/setup-php@accd6127cb78bee3e8082180cb391013d204ef9f # 2.37.0
         with:
@@ -427,9 +427,9 @@ jobs:
           mkdir -p "${RUNNER_TEMP}/gh-aw/safeoutputs"
           mkdir -p /tmp/gh-aw/safeoutputs
           mkdir -p /tmp/gh-aw/mcp-logs/safeoutputs
-          cat > "${RUNNER_TEMP}/gh-aw/safeoutputs/config.json" << 'GH_AW_SAFE_OUTPUTS_CONFIG_79b931cfdbe71442_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/safeoutputs/config.json" << 'GH_AW_SAFE_OUTPUTS_CONFIG_8d8be97b6987a53e_EOF'
           {"create_pull_request":{"draft":true,"fallback_as_issue":true,"labels":["port"],"max":1,"max_patch_size":1024,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","AGENTS.md","CLAUDE.md","GEMINI.md"],"protected_files_policy":"allowed","protected_path_prefixes":[".github/",".agents/",".githooks/",".husky/"],"title_prefix":"[port] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
-          GH_AW_SAFE_OUTPUTS_CONFIG_79b931cfdbe71442_EOF
+          GH_AW_SAFE_OUTPUTS_CONFIG_8d8be97b6987a53e_EOF
       - name: Write Safe Outputs Tools
         env:
           GH_AW_TOOLS_META_JSON: |
@@ -636,7 +636,7 @@ jobs:
           
           mkdir -p /home/runner/.copilot
           GH_AW_NODE=$(which node 2>/dev/null || command -v node 2>/dev/null || echo node)
-          cat << GH_AW_MCP_CONFIG_50d3e2fc26859597_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
+          cat << GH_AW_MCP_CONFIG_d4ad90ec49681624_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
           {
             "mcpServers": {
               "github": {
@@ -677,7 +677,7 @@ jobs:
               "payloadDir": "${MCP_GATEWAY_PAYLOAD_DIR}"
             }
           }
-          GH_AW_MCP_CONFIG_50d3e2fc26859597_EOF
+          GH_AW_MCP_CONFIG_d4ad90ec49681624_EOF
       - name: Clean git credentials
         continue-on-error: true
         run: bash "${RUNNER_TEMP}/gh-aw/actions/clean_git_credentials.sh"
