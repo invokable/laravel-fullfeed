@@ -26,14 +26,14 @@ tools:
   web-fetch:
   cache-memory: true
 
-#steps:
-#  - name: Set up PHP
-#    uses: shivammathur/setup-php@2.37.0
-#    with:
-#      php-version: 8.5
-#      extensions: mbstring
-#  - name: Install dependencies
-#    run: composer install --prefer-dist --no-interaction --no-progress
+steps:
+  - name: Set up PHP
+    uses: shivammathur/setup-php@2.37.0
+    with:
+      php-version: 8.5
+      extensions: mbstring
+  - name: Install dependencies
+    run: composer install --prefer-dist --no-interaction --no-progress
 
 safe-outputs:
   threat-detection: false
