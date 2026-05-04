@@ -1,13 +1,13 @@
 {
   "entries": {
-    "actions/checkout@v6": {
+    "actions/checkout@v6.0.2": {
       "repo": "actions/checkout",
-      "version": "v6",
+      "version": "v6.0.2",
       "sha": "de0fac2e4500dabe0009e67214ff5f5447ce83dd"
     },
-    "actions/github-script@v9": {
+    "actions/github-script@v9.0.0": {
       "repo": "actions/github-script",
-      "version": "v9",
+      "version": "v9.0.0",
       "sha": "3a2844b7e9c422d3c10d287c895573f7108da1b3"
     },
     "github/gh-aw-actions/setup@v0.71.1": {
@@ -19,6 +19,13 @@
       "repo": "shivammathur/setup-php",
       "version": "2.37.0",
       "sha": "accd6127cb78bee3e8082180cb391013d204ef9f"
+    }
+  },
+  "containers": {
+    "ghcr.io/github/github-mcp-server:v1.0.2": {
+      "image": "ghcr.io/github/github-mcp-server:v1.0.2",
+      "digest": "sha256:26db03408086a99cf1916348dcc4f9614206658f9082a8060dc7c81ad787f4ba",
+      "pinned_image": "ghcr.io/github/github-mcp-server:v1.0.2@sha256:26db03408086a99cf1916348dcc4f9614206658f9082a8060dc7c81ad787f4ba"
     }
   }
 }
