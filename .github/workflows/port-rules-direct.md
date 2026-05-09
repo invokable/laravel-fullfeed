@@ -30,6 +30,8 @@ jobs:
     setup-php:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout code
+              uses: actions/checkout@v6
             - name: Set up PHP
               uses: shivammathur/setup-php@2.37.0
               with:
