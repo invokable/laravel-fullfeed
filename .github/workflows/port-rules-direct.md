@@ -21,7 +21,7 @@ permissions:
 tools:
   github:
     toolsets: [default]
-  bash: [":*"]
+  bash: true
   edit:
   web-fetch:
   cache-memory: true
