@@ -1,7 +1,5 @@
 ---
-description: >
-  LDRFullFeed の items_all.json から plus.json へルールを移植するコーディングエージェント。
-  指定されたURLのサイトを確認し、最適な CSS selector ベースのルールを作成する。
+description: LDRFullFeed の items_all.json から plus.json へルールを移植するコーディングエージェント。指定されたURLのサイトを確認し、最適な CSS selector ベースのルールを作成する。
 ---
 
 # FullFeed ルール移植エージェント
