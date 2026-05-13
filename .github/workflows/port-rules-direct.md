@@ -6,6 +6,7 @@ on:
 engine:
   id: copilot
   model: claude-haiku-4.5
+  command: /usr/local/bin/copilot
   agent: port-rules
 
 strict: false
