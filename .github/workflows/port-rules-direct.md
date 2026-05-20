@@ -6,7 +6,7 @@ on:
 engine:
   id: copilot
   model: claude-haiku-4.5
-  command: /usr/local/bin/copilot
+#  command: /usr/local/bin/copilot
   agent: port-rules
 
 strict: false
@@ -29,7 +29,7 @@ tools:
 
 steps:
     -   name: Set up PHP
-        uses: shivammathur/setup-php@2.37.0
+        uses: shivammathur/setup-php@2.37.1
         with:
             php-version: 8.5
             extensions: mbstring, dom
