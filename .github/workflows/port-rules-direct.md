@@ -1,6 +1,7 @@
 ---
 on:
-  #schedule: daily around 2:00 utc+9 これだけ実行が失敗しているので一時的に停止
+  # items_all.jsonが大量にある割に古すぎて移植するのメリットが低いので終了。必要になったら再開。
+  #schedule: daily around 2:00 utc+9
   workflow_dispatch:
 
 engine:
