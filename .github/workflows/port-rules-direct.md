@@ -6,12 +6,13 @@ on:
 
 engine:
   id: copilot
-  model: claude-haiku-4.5
-#  command: /usr/local/bin/copilot
+  model: haiku
   agent: port-rules
 
 strict: false
 
+features:
+  dangerously-disable-sandbox-agent: "任意のURLにアクセスして有効性、htmlを調査するため"
 sandbox:
   agent: false
 
@@ -30,7 +31,7 @@ tools:
 
 steps:
     -   name: Set up PHP
-        uses: shivammathur/setup-php@2.37.1
+        uses: shivammathur/setup-php@2.37.2
         with:
             php-version: 8.5
             extensions: mbstring, dom
