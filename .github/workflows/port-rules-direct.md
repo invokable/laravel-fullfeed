@@ -6,7 +6,7 @@ on:
 
 engine:
   id: copilot
-  model: haiku
+  model: claude-haiku-4.5
   agent: port-rules
 
 strict: false
