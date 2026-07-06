@@ -64,7 +64,8 @@
         "boost": "vendor/bin/testbench boost:install --no-interaction --ansi",
         "post-autoload-dump": [
             "@clear",
-            "@prepare"
+            "@prepare",
+            "@boost"
         ],
         "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
