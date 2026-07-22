@@ -4,9 +4,9 @@ on:
   #schedule: daily around 2:00 utc+9
   workflow_dispatch:
 
+model: claude-haiku-4.5
 engine:
   id: copilot
-  model: claude-haiku-4.5
   agent: port-rules
 
 strict: false
