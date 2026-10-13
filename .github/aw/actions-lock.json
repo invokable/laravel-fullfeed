@@ -10,20 +10,32 @@
       "version": "v9.0.0",
       "sha": "3a2844b7e9c422d3c10d287c895573f7108da1b3"
     },
-    "github/gh-aw-actions/setup-cli@v0.83.0": {
+    "github/gh-aw-actions/setup-cli@v0.91.11": {
       "repo": "github/gh-aw-actions/setup-cli",
-      "version": "v0.83.0",
-      "sha": "34802437a0cba2fd1352d1f1bb02c18a78b56b31"
+      "version": "v0.91.11",
+      "sha": "c0d661a2925687358c937720c5c7d3c338299f55"
     },
-    "github/gh-aw-actions/setup@v0.83.0": {
+    "github/gh-aw-actions/setup@v0.91.11": {
       "repo": "github/gh-aw-actions/setup",
-      "version": "v0.83.0",
-      "sha": "34802437a0cba2fd1352d1f1bb02c18a78b56b31"
+      "version": "v0.91.11",
+      "sha": "c0d661a2925687358c937720c5c7d3c338299f55"
     },
-    "shivammathur/setup-php@2.37.2": {
+    "shivammathur/setup-php@2.40.0": {
       "repo": "shivammathur/setup-php",
-      "version": "2.37.2",
-      "sha": "f3e473d116dcccaddc5834248c87452386958240"
+      "version": "2.40.0",
+      "sha": "eb7c497e18156a6bbabfef1d3a82760b9eda3962"
+    }
+  },
+  "containers": {
+    "ghcr.io/github/gh-aw-node": {
+      "image": "ghcr.io/github/gh-aw-node",
+      "digest": "sha256:11c2c544876cdbaffefe0f7f1283b74838c209654b4934a78e23ed11f750490f",
+      "pinned_image": "ghcr.io/github/gh-aw-node@sha256:11c2c544876cdbaffefe0f7f1283b74838c209654b4934a78e23ed11f750490f"
+    },
+    "ghcr.io/github/github-mcp-server:v2.0.2": {
+      "image": "ghcr.io/github/github-mcp-server:v2.0.2",
+      "digest": "sha256:ffced0d76e77428532a2ced185516992d77fd146d69eec2f244e6237d1a97796",
+      "pinned_image": "ghcr.io/github/github-mcp-server:v2.0.2@sha256:ffced0d76e77428532a2ced185516992d77fd146d69eec2f244e6237d1a97796"
     }
   }
 }

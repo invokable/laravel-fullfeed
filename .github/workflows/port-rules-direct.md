@@ -3,42 +3,35 @@ on:
   # items_all.jsonが大量にある割に古すぎて移植するのメリットが低いので終了。必要になったら再開。
   #schedule: daily around 2:00 utc+9
   workflow_dispatch:
-
-model: claude-haiku-4.5
 engine:
   id: copilot
   agent: port-rules
-
+  copilot-sdk: true
 strict: false
-
 features:
-  dangerously-disable-sandbox-agent: "任意のURLにアクセスして有効性、htmlを調査するため"
+  dangerously-disable-sandbox-agent: true
 sandbox:
   agent: false
-
 permissions:
   contents: read
   issues: read
   pull-requests: read
-
 tools:
   github:
     toolsets: [default]
-  bash: true
+  bash: [":*"]
   edit:
   web-fetch:
   cache-memory: true
-
 steps:
-    -   name: Set up PHP
-        uses: shivammathur/setup-php@2.37.2
-        with:
-            php-version: 8.5
-            extensions: mbstring, dom
-            coverage: xdebug
-    -   name: Install Composer dependencies
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader
-
+  - name: Set up PHP
+    uses: shivammathur/setup-php@2.40.0
+    with:
+      php-version: 8.5
+      extensions: mbstring, dom
+      coverage: xdebug
+  - name: Install Composer dependencies
+    run: composer install --no-interaction --prefer-dist --optimize-autoloader
 safe-outputs:
   threat-detection: false
   create-pull-request:
